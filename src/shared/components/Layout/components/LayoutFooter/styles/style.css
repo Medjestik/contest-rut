@@ -19,3 +19,17 @@
   line-height: 1.15;
   color: var(--white-color);
 }
+.layout-footer__support {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-decoration: underline;
+  color: var(--white-color);
+  transition: all .3s ease-in-out;
+}
+.layout-footer__support:hover {
+  cursor: pointer;
+  opacity: .7;
+}

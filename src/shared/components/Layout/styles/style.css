@@ -82,6 +82,18 @@
 
 @media all and (max-width: 1366px) {
   .public-layout {
-    padding: 32px 48px;
+    padding: 32px 40px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .public-layout {
+    padding: 24px 32px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .public-layout {
+    padding: 8px 0;
   }
 }

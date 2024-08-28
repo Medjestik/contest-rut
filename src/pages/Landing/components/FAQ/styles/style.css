@@ -13,3 +13,39 @@
 .faq__title {
   margin-bottom: 80px;
 }
+
+@media all and (max-width: 1440px) {
+  .faq {
+    margin: 56px 0 0;
+  }
+  .faq__section {
+    margin: 32px 0;
+  }
+  .faq__title {
+    margin-bottom: 64px;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .faq {
+    margin: 40px 0 0;
+  }
+  .faq__section {
+    margin: 32px 0;
+  }
+  .faq__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .faq {
+    margin: 24px 0 0;
+  }
+  .faq__section {
+    margin: 24px 0;
+  }
+  .faq__title {
+    margin-bottom: 24px;
+  }
+}

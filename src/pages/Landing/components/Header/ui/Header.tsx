@@ -6,10 +6,15 @@ import icon from '../../../../../shared/icons/icon.svg';
 import logoRUT from '../../../../../shared/icons/logo-rut.svg';
 import Navigation from '../../../../../shared/components/Navigation/ui/Navigation';
 import { NavHeaderLinks } from '../../../../../shared/components/Navigation/interface/interface';
+import Icon from '../../../../../shared/components/Icon/ui/Icon';
 
 import '../styles/style.css';
 
-const Header: FC = () => {
+interface IHeaderProps {
+  windowWidth: number;
+}
+
+const Header: FC<IHeaderProps> = ({ windowWidth }) => {
 
   return (
     <header className='header' id='header'>
@@ -17,10 +22,18 @@ const Header: FC = () => {
         <img className='header__icon' src={icon} alt='логотип'></img>
         <img className='header__icon header__icon-rut' src={logoRUT} alt='логотип'></img>
       </div>
-      <Navigation links={NavHeaderLinks} color='default' />
-      <div className='header__contacts'>
-        <Link to='footer' smooth={true} offset={0} duration={1750} spy={true}>Контакты</Link>
-      </div>
+      {
+        windowWidth > 1000 
+        ?
+        <>
+        <Navigation links={NavHeaderLinks} color='default' />
+        <div className='header__contacts'>
+          <Link to='footer' smooth={true} offset={0} duration={1750} spy={true}>Контакты</Link>
+        </div>
+        </>
+        :
+        <Icon type='menu' />
+      }
     </header>
   );
 };

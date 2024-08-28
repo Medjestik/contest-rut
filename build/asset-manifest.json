@@ -1,20 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d7f4b86.css",
-    "main.js": "/static/js/main.5909f43e.js",
+    "main.css": "/static/css/main.bc173e68.css",
+    "main.js": "/static/js/main.bba18c87.js",
     "static/js/453.5e0df2e8.chunk.js": "/static/js/453.5e0df2e8.chunk.js",
     "static/media/main-img.png": "/static/media/main-img.ab3b66bb6a901ce85830.png",
     "static/media/description-img.jpg": "/static/media/description-img.11e710851c26b13da214.jpg",
     "static/media/recruitment-img.jpg": "/static/media/recruitment-img.4c422d736060f7023f20.jpg",
     "static/media/stage-moscow.jpg": "/static/media/stage-moscow.3a8e4ad0b0b477f88282.jpg",
-    "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.7d2f1e3c43251f14336c.ttf",
-    "static/media/BebasNeue-Bold.ttf": "/static/media/BebasNeue-Bold.0fff693ee8f49e3b60f2.ttf",
-    "static/media/BebasNeue-Light.ttf": "/static/media/BebasNeue-Light.9158f41b589579cf795d.ttf",
-    "static/media/BebasNeue-Thin.ttf": "/static/media/BebasNeue-Thin.9c552d8d8b65cd26ac0d.ttf",
-    "static/media/BebasNeue-Bold.otf": "/static/media/BebasNeue-Bold.127f59ce7d7e692453d6.otf",
-    "static/media/BebasNeue-Regular.otf": "/static/media/BebasNeue-Regular.7e59b91f7e7e28bb161e.otf",
-    "static/media/BebasNeue-Light.otf": "/static/media/BebasNeue-Light.c64072cebb39eb1db864.otf",
-    "static/media/BebasNeue-Thin.otf": "/static/media/BebasNeue-Thin.afc628e3b784b9b43ba9.otf",
     "static/media/Akrobat-ExtraBold.otf": "/static/media/Akrobat-ExtraBold.c563e35d28216ebe96ef.otf",
     "static/media/Akrobat-Bold.otf": "/static/media/Akrobat-Bold.02bb6e66ddbe0c7afdcb.otf",
     "static/media/Akrobat-SemiBold.otf": "/static/media/Akrobat-SemiBold.48f2a482355b4face150.otf",
@@ -23,20 +15,21 @@
     "static/media/Akrobat-Light.otf": "/static/media/Akrobat-Light.1150db0acfac627aa948.otf",
     "static/media/Akrobat-Regular.otf": "/static/media/Akrobat-Regular.12827ce5e0d9afebcc19.otf",
     "static/media/Akrobat-Thin.otf": "/static/media/Akrobat-Thin.6bcdb8587d336fc5b971.otf",
+    "static/media/BebasNeueLight.woff": "/static/media/BebasNeueLight.fb1021edc3744b98b5b7.woff",
+    "static/media/BebasNeueRegular.woff": "/static/media/BebasNeueRegular.c07e076467a248c2f672.woff",
+    "static/media/BebasNeue-Thin.woff": "/static/media/BebasNeue-Thin.83e86240c8a62475c312.woff",
+    "static/media/BebasNeueBold.woff": "/static/media/BebasNeueBold.e0462489b6967dbc5942.woff",
     "static/media/user.png": "/static/media/user.8d49e377c7c342895ec2.png",
     "static/media/logo-rut.svg": "/static/media/logo-rut.8a1505e3a7e469213d9a91721fee75ac.svg",
-    "static/media/social-telegram.svg": "/static/media/social-telegram.8d4ba7ebc9a13032d23c12fc744a6711.svg",
-    "static/media/social-vk.svg": "/static/media/social-vk.35b2298bc0fb1659716abc6d230e661b.svg",
-    "static/media/social-mail.svg": "/static/media/social-mail.70222a7334dbe63b191ca9ff753c2cef.svg",
     "static/media/icon.svg": "/static/media/icon.9525a7560bf2bc227eeb9bf8a149b621.svg",
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.55a4ec4915bbcdabc744.svg",
-    "main.2d7f4b86.css.map": "/static/css/main.2d7f4b86.css.map",
-    "main.5909f43e.js.map": "/static/js/main.5909f43e.js.map",
+    "main.bc173e68.css.map": "/static/css/main.bc173e68.css.map",
+    "main.bba18c87.js.map": "/static/js/main.bba18c87.js.map",
     "453.5e0df2e8.chunk.js.map": "/static/js/453.5e0df2e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d7f4b86.css",
-    "static/js/main.5909f43e.js"
+    "static/css/main.bc173e68.css",
+    "static/js/main.bba18c87.js"
   ]
 }

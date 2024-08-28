@@ -8,6 +8,7 @@ const LayoutFooter: FC = () => {
   return (
     <footer className='layout-footer'>
       <span className='layout-footer__copy'>&copy;{getCurrentYear()} Все права защищены, РУТ (МИИТ)</span>
+      <span className='layout-footer__support'>Техническая поддержка</span>
     </footer>
   );
 };

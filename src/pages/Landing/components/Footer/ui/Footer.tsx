@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 
-import icon from '../../../../../shared/icons/icon.svg';
+import icon from '../../../../../shared/icons/icon-white.png';
+import iconRUT from '../../../../../shared/icons/logo-rut-white.svg';
 
 import { ESOCIAL } from '../interface/interface';
 import FooterSocialLink from './FooterSocialLink';
@@ -25,9 +26,10 @@ const Footer: FC = () => {
               обращайтесь в <span className='footer__support-link'>техническую поддержку</span>.
             </p>
         </div>
-        <div className='footer__navigation'>
+        <div className='footer__bottom'>
           <img className='footer__icon' src={icon} alt='логотип'></img>
-          <Navigation links={NavFooterLinks} color='white' />
+          <img className='footer__icon footer__icon-rut' src={iconRUT} alt='логотип'></img>
+          <div className='footer__navigation'><Navigation links={NavFooterLinks} color='white' /></div>
         </div>
         <p className='footer__copy'>&copy; {getCurrentYear()}, Все права защищены РУТ (МИИТ)</p>
       </div>

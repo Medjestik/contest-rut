@@ -7,17 +7,21 @@ import PublicLayout from '../../shared/components/Layout/ui/PublicLayout';
 import Header from './components/Header/ui/Header';
 import Main from './components/Main/ui/Main';
 import Description from './components/Description/ui/Description';
-import Cases from './components/Cases/ui/Cases';
 import Stages from './components/Stages/ui/Stages';
+import Cases from './components/Cases/ui/Cases';
 import Recruitment from './components/Recruitment/ui/Recruitment';
 import FAQ from './components/FAQ/ui/FAQ';
 import Document from './components/Document/ui/Document';
-import Footer from './components/Footer/ui/Footer';
+
 import Preloader from '../../shared/components/Preloader/ui/Preloader';
 
 import './Landing.css';
 
-const Landing: FC = () => {
+interface ILandingProps {
+  windowWidth: number;
+}
+
+const Landing: FC<ILandingProps> = ({ windowWidth }) => {
 
   const [cases, setCases] = useState<ICaseItem[]>([]);
 
@@ -48,15 +52,15 @@ const Landing: FC = () => {
           <Preloader />
           :
           <>
-          <Header />
-          <Main />
-          <Description />
+          <Header windowWidth={windowWidth} />
+          <Main windowWidth={windowWidth} />
+          <Description windowWidth={windowWidth} />
           <Stages />
-          <Cases cases={cases} /> 
+          <Cases cases={cases} />
           <Recruitment />
           <FAQ />
           <Document />
-          <Footer />
+
           </>
         }
       </div>

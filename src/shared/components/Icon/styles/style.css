@@ -15,6 +15,12 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+.icon_type_menu {
+  background-image: url('../../../icons/menu.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .icon_active {
   transition: all .3s ease-in-out;
   cursor: pointer;

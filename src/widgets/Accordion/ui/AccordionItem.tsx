@@ -21,7 +21,7 @@ const AccordionItem: FC<IAccordionItemProps> = ({ item }) => {
       const childrenHeight = childrenRef.current.clientHeight;
       setHeight(isOpenAccordion ? mainHeight + childrenHeight : mainHeight);
     }
-  }, [isOpenAccordion]);
+  }, [mainRef.current && mainRef.current.clientHeight, isOpenAccordion]);
 
   return (
     <li style={{ height }} className={`accordion__item ${isOpenAccordion ? 'accordion__item_state_open' : ''}`}>

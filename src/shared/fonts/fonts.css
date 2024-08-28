@@ -1,33 +1,41 @@
 @font-face {
   font-family: 'Bebas Neue';
-  src: url('Bebas/BebasNeue-Thin.ttf') format('truetype'), /* Укажите путь к файлам */
-        url('Bebas/BebasNeue-Thin.otf') format('opentype');
+  src: url('Bebas/BebasNeue-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Bebas Neue';
-  src: url('Bebas/BebasNeue-Light.ttf') format('truetype'),
-        url('Bebas/BebasNeue-Light.otf') format('opentype');
+  src: url('Bebas/BebasNeueLight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Bebas Neue';
-  src: url('Bebas/BebasNeue-Regular.ttf') format('truetype'),
-        url('Bebas/BebasNeue-Regular.otf') format('opentype');
+  src: url('Bebas/BebasNeueRegular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Bebas Neue';
-  src: url('Bebas/BebasNeue-Bold.ttf') format('truetype'),
-        url('Bebas/BebasNeue-Bold.otf') format('opentype');
+  src: url('Bebas/BebasNeueBold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('Bebas/BebasNeueBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {

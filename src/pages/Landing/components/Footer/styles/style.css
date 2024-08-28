@@ -17,7 +17,7 @@
 .footer__title {
   margin: 0;
   font-family: 'Bebas Neue', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 80px;
   line-height: 1.15;
   letter-spacing: -4px;
@@ -60,7 +60,7 @@
 .footer__support {
   margin: 0;
   font-family: 'Bebas Neue', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 24px;
   line-height: 1.15;
   text-transform: uppercase;
@@ -82,24 +82,28 @@
   line-height: 1.15;
   color: var(--white-color);
 }
-.footer__navigation {
+.footer__bottom {
   margin: 36px 0 0 0;
   width: 100%;
   padding: 48px 90px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   border-radius: 80px;
   background-color: rgba(255, 255, 255, 0.05);
 }
 .footer__icon {
-  margin: 0;
-  width: 48px;
-  height: 48px;
+  margin: 0 20px 0 0;
+  height: 36px;
   object-fit: contain;
   object-position: center;
   user-select: none;
   pointer-events: none;
   z-index: 2;
+}
+.footer__icon-rut {
+  height: 28px;
+}
+.footer__navigation{
+  margin: 0 0 0 auto;
 }
