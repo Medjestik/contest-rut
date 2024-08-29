@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc173e68.css",
-    "main.js": "/static/js/main.bba18c87.js",
+    "main.css": "/static/css/main.045856f7.css",
+    "main.js": "/static/js/main.b1bdd7aa.js",
     "static/js/453.5e0df2e8.chunk.js": "/static/js/453.5e0df2e8.chunk.js",
     "static/media/main-img.png": "/static/media/main-img.ab3b66bb6a901ce85830.png",
     "static/media/description-img.jpg": "/static/media/description-img.11e710851c26b13da214.jpg",
@@ -21,15 +21,19 @@
     "static/media/BebasNeueBold.woff": "/static/media/BebasNeueBold.e0462489b6967dbc5942.woff",
     "static/media/user.png": "/static/media/user.8d49e377c7c342895ec2.png",
     "static/media/logo-rut.svg": "/static/media/logo-rut.8a1505e3a7e469213d9a91721fee75ac.svg",
+    "static/media/logo-rut-white.svg": "/static/media/logo-rut-white.d259705517743de0d67f7d6663abbb55.svg",
+    "static/media/social-telegram.svg": "/static/media/social-telegram.8d4ba7ebc9a13032d23c12fc744a6711.svg",
+    "static/media/social-vk.svg": "/static/media/social-vk.35b2298bc0fb1659716abc6d230e661b.svg",
+    "static/media/social-mail.svg": "/static/media/social-mail.70222a7334dbe63b191ca9ff753c2cef.svg",
     "static/media/icon.svg": "/static/media/icon.9525a7560bf2bc227eeb9bf8a149b621.svg",
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.55a4ec4915bbcdabc744.svg",
-    "main.bc173e68.css.map": "/static/css/main.bc173e68.css.map",
-    "main.bba18c87.js.map": "/static/js/main.bba18c87.js.map",
+    "main.045856f7.css.map": "/static/css/main.045856f7.css.map",
+    "main.b1bdd7aa.js.map": "/static/js/main.b1bdd7aa.js.map",
     "453.5e0df2e8.chunk.js.map": "/static/js/453.5e0df2e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc173e68.css",
-    "static/js/main.bba18c87.js"
+    "static/css/main.045856f7.css",
+    "static/js/main.b1bdd7aa.js"
   ]
 }

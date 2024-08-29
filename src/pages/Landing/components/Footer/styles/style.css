@@ -64,6 +64,7 @@
   font-size: 24px;
   line-height: 1.15;
   text-transform: uppercase;
+  text-decoration: none;
   color: var(--white-color);
 }
 .footer__support-link {
@@ -104,6 +105,107 @@
 .footer__icon-rut {
   height: 28px;
 }
-.footer__navigation{
+.footer__navigation {
   margin: 0 0 0 auto;
+}
+
+@media all and (max-width: 1440px) {
+  .footer {
+    margin: 40px 0 0;
+  }
+  .footer__container {
+    padding: 80px 40px;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .footer {
+    margin: 40px 0 0;
+  }
+  .footer__container {
+    padding: 60px 28px;
+  }
+  .footer__title {
+    font-size: 56px;
+    letter-spacing: -2px;
+  }
+  .footer__social {
+    grid-template-columns: 80px 80px 80px 1fr;
+    gap: 20px;
+  }
+  .footer__social-link {
+    width: 80px;
+    height: 80px;
+  }
+  .footer__social-icon {
+    width: 44px;
+    height: 44px;
+  }
+  .footer__support {
+    font-size: 20px;
+  }
+  .footer__bottom {
+    margin: 20px 0 0 0;
+    width: 100%;
+    padding: 20px 36px;
+  }
+  .footer__icon {
+    height: 32px;
+  }
+  .footer__icon-rut {
+    height: 24px;
+  }
+  .footer__copy {
+    margin: 32px 0 0;
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .footer__container{
+    border-radius: 40px;
+    padding: 32px 16px;
+  }
+  .footer__title {
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+  .footer__social-mobile {
+    margin: 12px 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__links-mobile {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 44px 44px 44px;
+    gap: 20px;
+  }
+  .footer__social-link {
+    width: 44px;
+    height: 44px;
+  }
+  .footer__social-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .footer__support {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+  }
+  .footer__bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px;
+    align-items: start;
+    justify-content: left;
+    border-radius: 20px;
+  }
+  .footer__navigation {
+    margin: 20px 0 0 0;
+  }
+  .footer__copy {
+    margin: 20px 0 0;
+    font-size: 16px;
+  }
 }

@@ -99,7 +99,8 @@
   .header {
     height: auto;
     padding: 12px 16px;
-    border-radius: 80px;
+    border-radius: 20px;
+    background-color: var(--white-color);
   }
   .header__icons {
     margin: 0;

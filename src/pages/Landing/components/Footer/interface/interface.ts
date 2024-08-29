@@ -6,4 +6,5 @@ export enum ESOCIAL {
 
 export interface IFooterSocialLinkProps {
   type: ESOCIAL;
+  link: string;
 }

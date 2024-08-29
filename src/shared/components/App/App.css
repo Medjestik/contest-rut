@@ -36,3 +36,9 @@
   margin: 0px auto;
   box-sizing: border-box;
 }
+
+@media all and (max-width: 1000px) {
+  .page  {
+    background-color: var(--background-main-color);
+  }
+}

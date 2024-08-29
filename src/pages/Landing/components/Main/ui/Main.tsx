@@ -21,7 +21,7 @@ const Main: FC<IMainProps> = ({ windowWidth }) => {
   };
 
   const btnMobileStyle = {
-    margin: 'auto 0 20px',
+    margin: '16px 0 24px',
   };
 
   return (
@@ -52,17 +52,20 @@ const Main: FC<IMainProps> = ({ windowWidth }) => {
         </div>
         </>
         :
-        <>
-          <h1 className='main__title'>Всероссийские транспортные проектные cоревнования</h1>
-          <div className='main__img'></div>
-          <div className='main__section'>
+        <> 
+          <div className='main__img'>
             <h3 className='main__timer-title'>До окончания регистрации</h3>
             <span className='main__timer-count'>
               <CountdownTimer targetDate={registrationOverDate} />
             </span>
-            <p className='main__timer-text'>Предложите свои решения —&nbsp;возможно, именно ваш проект станет шагом к&nbsp;успеху!</p>
+            <h1 className='main__title'>Международные транспортные проектные&nbsp;cоревнования</h1>
           </div>
-          <Button text='Зарегистрироваться' width='full' style={btnMobileStyle} onClick={() => navigate(EROUTES.REGISTRATION)} />
+          <div className='main__section'>
+            <h3 className='main__section-title'>Готовы попробовать свои силы?</h3>
+            <p className='main__section-text'>Предложите свои решения —&nbsp;возможно, именно ваш проект станет шагом к&nbsp;успеху!</p>
+            <Button text='Зарегистрироваться' width='full' style={btnMobileStyle} onClick={() => navigate(EROUTES.REGISTRATION)} />
+          </div>
+          
         </>
       }
     </div>

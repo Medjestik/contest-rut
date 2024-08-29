@@ -94,6 +94,6 @@
 
 @media all and (max-width: 1000px) {
   .public-layout {
-    padding: 8px 0;
+    padding: 8px 16px;
   }
 }

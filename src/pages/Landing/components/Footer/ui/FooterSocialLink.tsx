@@ -15,13 +15,13 @@ const iconMap = {
   [ESOCIAL.MAIL]: mailIcon,
 };
 
-const FooterSocialLink: FC<IFooterSocialLinkProps> = ({ type }) => {
+const FooterSocialLink: FC<IFooterSocialLinkProps> = ({ type, link }) => {
   const Icon = iconMap[type];
 
   return (
-    <div className='footer__social-link'>
+    <a className='footer__social-link' href={link} target='_blank'>
       <img className='footer__social-icon' src={Icon} alt={`${type} icon`} />
-    </div>
+    </a>
   );
 };
 

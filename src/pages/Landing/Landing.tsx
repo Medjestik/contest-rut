@@ -12,7 +12,7 @@ import Cases from './components/Cases/ui/Cases';
 import Recruitment from './components/Recruitment/ui/Recruitment';
 import FAQ from './components/FAQ/ui/FAQ';
 import Document from './components/Document/ui/Document';
-
+import Footer from './components/Footer/ui/Footer';
 import Preloader from '../../shared/components/Preloader/ui/Preloader';
 
 import './Landing.css';
@@ -60,7 +60,7 @@ const Landing: FC<ILandingProps> = ({ windowWidth }) => {
           <Recruitment />
           <FAQ />
           <Document />
-
+          <Footer windowWidth={windowWidth} />
           </>
         }
       </div>
