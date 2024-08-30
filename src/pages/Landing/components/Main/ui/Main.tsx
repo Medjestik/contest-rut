@@ -58,7 +58,7 @@ const Main: FC<IMainProps> = ({ windowWidth }) => {
             <span className='main__timer-count'>
               <CountdownTimer targetDate={registrationOverDate} />
             </span>
-            <h1 className='main__title'>Международные транспортные проектные&nbsp;cоревнования</h1>
+            <h1 className='main__title'>Межвузовские транспортные проектные&nbsp;cоревнования</h1>
           </div>
           <div className='main__section'>
             <h3 className='main__section-title'>Готовы попробовать свои силы?</h3>
