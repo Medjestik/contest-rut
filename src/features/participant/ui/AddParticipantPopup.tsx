@@ -123,7 +123,7 @@ const AddParticipantPopup: FC<IAddParticipantPopupProps> = ({ isOpen, currentPar
   };
 
   useEffect(() => {
-    const isAnyFieldEmpty = firstName.length < 1 || secondName.length < 1 || middleName.length < 1 || group.length < 1 || mail.length < 1 || phone.length < 1;
+    const isAnyFieldEmpty = firstName.length < 1 || secondName.length < 1 || group.length < 1 || mail.length < 1 || phone.length < 1;
     const hasAnyError = isShowErrorMail.isShow || isShowErrorPhone.isShow || isShowErrorTelegram.isShow; 
   
     if (isAnyFieldEmpty || hasAnyError || course.id === 0) {
@@ -131,7 +131,7 @@ const AddParticipantPopup: FC<IAddParticipantPopupProps> = ({ isOpen, currentPar
     } else {
       setIsBlockSubmitButton(false);
     }
-  }, [firstName, secondName, middleName, course, group, mail, phone, isShowErrorMail, isShowErrorPhone, isShowErrorTelegram]);
+  }, [firstName, secondName, course, group, mail, phone, isShowErrorMail, isShowErrorPhone, isShowErrorTelegram]);
 
   return (
     <Popup isOpen={isOpen} onClose={onClose} popupWidth='large'>
@@ -195,7 +195,7 @@ const AddParticipantPopup: FC<IAddParticipantPopupProps> = ({ isOpen, currentPar
         <FormField title='Telegram (необязательно)'>
           <FormInputString 
             value={telegram} 
-            placeholder='Введите ссылку..' 
+            placeholder='Введите ссылку (пример https://t.me/telegram)' 
             onChange={handleChangeTelegram} 
             error={isShowErrorTelegram} 
           />

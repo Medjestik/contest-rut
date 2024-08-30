@@ -196,7 +196,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
   };
 
   useEffect(() => {
-    if (name.length > 0 && login.length > 5 && selectCaseId.length > 0 && currentUniversity.id !== 0 && participants.length > 0 && isCheckFirst && isCheckSecond && isCheckThird) {
+    if (name.length > 0 && login.length > 5 && selectCaseId.length > 0 && currentUniversity.id !== 0 && participants.length === 4 && isCheckFirst && isCheckSecond && isCheckThird) {
       setIsBlockSubmitButton(false);
     } else {
       setIsBlockSubmitButton(true);
@@ -267,7 +267,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
           />
         </FormField>
 
-        <FormField title='Информация о команде' subtitle='Добавьте участников вашей команды'>
+        <FormField title='Информация о команде' subtitle='Добавьте участников вашей команды (обязательно 4 участника)'>
           <ParticipantList 
             items={participants} 
             onAdd={openAddParticipantPopup} 
@@ -307,7 +307,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
             </label>
             <div className='checkbox__text'>
               {'Подтверждаю, что субъекты персональных данных лично ознакомились с '}
-              <Link text='Положением об обработке персональных данных' path='' />
+              <Link text='Положением об обработке персональных данных' path='https://rut-miit.ru/org/privacy' />
               {' РУТ (МИИТ) и принимают условия этого Положения.'}
             </div>
           </div>
@@ -325,9 +325,9 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
             </label>
             <div className='checkbox__text'>
             {'Подтверждаю, что Участники команды ознакомлены и согласны с условиями и правилами участия в соревнованиях, изложенными в '}
-              <Link text='Положении' path='' />
+              <Link text='Положении' path='https://cloud.mail.ru/public/Rfcu/ZCm3ZmDBR' />
               {' и '}
-              <Link text='Регламенте' path='' />
+              <Link text='Регламенте' path='https://cloud.mail.ru/public/YhUL/vuXbSSsgF' />
               {'.'}
             </div>
           </div>
