@@ -30,7 +30,11 @@ import RegistrationErrorPopup from './RegistrationErrorPopup';
 
 import '../styles/style.css';
 
-const Registration: FC = () => {
+interface IRegistrationProps {
+  windowWidth: number;
+}
+
+const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
 
   const initialCase = useMemo(() => ({
     id: '',
@@ -228,7 +232,7 @@ const Registration: FC = () => {
     ?
     <Preloader />
     :
-    <MainLayout>
+    <MainLayout windowWidth={windowWidth} >
       <h1 className='layout__title'>Регистрация</h1>
 
       <Form formName={'registration-form'} onSubmit={onSubmit}>
@@ -252,7 +256,7 @@ const Registration: FC = () => {
         </FormField>
 
         <FormField title='Кейсы соревнований' subtitle='Выберите кейс для вашей команды'>
-          <CaseList items={cases} selectItemId={selectCaseId} onSelect={handleSelectCase} onDetail={openCaseDetailPopup} />
+          <CaseList items={cases} selectItemId={selectCaseId} onSelect={handleSelectCase} onDetail={openCaseDetailPopup} windowWidth={windowWidth} />
         </FormField>
 
         <FormField title='Информация о ВУЗе' subtitle='Выберите ВУЗ, который представляет ваша команда'>
@@ -269,6 +273,7 @@ const Registration: FC = () => {
             onAdd={openAddParticipantPopup} 
             onEdit={openEditParticipantPopup} 
             onRemove={openRemoveParticipantPopup} 
+            windowWidth={windowWidth}
           />
           
         </FormField>

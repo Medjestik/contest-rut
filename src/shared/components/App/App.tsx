@@ -29,7 +29,7 @@ function App() {
 
       <Routes>
         <Route path={EROUTES.LANDING} element={<Landing windowWidth={windowWidth} />} />
-        <Route path={EROUTES.REGISTRATION} element={<Registration />} />
+        <Route path={EROUTES.REGISTRATION} element={<Registration windowWidth={windowWidth} />} />
       </Routes>
       
     </div>

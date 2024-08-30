@@ -11,6 +11,7 @@ export interface ICaseItemProps {
   selectItemId: string;
   onSelect: (id: string) => void;
   onDetail: (card: ICaseItem) => void;
+  windowWidth: number;
 }
 
 export interface ICaseListProps {
@@ -18,6 +19,7 @@ export interface ICaseListProps {
   selectItemId: string;
   onSelect: (id: string) => void;
   onDetail: (item: ICaseItem) => void;
+  windowWidth: number;
 }
 
 export interface ICaseDetailProps {

@@ -16,6 +16,7 @@ export interface IParticipantItemProps {
   item: IParticipant;
   onEdit: (participant: IParticipant) => void;
   onRemove: (participant: IParticipant) => void;
+  windowWidth: number;
 }
 
 export interface IParticipantListProps {
@@ -23,6 +24,7 @@ export interface IParticipantListProps {
   onAdd: () => void;
   onEdit: (participant: IParticipant) => void;
   onRemove: (participant: IParticipant) => void;
+  windowWidth: number;
 }
 
 export interface IAddParticipantPopupProps {

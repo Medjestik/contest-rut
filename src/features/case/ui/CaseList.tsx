@@ -5,7 +5,7 @@ import CaseItem from './CaseItem';
 
 import '../styles/style.css';
 
-const CaseList: FC<ICaseListProps> = ({ items, selectItemId, onSelect, onDetail }) => {
+const CaseList: FC<ICaseListProps> = ({ items, selectItemId, onSelect, onDetail, windowWidth }) => {
 
   return (
     <ul className='case-list'>
@@ -17,6 +17,7 @@ const CaseList: FC<ICaseListProps> = ({ items, selectItemId, onSelect, onDetail 
             selectItemId={selectItemId} 
             onSelect={onSelect}
             onDetail={onDetail}
+            windowWidth={windowWidth}
           />
         ))
       }

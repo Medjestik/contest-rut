@@ -18,8 +18,8 @@ const Document: FC = () => {
         <div className='document__section'>
           <h2 className='section__title'>документы</h2>
           <div className='document__buttons'>
-            <Button color={'white'} text={'положение'} width='full' />
-            <Button color={'white'} text={'регламент'} width='full' />
+            <a href='https://cloud.mail.ru/public/Rfcu/ZCm3ZmDBR' target='_blank'><Button color={'white'} text={'положение'} width='full' /></a>
+            <a href='https://cloud.mail.ru/public/YhUL/vuXbSSsgF' target='_blank'><Button color={'white'} text={'регламент'} width='full' /></a>
             <Button color={'primary'} text={'зарегистрироваться'} width='full' onClick={() => navigate(EROUTES.REGISTRATION)}/>
           </div>
         </div>

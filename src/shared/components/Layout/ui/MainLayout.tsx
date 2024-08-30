@@ -7,11 +7,11 @@ import LayoutFooter from '../components/LayoutFooter/ui/LayoutFooter';
 
 import '../styles/style.css';
 
-const MainLayout: FC<ILayoutProps> = ({ containerWidth = 'default', children }) => {
+const MainLayout: FC<ILayoutProps> = ({ containerWidth = 'default', windowWidth, children }) => {
     return (
       <div className='layout'>
         <div className={`layout__container layout__container_width_${containerWidth}`}>
-          <LayoutHeader />
+          <LayoutHeader windowWidth={windowWidth} />
             <main className='layout__main'>
               <div className='layout__main-container'>
                 {children}

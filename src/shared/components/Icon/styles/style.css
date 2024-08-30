@@ -21,6 +21,18 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+.icon_type_close {
+  background-image: url('../../../icons/close-white.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon_type_home {
+  background-image: url('../../../icons/home.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .icon_active {
   transition: all .3s ease-in-out;
   cursor: pointer;

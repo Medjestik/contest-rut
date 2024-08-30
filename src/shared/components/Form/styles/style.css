@@ -296,3 +296,29 @@
 .checkbox:hover input:checked + span:after {
   transform: scale(0);
 }
+
+
+@media all and (max-width: 1000px) {
+  .form {
+    margin: 12px 0 0;
+  }
+  .form__field {
+    margin: 0 0 12px;
+  }
+  .checkbox__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .form__field-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .form_type_popup .form__field-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .form__field-subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

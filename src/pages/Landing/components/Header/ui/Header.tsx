@@ -12,9 +12,10 @@ import '../styles/style.css';
 
 interface IHeaderProps {
   windowWidth: number;
+  showMobileMenu: () => void;
 }
 
-const Header: FC<IHeaderProps> = ({ windowWidth }) => {
+const Header: FC<IHeaderProps> = ({ windowWidth, showMobileMenu }) => {
 
   return (
     <header className='header' id='header'>
@@ -32,7 +33,7 @@ const Header: FC<IHeaderProps> = ({ windowWidth }) => {
         </div>
         </>
         :
-        <Icon type='menu' />
+        <Icon type='menu' onClick={showMobileMenu} />
       }
     </header>
   );

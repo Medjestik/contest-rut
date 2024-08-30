@@ -14,6 +14,7 @@ import FAQ from './components/FAQ/ui/FAQ';
 import Document from './components/Document/ui/Document';
 import Footer from './components/Footer/ui/Footer';
 import Preloader from '../../shared/components/Preloader/ui/Preloader';
+import MobileMenu from './components/MobileMenu/ui/MobileMenu';
 
 import './Landing.css';
 
@@ -25,7 +26,12 @@ const Landing: FC<ILandingProps> = ({ windowWidth }) => {
 
   const [cases, setCases] = useState<ICaseItem[]>([]);
 
+  const [isShowMobileMenu, setIsShowMobileMenu] = useState<boolean>(false);
   const [isLoadingData, setIsLoadingData] = useState<boolean>(true);
+
+  const toggleMobileMenu = () => {
+    setIsShowMobileMenu(!isShowMobileMenu);
+  };
 
   const getCases = () => {
     setIsLoadingData(true);
@@ -52,7 +58,11 @@ const Landing: FC<ILandingProps> = ({ windowWidth }) => {
           <Preloader />
           :
           <>
-          <Header windowWidth={windowWidth} />
+          {
+            windowWidth < 1001 &&
+            <MobileMenu isShow={isShowMobileMenu} onClose={toggleMobileMenu} />
+          }
+          <Header windowWidth={windowWidth} showMobileMenu={toggleMobileMenu} />
           <Main windowWidth={windowWidth} />
           <Description windowWidth={windowWidth} />
           <Stages />

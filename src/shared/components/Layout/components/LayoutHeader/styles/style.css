@@ -45,3 +45,21 @@
   opacity: .7;
 }
 
+@media all and (max-width: 1000px) {
+  .layout-header {
+    margin: 0;
+    min-height: auto;
+    height: auto;
+    padding: 12px 16px;
+    border-radius: 20px;
+    background-color: var(--white-color);
+  }
+  .layout-header__icon {
+    margin: 0 12px 0 0;
+    height: 24px;
+  }
+  .layout-header__icon-rut {
+    height: 20px;
+  }
+}
+

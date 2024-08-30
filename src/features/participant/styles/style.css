@@ -62,3 +62,19 @@
   color: var(--subtitle-color);
   text-align: left;
 }
+
+@media all and (max-width: 1000px) {
+  .participant__item {
+    margin: 0;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    gap: 8px;
+    grid-template-columns: 32px 1fr 24px 24px;
+    padding: 12px 8px;
+  }
+  .participant__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

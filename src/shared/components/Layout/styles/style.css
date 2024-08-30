@@ -96,4 +96,22 @@
   .public-layout {
     padding: 8px 16px;
   }
+  .layout {
+    padding: 8px;
+  }
+  .layout__main {
+    height: auto;
+    margin: 20px 0 0 0;
+    padding: 16px 8px;
+    border-radius: 20px;
+  }
+  .layout__main-container {
+    width: 100%;
+    margin: 0;
+    padding: 0 8px;
+  }
+  .layout__title {
+    font-size: 36px;
+    letter-spacing: 0px;
+  }
 }
