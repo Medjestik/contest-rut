@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c0721fa.css",
+    "main.css": "/static/css/main.8979af65.css",
     "main.js": "/static/js/main.e40dd14e.js",
     "static/js/453.5e0df2e8.chunk.js": "/static/js/453.5e0df2e8.chunk.js",
     "static/media/main-img.png": "/static/media/main-img.ab3b66bb6a901ce85830.png",
     "static/media/description-img.jpg": "/static/media/description-img.11e710851c26b13da214.jpg",
     "static/media/recruitment-img.jpg": "/static/media/recruitment-img.4c422d736060f7023f20.jpg",
     "static/media/stage-moscow.jpg": "/static/media/stage-moscow.3a8e4ad0b0b477f88282.jpg",
-    "static/media/Akrobat-ExtraBold.otf": "/static/media/Akrobat-ExtraBold.c563e35d28216ebe96ef.otf",
-    "static/media/Akrobat-Bold.otf": "/static/media/Akrobat-Bold.02bb6e66ddbe0c7afdcb.otf",
-    "static/media/Akrobat-SemiBold.otf": "/static/media/Akrobat-SemiBold.48f2a482355b4face150.otf",
-    "static/media/Akrobat-Black.otf": "/static/media/Akrobat-Black.fa71f9cb589771f686b9.otf",
-    "static/media/Akrobat-ExtraLight.otf": "/static/media/Akrobat-ExtraLight.47c8f5999b947b591474.otf",
-    "static/media/Akrobat-Light.otf": "/static/media/Akrobat-Light.1150db0acfac627aa948.otf",
-    "static/media/Akrobat-Regular.otf": "/static/media/Akrobat-Regular.12827ce5e0d9afebcc19.otf",
-    "static/media/Akrobat-Thin.otf": "/static/media/Akrobat-Thin.6bcdb8587d336fc5b971.otf",
+    "static/media/Akrobat-ExtraLight.woff": "/static/media/Akrobat-ExtraLight.781b11c9636cc2dea2a1.woff",
+    "static/media/Akrobat-Light.woff": "/static/media/Akrobat-Light.203431379c7d180867f3.woff",
+    "static/media/Akrobat-SemiBold.woff": "/static/media/Akrobat-SemiBold.0c7fa14ee99df518260c.woff",
+    "static/media/Akrobat-Bold.woff": "/static/media/Akrobat-Bold.4e3e8bdebccbf955484c.woff",
+    "static/media/Akrobat-ExtraBold.woff": "/static/media/Akrobat-ExtraBold.28eba92abd705797eeb9.woff",
+    "static/media/Akrobat-Regular.woff": "/static/media/Akrobat-Regular.9e31e53d72556b7eb4e7.woff",
+    "static/media/Akrobat-Black.woff": "/static/media/Akrobat-Black.f14750998f34f5477f3f.woff",
+    "static/media/Akrobat-Thin.woff": "/static/media/Akrobat-Thin.2e3f6f4a53187d9ba215.woff",
     "static/media/BebasNeueLight.woff": "/static/media/BebasNeueLight.fb1021edc3744b98b5b7.woff",
     "static/media/BebasNeueRegular.woff": "/static/media/BebasNeueRegular.c07e076467a248c2f672.woff",
     "static/media/BebasNeue-Thin.woff": "/static/media/BebasNeue-Thin.83e86240c8a62475c312.woff",
@@ -28,12 +28,12 @@
     "static/media/icon.svg": "/static/media/icon.9525a7560bf2bc227eeb9bf8a149b621.svg",
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.55a4ec4915bbcdabc744.svg",
-    "main.5c0721fa.css.map": "/static/css/main.5c0721fa.css.map",
+    "main.8979af65.css.map": "/static/css/main.8979af65.css.map",
     "main.e40dd14e.js.map": "/static/js/main.e40dd14e.js.map",
     "453.5e0df2e8.chunk.js.map": "/static/js/453.5e0df2e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c0721fa.css",
+    "static/css/main.8979af65.css",
     "static/js/main.e40dd14e.js"
   ]
 }
