@@ -232,7 +232,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
     ?
     <Preloader />
     :
-    <MainLayout windowWidth={windowWidth} >
+    <MainLayout windowWidth={windowWidth} isLoggedIn={false} >
       <h1 className='layout__title'>Регистрация</h1>
 
       <Form formName={'registration-form'} onSubmit={onSubmit}>

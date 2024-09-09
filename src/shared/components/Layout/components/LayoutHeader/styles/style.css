@@ -25,6 +25,27 @@
 .layout-header__icon-rut {
   height: 28px;
 }
+.layout-header__user {
+  margin: 0 32px 0 auto;
+  display: flex;
+  align-items: center;
+}
+.layout-header__user-img {
+  margin: 0 12px 0 0;
+  width: 36px;
+  height: 36px;
+  background-image: url('../../../../../icons/user.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.layout-header__user-name {
+  margin: 0;
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+}
 .layout-header__btn {
   margin: 0;
   padding: 12px 28px;

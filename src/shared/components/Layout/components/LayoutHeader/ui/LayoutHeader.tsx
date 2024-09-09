@@ -1,6 +1,8 @@
-import type { FC } from 'react';
+import { type FC, useContext } from 'react';
 
 import { useNavigate } from 'react-router-dom';
+
+import { CurrentTeamContext } from '../../../../../context/team';
 
 import Icon from '../../../../Icon/ui/Icon';
 
@@ -13,10 +15,15 @@ import '../styles/style.css';
 
 interface ILayoutHeaderProps {
   windowWidth: number;
+  isLoggedIn: boolean;
+  onLogout?: () => void;
 }
 
 
-const LayoutHeader: FC<ILayoutHeaderProps> = ({ windowWidth }) => {
+const LayoutHeader: FC<ILayoutHeaderProps> = ({ windowWidth, isLoggedIn, onLogout }) => {
+
+  const currentTeam = useContext(CurrentTeamContext);
+
   const navigate = useNavigate();
 
   return (
@@ -26,13 +33,26 @@ const LayoutHeader: FC<ILayoutHeaderProps> = ({ windowWidth }) => {
         <img className='layout-header__icon layout-header__icon-rut' src={logoRUT} alt='логотип'></img>
       </div>
       {
-        windowWidth > 1000
+        isLoggedIn
         ?
-        <button className='layout-header__btn' type='button' onClick={() => navigate(EROUTES.LANDING)}>На главную</button>
+        <>
+        <div className='layout-header__user'>
+          <div className='layout-header__user-img'></div>
+          <p className='layout-header__user-name'>{currentTeam.name}</p>
+        </div>
+        <button className='layout-header__btn' type='button' onClick={onLogout}>Выход</button>
+        </>
         :
-        <Icon type='home' onClick={() => navigate(EROUTES.LANDING)} />
+        <>
+        {
+          windowWidth > 1000
+          ?
+          <button className='layout-header__btn' type='button' onClick={() => navigate(EROUTES.LANDING)}>На главную</button>
+          :
+          <Icon type='home' onClick={() => navigate(EROUTES.LANDING)} />
+        }
+        </>
       }
-      
     </header>
   );
 };

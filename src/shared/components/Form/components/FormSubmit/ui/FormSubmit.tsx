@@ -7,13 +7,17 @@ const FormSubmit: FC<IFormSubmit> = ({ text, isBlock }) => {
 
   return (
     <>
-    <button 
-      className={`form__submit ${isBlock ? 'form__submit_type_block' : ''}`} 
-      type='submit'
-      disabled={isBlock}
-    >
-      {text}
-    </button>
+    {
+      isBlock
+      ?
+      <div className='form__submit form__submit_type_block'>
+        {text}
+      </div>
+      :
+      <button className='form__submit' type='submit'>
+        {text}
+      </button>
+    }
     </>
   );
 };

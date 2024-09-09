@@ -6,6 +6,8 @@ import Button from '../../../shared/components/Button/ui/Button';
 
 import '../styles/style.css';
 
+const closedId = '6100eede-a79a-40be-a695-5aec7004b6f5';
+
 const CaseDetailPopup: FC<ICaseDetailProps> = ({ isOpen, onClose, currentCase }) => {
 
   const btnStyle = {
@@ -24,6 +26,10 @@ const CaseDetailPopup: FC<ICaseDetailProps> = ({ isOpen, onClose, currentCase })
       <p className='cases__card-text'>{currentCase.situation}</p>
       <h4 className='cases__card-title cases__card-title_type_problem'>Сбой</h4>
       <p className='cases__card-text'>{currentCase.problem}</p>
+      {
+        currentCase.id === closedId &&
+        <p className='cases__card-text cases__card-text-warning'>Регистрация на кейс завершена!</p>
+      }
       <Button style={btnStyle} text='Назад' onClick={onClose} />
     </Popup>
   );

@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.b10512f1.css",
-    "main.js": "/static/js/main.ba113215.js",
+    "main.css": "/static/css/main.709c92fc.css",
+    "main.js": "/static/js/main.ff00673d.js",
     "static/js/453.5e0df2e8.chunk.js": "/static/js/453.5e0df2e8.chunk.js",
     "static/media/main-img.png": "/static/media/main-img.ab3b66bb6a901ce85830.png",
+    "static/media/poster.png": "/static/media/poster.1d3af4d46cfb01c5b7f7.png",
     "static/media/description-img.jpg": "/static/media/description-img.11e710851c26b13da214.jpg",
     "static/media/recruitment-img.jpg": "/static/media/recruitment-img.4c422d736060f7023f20.jpg",
     "static/media/stage-moscow.jpg": "/static/media/stage-moscow.3a8e4ad0b0b477f88282.jpg",
@@ -28,12 +29,12 @@
     "static/media/icon.svg": "/static/media/icon.9525a7560bf2bc227eeb9bf8a149b621.svg",
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.55a4ec4915bbcdabc744.svg",
-    "main.b10512f1.css.map": "/static/css/main.b10512f1.css.map",
-    "main.ba113215.js.map": "/static/js/main.ba113215.js.map",
+    "main.709c92fc.css.map": "/static/css/main.709c92fc.css.map",
+    "main.ff00673d.js.map": "/static/js/main.ff00673d.js.map",
     "453.5e0df2e8.chunk.js.map": "/static/js/453.5e0df2e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b10512f1.css",
-    "static/js/main.ba113215.js"
+    "static/css/main.709c92fc.css",
+    "static/js/main.ff00673d.js"
   ]
 }

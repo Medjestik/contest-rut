@@ -51,6 +51,9 @@
   line-height: 1.15;
   color: var(--title-color);
 }
+.cases__card-text-warning {
+  color: var(--main-color);
+}
 .cases__card-footer {
   margin: 20px 0 0;
   width: 100%;

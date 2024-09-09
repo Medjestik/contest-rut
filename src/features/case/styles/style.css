@@ -37,6 +37,14 @@
   z-index: 2;
   position: relative;
 }
+.case-item__close {
+  width: 22px;
+  height: 22px;
+  background-image: url('../../../shared/icons/closed.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 @media all and (max-width: 1000px) {
   .case-list {

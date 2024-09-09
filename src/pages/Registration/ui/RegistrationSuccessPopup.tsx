@@ -25,7 +25,7 @@ const RegistrationSuccessPopup: FC<IPopupProps> = ({ isOpen, onClose }) => {
       <h2 className='popup__title'>Регистрация успешно завершена!</h2>
       <p className='popup__subtitle'>Всем участникам вашей команды на указанные почты направлено письмо с логином и паролем для входа в учетную запись.</p>
       <p className='popup__subtitle'>Регистрироваться повторно участникам команды не нужно.</p>
-      <p className='popup__subtitle'>Доступ в личный кабинет откроется 10 сентября в 00:00 по московскому времени.</p>
+      <p className='popup__subtitle'>Доступ в личный кабинет откроется после 15 сентября.</p>
       <Button style={btnStyle} text='Хорошо' onClick={onClose} />
     </Popup>
   );

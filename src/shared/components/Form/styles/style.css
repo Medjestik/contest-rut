@@ -121,6 +121,7 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
   transition: .3s ease-in-out;
 }
 .form_type_popup .form__submit {
@@ -143,6 +144,23 @@
   opacity: 1;
   user-select: none;
   pointer-events: none;
+}
+.form__error {
+  margin: 4px 0 0 0;
+  min-height: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  color: var(--error-color);
+  text-align: left;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+  -webkit-user-select: none;
+  user-select: none;
+  opacity: 0;
+}
+.form__error_status_show {
+  opacity: 1;
 }
 
 .radio {

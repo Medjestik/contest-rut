@@ -23,19 +23,27 @@ const CaseItem: FC<ICaseItemProps> = ({ item, selectItemId, onSelect, onDetail, 
     lineHeight: '1',
   };
 
+  const closedId = '6100eede-a79a-40be-a695-5aec7004b6f5';
+
   return (
     <li className='case-item'>
-      <label className='radio'>
-        <input 
-          name='registration-case'
-          type='radio'
-          id='registration-case'
-          defaultChecked={selectItemId === item.id}
-          onChange={() => onSelect(item.id)} 
-        >
-        </input>
-        <span></span>
-      </label>
+      {
+        item.id === closedId
+        ?
+        <div className='case-item__close'></div>
+        :
+        <label className='radio'>
+          <input 
+            name='registration-case'
+            type='radio'
+            id='registration-case'
+            defaultChecked={selectItemId === item.id}
+            onChange={() => onSelect(item.id)} 
+          >
+          </input>
+          <span></span>
+        </label>
+      }
       {
         windowWidth > 1000
         ?

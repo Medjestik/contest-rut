@@ -29,3 +29,9 @@ export interface IFormSubmit {
   isShowError?: IFormFieldError;
   isBlock?: boolean;
 }
+
+export interface IFormError {
+  text: string;
+  isShowError: boolean;
+}
+
