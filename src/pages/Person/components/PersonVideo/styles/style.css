@@ -48,3 +48,18 @@
 .person-video__play-btn:hover {
   cursor: pointer;
 }
+
+@media all and (max-width: 1000px) {
+  .person-video__container {
+    margin: 0;
+    width: 100%;
+  }
+  .person-video {
+    margin: 0;
+    width: 100%;
+  }
+  .person-video__play-btn {
+    width: 64px;
+    height: 64px;
+  }
+}

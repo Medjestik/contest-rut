@@ -1,11 +1,20 @@
 import type { ILoginData } from '../../features/login/interface/interface';
 import type { IRegisterData } from '../../pages/Registration/interface/interface';
+import type { IUploadFile, IUploadLink } from '../components/Popup/interface/interface'; 
 
 import { API_URL } from './config';
 
 function handleResponse (res: Response) {
   if (res.ok) {
     return res.json();
+  } else {
+    return Promise.reject(res);
+  }
+}
+
+function checkResponse (res: Response) {
+  if (res.status === 201) {
+    return res;
   } else {
     return Promise.reject(res);
   }
@@ -109,6 +118,53 @@ export const getStage = (token: string, stageId: number) => {
       'Content-Type': 'application/json',
       'Authorization': `Token ${token}`,
     }
+  })
+  .then(res => handleResponse(res));
+};
+
+export const uploadFile = (token: string, data: IUploadFile, stageId: number) => {
+  return fetch(`${API_URL}/upload-file/`, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Authorization': `Token ${token}`,
+    },
+    body: JSON.stringify({
+      file: data.file,
+      name: data.name,
+      filename: data.fileName,
+      stage: stageId,
+    }),
+  })
+  .then(res => handleResponse(res));
+};
+
+export const uploadLink = (token: string, data: IUploadLink, stageId: number) => {
+  return fetch(`${API_URL}/upload-url/`, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Authorization': `Token ${token}`,
+    },
+    body: JSON.stringify({
+      url: data.link,
+      name: data.name,
+      stage: stageId,
+    }),
+  })
+  .then(res => checkResponse(res));
+};
+
+export const nextStage = (token: string) => {
+  return fetch(`${API_URL}/next_stage/`, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Authorization': `Token ${token}`,
+    },
   })
   .then(res => handleResponse(res));
 };

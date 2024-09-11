@@ -2,6 +2,7 @@ import './App.css';
 
 import type { ILoginData } from '../../../features/login/interface/interface';
 import type { IFormError } from '../Form/interface/interface';
+import type { ICurrentTeam } from './interface';
 
 import { useEffect, useState } from 'react';
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
@@ -21,14 +22,14 @@ function App() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
-  const [currentTeam, setCurrentTeam] = useState(initialTeam);
+  const [currentTeam, setCurrentTeam] = useState<ICurrentTeam>(initialTeam);
   const [loggedIn, setLoggedIn] = useState<boolean>(false);
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
   const [isLoadingPage, setIsLoadingPage] = useState<boolean>(false);
 
   const [isLoadingRequest, setIsLoadingRequest] = useState<boolean>(false);
-  const [isShowLoginError, setIsShowLoginError] = useState<IFormError>({ text: '', isShowError: false });
+  const [isShowLoginError, setIsShowLoginError] = useState<IFormError>({ text: '', isShow: false });
 
   const tokenCheck = () => {
     const token = localStorage.getItem('token');
@@ -39,7 +40,6 @@ function App() {
         setCurrentTeam(res);
         setLoggedIn(true);
         navigate('/person-test');
-        console.log(res);
       })
       .catch((err) => {
         setLoggedIn(false);
@@ -54,9 +54,13 @@ function App() {
     }
   };
 
+  const handleChangeStage = (stageId: number) => {
+    setCurrentTeam({ ...currentTeam, current_stage: stageId });
+  };
+
   const handleLogin = (data: ILoginData) => {
     setIsLoadingRequest(true);
-    setIsShowLoginError({ text: '', isShowError: false });
+    setIsShowLoginError({ text: '', isShow: false });
     api.login(data)
     .then((res) => {
       localStorage.setItem('token', res.key);
@@ -64,9 +68,9 @@ function App() {
     })
     .catch((err) => {
       if (err.status === 400) {
-        setIsShowLoginError({ text: 'Неправильный логин или пароль!', isShowError: true });
+        setIsShowLoginError({ text: 'Неправильный логин или пароль!', isShow: true });
       } else {
-        setIsShowLoginError({ text: 'К сожалению произошла ошибка! Обратитесь в техническую поддержку.', isShowError: true });
+        setIsShowLoginError({ text: 'К сожалению произошла ошибка! Обратитесь в техническую поддержку.', isShow: true });
       }
       console.error(err);
     })
@@ -80,7 +84,7 @@ function App() {
   };
 
   useEffect(() => {
-    // tokenCheck();
+    tokenCheck();
   }, []);
 
   useEffect(() => {
@@ -107,7 +111,7 @@ function App() {
             <Route path={EROUTES.REGISTRATION} element={<Registration windowWidth={windowWidth} />} />
             {
               loggedIn &&
-              <Route path={EROUTES.PERSON} element={<Person windowWidth={windowWidth} onLogout={handleLogout} />} />
+              <Route path={EROUTES.PERSON} element={<Person windowWidth={windowWidth} onLogout={handleLogout} onChangeStage={handleChangeStage} />} />
             }
             <Route path={EROUTES.LOGIN} element={<Login onLogin={handleLogin} isLoadingRequest={isLoadingRequest} isShowLoginError={isShowLoginError} />} />
           </Routes>

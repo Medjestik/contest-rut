@@ -100,15 +100,16 @@
     padding: 8px;
   }
   .layout__main {
+    min-height: 80vh;
     height: auto;
     margin: 20px 0 0 0;
-    padding: 16px 8px;
+    padding: 16px;
     border-radius: 20px;
   }
   .layout__main-container {
     width: 100%;
     margin: 0;
-    padding: 0 8px;
+    padding: 0;
   }
   .layout__title {
     font-size: 36px;

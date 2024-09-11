@@ -10,6 +10,9 @@ export interface IStageNavItem {
   end_date?: string;
   type: string;
   view: string;
+  url_template: string;
+  url_video: string;
+  team_file_count: number;
 }
 
 export interface IStage {
@@ -19,11 +22,15 @@ export interface IStage {
   position: number;
   start_date?: string;
   end_date?: string;
+  url_template: string;
+  url_video: string;
+  team_file_count: number;
 }
 
 export interface IPersonProps {
   windowWidth: number;
   onLogout:() => void;
+  onChangeStage:(stageId: number) => void;
 }
 
 export interface IPersonNavigationProps {
@@ -38,4 +45,7 @@ export interface IPersonContainerProps extends PropsWithChildren {
 
 export interface IPersonStageProps {
   stage: IStageNavItem;
+  onOpen?: () => void;
+  onLink?: () => void;
+  onChangeStage?: () => void;
 }

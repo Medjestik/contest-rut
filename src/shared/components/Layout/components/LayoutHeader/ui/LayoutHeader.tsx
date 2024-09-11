@@ -36,11 +36,21 @@ const LayoutHeader: FC<ILayoutHeaderProps> = ({ windowWidth, isLoggedIn, onLogou
         isLoggedIn
         ?
         <>
-        <div className='layout-header__user'>
-          <div className='layout-header__user-img'></div>
-          <p className='layout-header__user-name'>{currentTeam.name}</p>
-        </div>
-        <button className='layout-header__btn' type='button' onClick={onLogout}>Выход</button>
+        {
+          windowWidth > 1000 &&
+          <div className='layout-header__user'>
+            <div className='layout-header__user-img'></div>
+            <p className='layout-header__user-name'>{currentTeam.name}</p>
+          </div>
+        }
+        {
+          windowWidth > 1000 
+          ?
+          <button className='layout-header__btn' type='button' onClick={onLogout}>Выход</button>
+          :
+          <Icon type='logout' onClick={onLogout} />
+        }
+
         </>
         :
         <>

@@ -26,12 +26,14 @@ export interface IFormFieldError {
 
 export interface IFormSubmit {
   text: string;
+  isLoading?: boolean;
+  loadingText?: string;
   isShowError?: IFormFieldError;
   isBlock?: boolean;
 }
 
 export interface IFormError {
   text: string;
-  isShowError: boolean;
+  isShow: boolean;
 }
 

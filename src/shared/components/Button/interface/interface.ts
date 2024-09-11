@@ -5,5 +5,7 @@ export interface IButtonProps {
   width?: 'default' | 'full';
   color?: 'primary' | 'secondary' | 'white' | 'cancel';
   style?: CSSProperties;
+  type?: 'link' | 'button';
+  link?: string;
   onClick?: () => void;
 }

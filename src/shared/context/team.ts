@@ -1,5 +1,7 @@
+import type { ICurrentTeam } from '../components/App/interface';
+
 import { createContext } from 'react';
 
-export const initialTeam = { case: null, id: 0, name: '', current_stage: 0, university: null };
+export const initialTeam: ICurrentTeam = { id: 0, name: '', university: null, case: null,  current_stage: 0 };
 
 export const CurrentTeamContext = createContext(initialTeam);

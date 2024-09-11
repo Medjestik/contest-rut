@@ -33,6 +33,12 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+.icon_type_logout {
+  background-image: url('../../../icons/logout.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .icon_active {
   transition: all .3s ease-in-out;
   cursor: pointer;

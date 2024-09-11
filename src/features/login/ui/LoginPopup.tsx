@@ -9,6 +9,7 @@ import Form from '../../../shared/components/Form/ui/Form';
 import FormField from '../../../shared/components/Form/components/FormField/ui/FormField';
 import FormInputString from '../../../shared/components/Form/components/FormInput/ui/FormInputString';
 import FormSubmit from '../../../shared/components/Form/components/FormSubmit/ui/FormSubmit';
+import FormError from '../../../shared/components/Form/components/FormError/ui/FormError';
 
 const LoginPopup: FC<ILoginPopupProps> = ({ isOpen, onClose, onSubmit, loginError, isLoadingRequest }) => {
 
@@ -78,7 +79,7 @@ const LoginPopup: FC<ILoginPopupProps> = ({ isOpen, onClose, onSubmit, loginErro
           <Button style={btnStyle} text='Назад' color='cancel' onClick={onClose} />
           <FormSubmit text='Войти' isBlock={isBlockSubmitButton || isLoadingRequest} />
         </div>
-        <p className={`form__error ${loginError.isShowError ? 'form__error_status_show' : ''}`}>{loginError.text}</p>
+        <FormError isShow={loginError.isShow} text={loginError.text} />
       </Form>
     </Popup>
   );

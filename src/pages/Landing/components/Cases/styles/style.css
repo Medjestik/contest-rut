@@ -31,6 +31,9 @@
   border-radius: 40px;
   position: relative;
 }
+.cases__card_color_grey {
+  background-color: var(--background-main-color);
+}
 .cases__card-title {
   margin: 0;
   font-weight: 800;
