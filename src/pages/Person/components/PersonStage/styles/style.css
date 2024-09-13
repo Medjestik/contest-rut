@@ -15,9 +15,9 @@
   text-transform: uppercase;
 }
 .person-stage__subtitle {
-  margin: 12px 0 0 0;
+  margin: 8px 0 0 0;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.15;
   color: var(--title-color);
 }
@@ -96,8 +96,8 @@
   }
   .person-stage__subtitle {
     margin: 4px 0 0 0;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .person-stage__container {
     margin: 24px 0 0 0;
@@ -109,8 +109,8 @@
   }
   .person-stage__row-subtitle {
     margin: 4px 0 8px 0;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .person-stage__row {
     margin: 0 0 24px 0;

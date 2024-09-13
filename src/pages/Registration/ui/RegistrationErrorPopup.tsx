@@ -21,7 +21,7 @@ const RegistrationErrorPopup: FC<IPopupProps> = ({ isOpen, onClose }) => {
 
   return (
     <Popup isOpen={isOpen} onClose={onClose} popupWidth='small'>
-      <img className='popup__icon' src={icon} alt={'иконка ошибки'}></img>
+      <img className='popup__icon' src={icon} alt={'иконка'}></img>
       <h2 className='popup__title'>К сожалению, произошла ошибка!</h2>
       <p className='popup__subtitle'>Попробуйте позже или обратитесь в техническую поддержку.</p>
       <Button style={btnStyle} text='Понятно' onClick={onClose} />

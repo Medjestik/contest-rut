@@ -13,6 +13,17 @@ export interface ICase {
   situation: string;
   title: string;
   telegram_url: string;
+  files: IFile[];
+  description: string;
+}
+
+export interface IFile {
+  id: number;
+  case: string;
+  url: string;
+  name: string;
+  description?: string;
+  position: number;
 }
 
 export interface IUniversity {

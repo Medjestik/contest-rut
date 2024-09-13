@@ -23,7 +23,7 @@ const PersonStageInitial: FC<IPersonStageProps> = ({ stage }) => {
   return (
     <div className='person-stage'>
       <h2 className='person-stage__title'>{stage.name || ''}</h2>
-      <p className='person-stage__subtitle'>Поздравляем с участием в первых проектных соревнованиях студентов транспорта! Вам предстоит заполнить все поля и что-нибудь сделать. Ниже - кейс. Ля-ля-ля.</p>
+      <p className='person-stage__subtitle'>Поздравляем с участием в первых проектных соревнованиях студентов транспорта! Вам предстоит: проанализировать проблему, предложить идеи и создать прототип своего решения. Ниже приведены материалы по вашему кейсу. Желаем вам удачи!</p>
       <div className='person-stage__container'>
         <div className='person-stage__info person-stage__info-case'>
           {
@@ -40,11 +40,22 @@ const PersonStageInitial: FC<IPersonStageProps> = ({ stage }) => {
           }
         </div>
         <div className='person-stage__info'>
-          <div className='person-stage__row'>
-            <h4 className='person-stage__row-title'>Описакние кейса</h4>
-            <p className='person-stage__row-subtitle'>Скачайте и изучите описание кейса.</p>
-            <Button style={btnStyle} text='Скачать' />
-          </div>
+          {
+            currentTeam.case && currentTeam.case.description &&
+            <div className='person-stage__row'>
+              <h4 className='person-stage__row-title'>Описание кейса</h4>
+              <p className='person-stage__row-subtitle'>Скачайте и изучите описание кейса.</p>
+              <Button style={btnStyle} text='Скачать' type='link' link={currentTeam.case.description} />
+            </div>
+          }
+          {
+            currentTeam.case && currentTeam.case.files.length > 0 &&
+            <div className='person-stage__row'>
+              <h4 className='person-stage__row-title'>Файлы кейса</h4>
+              <p className='person-stage__row-subtitle'>Скачайте файлы для кейса.</p>
+              <Button style={btnStyle} text='Скачать' type='link' link={`https://contest-api.emiit.ru${currentTeam.case && currentTeam.case.files[0].url}`} />
+            </div>
+          }
           <div className='person-stage__row'>
             <h4 className='person-stage__row-title'>Чат с экспертами</h4>
             <p className='person-stage__row-subtitle'>Вы можете задать свой вопрос экспертам в специальном чате.</p>

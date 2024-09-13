@@ -8,14 +8,14 @@ import { useEffect, useState } from 'react';
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 
 import Landing from '../../../pages/Landing/Landing';
-import Registration from '../../../pages/Registration/ui/Registration';
 import Person from '../../../pages/Person/ui/Person';
-import Login from '../../../features/login/ui/Login';
 import Preloader from '../Preloader/ui/Preloader';
 import { EROUTES } from '../../utils/ERoutes';
 import { initialTeam, CurrentTeamContext } from '../../context/team';
+import LoginPopup from '../../../features/login/ui/LoginPopup';
 
 import * as api from '../../../shared/utils/api';
+
 
 function App() {
 
@@ -30,6 +30,16 @@ function App() {
 
   const [isLoadingRequest, setIsLoadingRequest] = useState<boolean>(false);
   const [isShowLoginError, setIsShowLoginError] = useState<IFormError>({ text: '', isShow: false });
+
+  const [isOpenLoginPopup, setIsOpenLoginPopup] = useState<boolean>(false);
+
+  const openLoginPopup = () => {
+    setIsOpenLoginPopup(true);
+  };
+
+  const closePopup = () => {
+    setIsOpenLoginPopup(false);
+  };
 
   const tokenCheck = () => {
     const token = localStorage.getItem('token');
@@ -65,6 +75,7 @@ function App() {
     .then((res) => {
       localStorage.setItem('token', res.key);
       tokenCheck();
+      closePopup();
     })
     .catch((err) => {
       if (err.status === 400) {
@@ -107,15 +118,23 @@ function App() {
           <Preloader />
           :
           <Routes>
-            <Route path={EROUTES.LANDING} element={<Landing windowWidth={windowWidth} />} />
-            <Route path={EROUTES.REGISTRATION} element={<Registration windowWidth={windowWidth} />} />
+            <Route path={EROUTES.LANDING} element={<Landing onLogin={openLoginPopup} windowWidth={windowWidth} />} />
             {
               loggedIn &&
               <Route path={EROUTES.PERSON} element={<Person windowWidth={windowWidth} onLogout={handleLogout} onChangeStage={handleChangeStage} />} />
             }
-            <Route path={EROUTES.LOGIN} element={<Login onLogin={handleLogin} isLoadingRequest={isLoadingRequest} isShowLoginError={isShowLoginError} />} />
           </Routes>
-        } 
+        }
+        {
+        isOpenLoginPopup &&
+        <LoginPopup 
+          isOpen={isOpenLoginPopup}
+          onClose={closePopup}
+          onSubmit={handleLogin}
+          loginError={isShowLoginError}
+          isLoadingRequest={isLoadingRequest}
+        />
+      }
       </div>
     </CurrentTeamContext.Provider>
   );

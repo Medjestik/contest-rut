@@ -74,10 +74,10 @@ const UploadLinkPopup: FC<IUploadLinkPopupProps> = ({ isOpen, onClose, onUpload,
   return (
     <Popup isOpen={isOpen} onClose={onClose} popupWidth='large' closeOutside>
       <h2 className='popup__title'>Добавление ссылки</h2>
-      <p className='popup__subtitle'>Введите наименование вашей работы и прикрепите ссылку</p>
+      <p className='popup__subtitle'>Введите наименование и прикрепите ссылку</p>
 
       <Form formName='upload-file' type='popup' onSubmit={handleSubmit}>
-        <FormField title='Наименование работы'>
+        <FormField title='Наименование'>
           <FormInputString 
             value={title} 
             placeholder='Введите наименование..' 
@@ -85,7 +85,7 @@ const UploadLinkPopup: FC<IUploadLinkPopupProps> = ({ isOpen, onClose, onUpload,
             error={isShowErrorTitle} 
           />
         </FormField>
-        <FormField title='Ссылка на файл'>
+        <FormField title='Ссылка'>
           <FormInputString 
             value={link} 
             placeholder='Введите ссылку..' 

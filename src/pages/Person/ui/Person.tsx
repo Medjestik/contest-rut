@@ -15,6 +15,7 @@ import PersonStage from '../components/PersonStage/ui/PersonStage';
 import PersonStageInitial from '../components/PersonStage/ui/PersonStageInitial';
 import UploadFilePopup from '../../../shared/components/Popup/ui/UploadFilePopup';
 import UploadLinkPopup from '../../../shared/components/Popup/ui/UploadLinkPopup';
+import SuccessPopup from '../../../shared/components/Popup/ui/SuccessPopup';
 
 import '../styles/style.css';
 
@@ -30,6 +31,7 @@ const Person: FC<IPersonProps> = ({ windowWidth, onLogout, onChangeStage }) => {
     url_template: '',
     url_video: '',
     team_file_count: 0, 
+    team_videos: [],
   };
 
   const currentTeam = useContext(CurrentTeamContext);
@@ -40,8 +42,10 @@ const Person: FC<IPersonProps> = ({ windowWidth, onLogout, onChangeStage }) => {
 
   const [isOpenUploadFilePopup, setIsOpenUploadFilePopup] = useState<boolean>(false);
   const [isOpenUploadLinkPopup, setIsOpenUploadLinkPopup] = useState<boolean>(false);
+  const [isOpenUploadVideoPopup, setIsOpenUploadVideoPopup] = useState<boolean>(false);
+  const [isOpenSuccessPopup, setIsOpenSuccessPopup] = useState<boolean>(false);
 
-  const [isLoadingData, setIsLoadingData] = useState<boolean>(false);
+  const [isLoadingData, setIsLoadingData] = useState<boolean>(true);
   const [isLoadingStage, setIsLoadingStage] = useState<boolean>(false);
   const [isLoadingRequest, setIsLoadingRequest] = useState<boolean>(false);
   const [isShowRequestError, setIsShowRequestError] = useState<boolean>(false);
@@ -120,6 +124,25 @@ const Person: FC<IPersonProps> = ({ windowWidth, onLogout, onChangeStage }) => {
     }
   };
 
+  const handleUploadVideo = (data: IUploadLink) => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      setIsShowRequestError(false);
+      setIsLoadingRequest(true);
+      api.uploadVideo(token, data, openStageId)
+      .then(() => {
+        setCurrentStage({ ...currentStage, team_videos: ['loaded'] });
+        closePopup();
+        setIsOpenSuccessPopup(true);
+      })
+      .catch((err) => {
+        setIsShowRequestError(true);
+        console.error(err);
+      })
+      .finally(() => setIsLoadingRequest(false));
+    }
+  };
+
   const openUploadFilePopup = () => {
     setIsOpenUploadFilePopup(true);
   };
@@ -128,10 +151,20 @@ const Person: FC<IPersonProps> = ({ windowWidth, onLogout, onChangeStage }) => {
     setIsOpenUploadLinkPopup(true);
   };
 
+  const openUploadVideoPopup = () => {
+    setIsOpenUploadVideoPopup(true);
+  };
+
+
   const closePopup = () => {
     setIsShowRequestError(false);
     setIsOpenUploadFilePopup(false);
     setIsOpenUploadLinkPopup(false);
+    setIsOpenUploadVideoPopup(false);
+  };
+
+  const closeSuccessPopup = () => {
+    setIsOpenSuccessPopup(false);
   };
  
   const getData = () => {
@@ -159,7 +192,7 @@ const Person: FC<IPersonProps> = ({ windowWidth, onLogout, onChangeStage }) => {
     ?
     <Preloader />
     :
-    <MainLayout mainContainer={false} windowWidth={windowWidth} onLogout={onLogout} >
+    <MainLayout mainContainer={false} windowWidth={windowWidth} onLogout={onLogout} > 
       <div className='person'>
         <PersonNavigation stages={stages} openStageId={openStageId} onChange={toggleStage} /> 
         <PersonContainer>
@@ -174,7 +207,7 @@ const Person: FC<IPersonProps> = ({ windowWidth, onLogout, onChangeStage }) => {
               ?
               <PersonStageInitial stage={currentStage} />
               :
-              <PersonStage stage={currentStage} onOpen={openUploadFilePopup} onLink={openUploadLinkPopup} onChangeStage={handleNextStage}  />
+              <PersonStage stage={currentStage} onOpen={openUploadFilePopup} onLink={openUploadLinkPopup} onUploadVideo={openUploadVideoPopup} onChangeStage={handleNextStage}  />
             }
             </>
           }
@@ -198,6 +231,23 @@ const Person: FC<IPersonProps> = ({ windowWidth, onLogout, onChangeStage }) => {
           isShowRequestError={isShowRequestError}
           onClose={closePopup}
           onUpload={handleUploadLink}
+        />
+      }
+      {
+        isOpenUploadVideoPopup &&
+        <UploadLinkPopup 
+          isOpen={isOpenUploadVideoPopup}
+          isLoading={isLoadingRequest}
+          isShowRequestError={isShowRequestError}
+          onClose={closePopup}
+          onUpload={handleUploadVideo}
+        />
+      }
+      {
+        isOpenSuccessPopup &&
+        <SuccessPopup 
+          isOpen={isOpenSuccessPopup}
+          onClose={closeSuccessPopup}
         />
       }
     </MainLayout>

@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.72c95c4b.css",
-    "main.js": "/static/js/main.f5c7b458.js",
+    "main.css": "/static/css/main.0318f002.css",
+    "main.js": "/static/js/main.40d3bad6.js",
     "static/js/453.5e0df2e8.chunk.js": "/static/js/453.5e0df2e8.chunk.js",
     "static/media/main-img.png": "/static/media/main-img.ab3b66bb6a901ce85830.png",
-    "static/media/poster.png": "/static/media/poster.1d3af4d46cfb01c5b7f7.png",
     "static/media/description-img.jpg": "/static/media/description-img.11e710851c26b13da214.jpg",
     "static/media/recruitment-img.jpg": "/static/media/recruitment-img.4c422d736060f7023f20.jpg",
+    "static/media/poster.png": "/static/media/poster.0d47aa7ebb75484b529e.png",
     "static/media/stage-moscow.jpg": "/static/media/stage-moscow.3a8e4ad0b0b477f88282.jpg",
     "static/media/Akrobat-ExtraLight.woff": "/static/media/Akrobat-ExtraLight.781b11c9636cc2dea2a1.woff",
     "static/media/Akrobat-Light.woff": "/static/media/Akrobat-Light.203431379c7d180867f3.woff",
@@ -28,13 +28,12 @@
     "static/media/social-mail.svg": "/static/media/social-mail.70222a7334dbe63b191ca9ff753c2cef.svg",
     "static/media/icon.svg": "/static/media/icon.9525a7560bf2bc227eeb9bf8a149b621.svg",
     "index.html": "/index.html",
-    "static/media/arrow.svg": "/static/media/arrow.55a4ec4915bbcdabc744.svg",
-    "main.72c95c4b.css.map": "/static/css/main.72c95c4b.css.map",
-    "main.f5c7b458.js.map": "/static/js/main.f5c7b458.js.map",
+    "main.0318f002.css.map": "/static/css/main.0318f002.css.map",
+    "main.40d3bad6.js.map": "/static/js/main.40d3bad6.js.map",
     "453.5e0df2e8.chunk.js.map": "/static/js/453.5e0df2e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72c95c4b.css",
-    "static/js/main.f5c7b458.js"
+    "static/css/main.0318f002.css",
+    "static/js/main.40d3bad6.js"
   ]
 }

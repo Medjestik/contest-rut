@@ -8,12 +8,6 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
   z-index: 100;
 }
 .popup_opened {

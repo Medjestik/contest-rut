@@ -13,6 +13,7 @@ export interface IStageNavItem {
   url_template: string;
   url_video: string;
   team_file_count: number;
+  team_videos: string[];
 }
 
 export interface IStage {
@@ -25,6 +26,7 @@ export interface IStage {
   url_template: string;
   url_video: string;
   team_file_count: number;
+  team_videos: string[];
 }
 
 export interface IPersonProps {
@@ -47,5 +49,6 @@ export interface IPersonStageProps {
   stage: IStageNavItem;
   onOpen?: () => void;
   onLink?: () => void;
+  onUploadVideo?: () => void;
   onChangeStage?: () => void;
 }

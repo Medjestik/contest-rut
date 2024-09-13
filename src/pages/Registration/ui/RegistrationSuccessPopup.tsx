@@ -21,7 +21,7 @@ const RegistrationSuccessPopup: FC<IPopupProps> = ({ isOpen, onClose }) => {
 
   return (
     <Popup isOpen={isOpen} onClose={onClose} popupWidth='small'>
-      <img className='popup__icon' src={icon} alt={'иконка ошибки'}></img>
+      <img className='popup__icon' src={icon} alt={'иконка'}></img>
       <h2 className='popup__title'>Регистрация успешно завершена!</h2>
       <p className='popup__subtitle'>Всем участникам вашей команды на указанные почты направлено письмо с логином и паролем для входа в учетную запись.</p>
       <p className='popup__subtitle'>Регистрироваться повторно участникам команды не нужно.</p>

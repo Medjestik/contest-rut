@@ -1,1 +1,1 @@
-export const registrationOverDate = '2024-09-15T23:59:59';
+export const registrationOverDate = '2024-09-16T08:59:59';

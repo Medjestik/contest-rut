@@ -20,9 +20,10 @@ import './Landing.css';
 
 interface ILandingProps {
   windowWidth: number;
+  onLogin: () => void;
 }
 
-const Landing: FC<ILandingProps> = ({ windowWidth }) => {
+const Landing: FC<ILandingProps> = ({ windowWidth, onLogin }) => {
 
   const [cases, setCases] = useState<ICaseItem[]>([]);
 
@@ -63,7 +64,7 @@ const Landing: FC<ILandingProps> = ({ windowWidth }) => {
             <MobileMenu isShow={isShowMobileMenu} onClose={toggleMobileMenu} />
           }
           <Header windowWidth={windowWidth} showMobileMenu={toggleMobileMenu} />
-          <Main windowWidth={windowWidth} />
+          <Main windowWidth={windowWidth} onLogin={onLogin} />
           <Description windowWidth={windowWidth} />
           <Stages />
           <Cases cases={cases} />

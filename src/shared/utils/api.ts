@@ -157,6 +157,23 @@ export const uploadLink = (token: string, data: IUploadLink, stageId: number) =>
   .then(res => checkResponse(res));
 };
 
+export const uploadVideo = (token: string, data: IUploadLink, stageId: number) => {
+  return fetch(`${API_URL}/upload-video/`, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Authorization': `Token ${token}`,
+    },
+    body: JSON.stringify({
+      url: data.link,
+      name: data.name,
+      stage: stageId,
+    }),
+  })
+  .then(res => checkResponse(res));
+};
+
 export const nextStage = (token: string) => {
   return fetch(`${API_URL}/next_stage/`, {
     method: 'POST',
