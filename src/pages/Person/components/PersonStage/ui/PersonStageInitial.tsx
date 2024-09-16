@@ -23,7 +23,9 @@ const PersonStageInitial: FC<IPersonStageProps> = ({ stage }) => {
   return (
     <div className='person-stage'>
       <h2 className='person-stage__title'>{stage.name || ''}</h2>
-      <p className='person-stage__subtitle'>Поздравляем с участием в первых проектных соревнованиях студентов транспорта! Вам предстоит: проанализировать проблему, предложить идеи и создать прототип своего решения. Ниже приведены материалы по вашему кейсу. Желаем вам удачи!</p>
+      <p className='person-stage__subtitle'>Поздравляем вас с участием в первых Межвузовских транспортных проектных соревнованиях!</p>
+      <p className='person-stage__subtitle'>Вас ждут интересные испытания, и каждый пройденный этап будет приближать вашу команду к решению реальной проблемы. Не забывайте внимательно выполнять задания, изучать предложенные инструменты и применять их для достижения цели.</p>
+      <p className='person-stage__subtitle'>Желаем удачи на всех этапах соревнований!</p>
       <div className='person-stage__container'>
         <div className='person-stage__info person-stage__info-case'>
           {
