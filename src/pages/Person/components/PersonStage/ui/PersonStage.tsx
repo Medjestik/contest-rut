@@ -64,7 +64,7 @@ const PersonStage: FC<IPersonStageProps> = ({ stage, onOpen, onLink, onUploadVid
               </>
               :
               <>
-                <p className='person-stage__row-subtitle'>Загрузите задание на проверку.</p>
+                <p className='person-stage__row-subtitle'>Загрузите задание на проверку. Для файлов более 10MB прикрепите ссылку.</p>
                 <div className='person-stage__btn-container'>
                   <Button style={btnStyle} text='Добавить файл' onClick={onOpen} />
                   <Button style={btnStyle} text='Прикрепить ссылку' onClick={onLink} />
