@@ -25,7 +25,7 @@
   flex-direction: column;
 }
 .main__section-registration {
-  margin: 40px 0 0 0;
+  margin: 0;
   flex-grow: 2;
 }
 .main__section-img {
@@ -35,7 +35,7 @@
   margin: 0;
   font-weight: 800;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.15;
   color: var(--title-color);
   text-transform: uppercase;
@@ -54,9 +54,8 @@
 }
 .main__timer-text {
   margin: 8px 0 0;
-  max-width: 340px;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.15;
   color: var(--title-color);
   z-index: 2;

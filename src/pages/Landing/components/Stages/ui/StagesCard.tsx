@@ -1,10 +1,7 @@
 import type { FC } from 'react';
 import type { IStagesCardProps } from '../interface/interface';
 
-import { useNavigate } from 'react-router-dom';
-
 import Button from '../../../../../shared/components/Button/ui/Button';
-import { EROUTES } from '../../../../../shared/utils/ERoutes';
 
 import '../styles/style.css';
 
@@ -13,7 +10,6 @@ const btnStyle = {
 };
 
 const StagesCard: FC<IStagesCardProps> = ({ card }) => {
-  const navigate = useNavigate();
   
   return (
     <li className={`stages__card stages__card_type_${card.color}`}>
@@ -26,7 +22,7 @@ const StagesCard: FC<IStagesCardProps> = ({ card }) => {
       }
       {
         card.type === 'registration' &&
-        <Button text='Клик!' width='default' color='secondary' style={btnStyle} onClick={() => navigate(EROUTES.REGISTRATION)}/>
+        <Button text='Клик!' width='default' color='secondary' style={btnStyle} />
       }
     </li>
   );

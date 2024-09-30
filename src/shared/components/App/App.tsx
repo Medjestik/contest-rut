@@ -8,7 +8,6 @@ import { useEffect, useState } from 'react';
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 
 import Landing from '../../../pages/Landing/Landing';
-import Person from '../../../pages/Person/ui/Person';
 import Preloader from '../Preloader/ui/Preloader';
 import { EROUTES } from '../../utils/ERoutes';
 import { initialTeam, CurrentTeamContext } from '../../context/team';
@@ -64,9 +63,11 @@ function App() {
     }
   };
 
+  /*
   const handleChangeStage = (stageId: number) => {
     setCurrentTeam({ ...currentTeam, current_stage: stageId });
   };
+  */
 
   const handleLogin = (data: ILoginData) => {
     setIsLoadingRequest(true);
@@ -88,14 +89,16 @@ function App() {
     .finally(() => setIsLoadingRequest(false));
   };
 
+  /*
   const handleLogout = () => {
     localStorage.removeItem('token');
     setLoggedIn(false);
     navigate(EROUTES.LANDING);
   };
+  */
 
   useEffect(() => {
-    tokenCheck();
+    // tokenCheck();
   }, []);
 
   useEffect(() => {
@@ -121,7 +124,7 @@ function App() {
             <Route path={EROUTES.LANDING} element={<Landing onLogin={openLoginPopup} windowWidth={windowWidth} />} />
             {
               loggedIn &&
-              <Route path={EROUTES.PERSON} element={<Person windowWidth={windowWidth} onLogout={handleLogout} onChangeStage={handleChangeStage} />} />
+              <Route path={EROUTES.PERSON} element={<div />} />
             }
           </Routes>
         }
