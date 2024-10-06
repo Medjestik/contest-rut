@@ -6,6 +6,7 @@ import * as api from '../../shared/utils/api';
 import PublicLayout from '../../shared/components/Layout/ui/PublicLayout';
 import Header from './components/Header/ui/Header';
 import Main from './components/Main/ui/Main';
+import LeaderBoard from './components/LeaderBoard/ui/LeaderBoard';
 import Description from './components/Description/ui/Description';
 import Stages from './components/Stages/ui/Stages';
 import Cases from './components/Cases/ui/Cases';
@@ -65,6 +66,7 @@ const Landing: FC<ILandingProps> = ({ windowWidth, onLogin }) => {
           }
           <Header windowWidth={windowWidth} showMobileMenu={toggleMobileMenu} />
           <Main windowWidth={windowWidth} onLogin={onLogin} />
+          <LeaderBoard />
           <Description windowWidth={windowWidth} />
           <Stages />
           <Cases cases={cases} />
