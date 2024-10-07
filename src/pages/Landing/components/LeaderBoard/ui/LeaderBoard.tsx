@@ -17,11 +17,16 @@ interface ITeam {
   place: number;
   name: string;
   university: string;
-  status: string;
+  score?: string;
+  status: string | null;
 }
 
-const LeaderBoard: FC = () => {
-  const [currentCase, setCurrentCase] = useState(results[0]);
+interface ILeaderBoardProps {
+  windowWidth: number;
+}
+
+const LeaderBoard: FC<ILeaderBoardProps> = ({ windowWidth }) => {
+  const [currentCase, setCurrentCase] = useState<ICase>(results[0]);
 
   const handleSelectCase = (item: ICase) => {
     setCurrentCase(item);
@@ -45,7 +50,7 @@ const LeaderBoard: FC = () => {
   };
 
   return (
-    <div className='cases' id={ENAV.LEADERBOARD}>
+    <div className='leaderboard' id={ENAV.LEADERBOARD}>
       <Section>
         <div className='leaderboard__section'>
           <h2 className='section__title'>Лидеры сезона</h2>
@@ -61,19 +66,40 @@ const LeaderBoard: FC = () => {
           {
             currentCase.teams.length > 0 &&
             <ul className='leaderboard__list'>
-              <li className='leaderboard__row leaderboard__row-header'>
-                <div className='leaderboard__text leaderboard__text-header'>Место</div>
-                <div className='leaderboard__text leaderboard__text-header'>Команда</div>
-                <div className='leaderboard__text leaderboard__text-header'>ВУЗ</div>
-                <div className='leaderboard__text leaderboard__text-header'>Статус</div>
-              </li>
+              {
+                windowWidth > 1000 
+                ?
+                <li className='leaderboard__row leaderboard__row-header'>
+                  <div className='leaderboard__text leaderboard__text-header'>Место</div>
+                  <div className='leaderboard__text leaderboard__text-header'>Команда</div>
+                  <div className='leaderboard__text leaderboard__text-header'>ВУЗ</div>
+                  <div className='leaderboard__text leaderboard__text-header'>Баллы</div>
+                  <div className='leaderboard__text leaderboard__text-header'>Статус</div>
+                </li>
+                :
+                <li className='leaderboard__row leaderboard__row-header'>
+                  <div className='leaderboard__text leaderboard__text-header'></div>
+                  <div className='leaderboard__text leaderboard__text-header'>Команда</div>
+                  <div className='leaderboard__text leaderboard__text-header'>Баллы</div>
+                  <div className='leaderboard__text leaderboard__text-header'>Статус</div>
+                </li>
+              }
               {
                 currentCase.teams.map((team, i) => (
                   <li className='leaderboard__row leaderboard__row-main' key={i}>
                     <div className='leaderboard__text leaderboard__text-header'>{i + 1}</div>
-                    <div className='leaderboard__text'>{team.name}</div>
-                    <div className='leaderboard__text'>{team.university}</div>
-                    {renderStatus(team.status)}
+                    {
+                      windowWidth > 1000 
+                      ?
+                      <>
+                        <div className='leaderboard__text leaderboard__text_color'>{team.name}</div>
+                        <div className='leaderboard__text'>{team.university}</div>
+                      </>
+                      :
+                      <div className='leaderboard__text'><span className='leaderboard__text_color'>{team.name}</span><br></br>{team.university}</div>
+                    }
+                    <div className='leaderboard__text'>{team.score}</div>
+                    {team.status && renderStatus(team.status)}
                   </li>
                 ))
               }

@@ -179,9 +179,8 @@
     position: relative;
   }
   .main__timer-title {
-    font-size: 32px;
     text-align: left;
-    font-size: 18px;
+    font-size: 24px;
     color: var(--white-color);
     z-index: 200;
   }

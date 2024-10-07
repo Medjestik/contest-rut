@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.63cdd26f.css",
-    "main.js": "/static/js/main.226f4b42.js",
+    "main.css": "/static/css/main.924abafb.css",
+    "main.js": "/static/js/main.440e9151.js",
     "static/js/453.5e0df2e8.chunk.js": "/static/js/453.5e0df2e8.chunk.js",
     "static/media/main-img.png": "/static/media/main-img.ab3b66bb6a901ce85830.png",
     "static/media/description-img.jpg": "/static/media/description-img.11e710851c26b13da214.jpg",
@@ -19,19 +19,19 @@
     "static/media/BebasNeueRegular.woff": "/static/media/BebasNeueRegular.c07e076467a248c2f672.woff",
     "static/media/BebasNeue-Thin.woff": "/static/media/BebasNeue-Thin.83e86240c8a62475c312.woff",
     "static/media/BebasNeueBold.woff": "/static/media/BebasNeueBold.e0462489b6967dbc5942.woff",
-    "static/media/logo-rut.svg": "/static/media/logo-rut.cc17f67678b620f9155e76633af137b1.svg",
+    "static/media/logo-rut.svg": "/static/media/logo-rut.8a1505e3a7e469213d9a91721fee75ac.svg",
     "static/media/logo-rut-white.svg": "/static/media/logo-rut-white.d259705517743de0d67f7d6663abbb55.svg",
-    "static/media/social-telegram.svg": "/static/media/social-telegram.a68c534aa0962f99d5455c3ae3ae3f17.svg",
-    "static/media/social-vk.svg": "/static/media/social-vk.165e53f12b5d6400d953585488d9613c.svg",
-    "static/media/social-mail.svg": "/static/media/social-mail.192282b1d6f310b980440feb4b535615.svg",
-    "static/media/icon.svg": "/static/media/icon.536c585726560e1b56073c03a0f01348.svg",
+    "static/media/social-telegram.svg": "/static/media/social-telegram.8d4ba7ebc9a13032d23c12fc744a6711.svg",
+    "static/media/social-vk.svg": "/static/media/social-vk.35b2298bc0fb1659716abc6d230e661b.svg",
+    "static/media/social-mail.svg": "/static/media/social-mail.70222a7334dbe63b191ca9ff753c2cef.svg",
+    "static/media/icon.svg": "/static/media/icon.9525a7560bf2bc227eeb9bf8a149b621.svg",
     "index.html": "/index.html",
-    "main.63cdd26f.css.map": "/static/css/main.63cdd26f.css.map",
-    "main.226f4b42.js.map": "/static/js/main.226f4b42.js.map",
+    "main.924abafb.css.map": "/static/css/main.924abafb.css.map",
+    "main.440e9151.js.map": "/static/js/main.440e9151.js.map",
     "453.5e0df2e8.chunk.js.map": "/static/js/453.5e0df2e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63cdd26f.css",
-    "static/js/main.226f4b42.js"
+    "static/css/main.924abafb.css",
+    "static/js/main.440e9151.js"
   ]
 }

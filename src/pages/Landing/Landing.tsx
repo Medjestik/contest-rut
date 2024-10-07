@@ -66,7 +66,7 @@ const Landing: FC<ILandingProps> = ({ windowWidth, onLogin }) => {
           }
           <Header windowWidth={windowWidth} showMobileMenu={toggleMobileMenu} />
           <Main windowWidth={windowWidth} onLogin={onLogin} />
-          <LeaderBoard />
+          <LeaderBoard windowWidth={windowWidth} />
           <Description windowWidth={windowWidth} />
           <Stages />
           <Cases cases={cases} />

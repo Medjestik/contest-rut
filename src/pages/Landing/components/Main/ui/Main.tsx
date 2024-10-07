@@ -1,11 +1,23 @@
 import type { FC } from 'react';
 
+import { Link } from 'react-scroll';
+import Button from '../../../../../shared/components/Button/ui/Button';
+
 import '../styles/style.css';
 
 interface IMainProps {
   windowWidth: number;
   onLogin: () => void;
 }
+
+const btnStyle = {
+  margin: '40px 0 0',
+};
+
+const mobileBtnStyle = {
+  margin: '20px auto',
+  width: '100%',
+};
 
 const Main: FC<IMainProps> = ({ windowWidth }) => {
 
@@ -19,8 +31,8 @@ const Main: FC<IMainProps> = ({ windowWidth }) => {
           <div className='main__section main__section-registration'>
             <h3 className='main__timer-title'>Отбор команд завершен!</h3>
             <p className='main__timer-text'>Мы благодарим все команды за участие!</p>
-            <p className='main__timer-text'>Наши эксперты сейчас оценивают ваши работы.</p>
-            <p className='main__timer-text'>Ожидайте, результаты будут опубликованы в&nbsp;ближайшее время.</p>
+            <p className='main__timer-text'>Наши эксперты оценили ваши работы и вы можете ознакомиться с результатами.</p>
+            <Link to='leaderboard' smooth={true} offset={0} duration={750} spy={true}><Button text='Результаты' width='default' style={windowWidth > 1000 ? btnStyle : mobileBtnStyle} /></Link>
           </div>
         </div>
         <div className='main__column'>
@@ -38,8 +50,8 @@ const Main: FC<IMainProps> = ({ windowWidth }) => {
           </div>
           <div className='main__section'>
             <h3 className='main__section-title'>Мы благодарим все команды за участие!</h3>
-            <p className='main__section-text'>Наши эксперты сейчас оценивают ваши работы.</p>
-            <p className='main__section-text'>Ожидайте, результаты будут опубликованы в&nbsp;ближайшее время.</p>
+            <p className='main__section-text'>Наши эксперты оценили ваши работы и вы можете ознакомиться с результатами.</p>
+            <Link to='leaderboard' smooth={true} offset={0} duration={750} spy={true}><Button text='Результаты' width='default' style={windowWidth > 1000 ? btnStyle : mobileBtnStyle} /></Link>
           </div>
           
         </>
