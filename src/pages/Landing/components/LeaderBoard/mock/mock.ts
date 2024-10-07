@@ -420,7 +420,7 @@ export const results = [
       },
       {
         place: 6,
-        name: 'Крутые бобры',
+        name: 'Бригада',
         university: 'ПривГУПС',
         status: 'final',
         score: '32,85',
