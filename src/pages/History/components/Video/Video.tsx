@@ -1,12 +1,10 @@
-import video from '../../../../shared/video/video.mp4';
-
 import './Video.css';
 
 const Video = () => {
   return (
     <div className='h-video'>
       <video
-        src={video}
+        src='https://course.emiit.ru/webtutor/ivan/video.mp4'
         autoPlay
         loop
         muted
