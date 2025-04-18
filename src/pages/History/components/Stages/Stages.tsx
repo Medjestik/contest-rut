@@ -8,7 +8,7 @@ const Stages = () => {
   return (
     <div className='h-stages' id='stages'>
       <div className='h-stages__container'>
-        <h2 className='h-stages__title'>Как проходили соревнования</h2>
+        <h2 className='h-stages__title'>Как проходили соревнования </h2>
         <div className='h-stages__line'>
           <ul className='h-stages__cards'>
             <li className='h-stages__card h-stages__card_type_first'>
