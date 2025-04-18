@@ -1,0 +1,92 @@
+.h-about {
+  margin: 80px 0 0 0;
+  width: 100%;
+}
+
+.h-about__container {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.h-about__description {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.h-about__background {
+  margin: 0;
+  width: 100%;
+  height: 600px;
+  border-radius: 100px;
+  background-image: url('../../../../shared/images/history/about.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.h-about__numbers {
+  margin: 0;
+  padding: 34px 30px;
+  box-sizing: border-box;
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  background: #8787D9;
+}
+
+.h-about__text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--white-color);
+}
+
+.h-about__list {
+  margin: 20px 0 0 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.h-about__item {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.h-about__count {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--white-color);
+}
+
+.h-about__number {
+  margin: 0;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 1;
+  color: var(--white-color);
+}
+
+.h-about__caption {
+  margin: 8px 0 0 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--white-color);
+}
+

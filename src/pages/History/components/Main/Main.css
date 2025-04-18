@@ -1,0 +1,65 @@
+.h-main {
+  margin: 20px 0 0 0;
+  width: 100%;
+  height: calc(100vh - 56px - 32px - 20px);
+}
+
+.h-main__overlay {
+  margin: 0;
+  width: 100%;
+  height: calc(100vh - 56px - 64px - 20px);
+  border-radius: 100px;
+  background-image: url('../../../../shared/images/history/background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.h-main__container {
+  margin: 0;
+  padding: 76px 84px;
+  width: 100%;
+  height: calc(100vh - 56px - 64px - 20px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.h-main__title {
+  margin: 0;
+  max-width: 535px;
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 1;
+  color: var(--white-color);
+}
+
+.h-main__subtitle {
+  margin: 40px 0 0 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--white-color);
+}
+
+.h-main__button {
+  width: fit-content;
+  margin: auto 0 0 0;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  background-color: var(--white-color);
+  color: var(--title-color);
+  flex-shrink: 0;
+  transition: all .3s ease-in-out;
+}
+
+.h-main__button:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+

@@ -65,6 +65,18 @@ export const registration = (data: IRegisterData) => {
   .then(res => handleResponse(res));
 };
 
+export const subscribe = (email: string) => {
+  return fetch(`${API_URL}/email/`, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ email }),
+  })
+  .then(res => handleResponse(res));
+};
+
 export const getCases = () => {
   return fetch(`${API_URL}/cases`, {
     method: 'GET',

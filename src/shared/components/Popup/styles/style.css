@@ -523,7 +523,7 @@
 }
 .popup__author {
   width: 100%;
-  margin: 0px;
+  margin: 20px 0 0 0;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -560,7 +560,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.15;
   color: var(--main-black-color);
   transition: all .3s ease-in-out;
 }

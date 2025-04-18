@@ -1,0 +1,124 @@
+.h-stages {
+  margin: 40px 0 0 0;
+  padding: 0 0 240px 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #DEDEE6;
+  border-radius: 80px;
+}
+
+.h-stages__container {
+  margin: 0 auto;
+  padding: 44px 0;
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.h-stages__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 1;
+  color: #372B4A;
+}
+
+.h-stages__line {
+  margin: 20px auto 0;
+  width: 100%;
+  aspect-ratio: 1118 / 1189;
+  background-image: url('../../../../shared/images/history/line.svg');
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.h-stages__cards {
+  width: 100%;
+  position: absolute;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.h-stages__card {
+  margin: 0;
+  padding: 44px;
+  box-sizing: border-box;
+  width: 540px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 40px;
+  background-color: #FFFFFF;
+}
+
+.h-stages__card_type_first {
+  margin: 60px 0 0 0;
+}
+
+.h-stages__card_type_second {
+  margin: -300px 0 0 auto;
+}
+
+.h-stages__card_type_third {
+  margin: 40px 0 0 0;
+}
+
+.h-stages__card-date {
+  margin: 0 0 16px 0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1;
+  color: #F764B3;
+}
+
+.h-stages__card-title {
+  margin: 0 0 32px 0;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1;
+  color: #372B4A;
+}
+
+.h-stages__card-text {
+  margin: 0 0 16px 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  color: #372B4A;
+  z-index: 2;
+}
+
+.h-stages__card-text_weight_bold {
+  font-weight: 800;
+}
+
+.h-stages__card-count {
+  position: absolute;
+  bottom: -36px;
+  left: 40px;
+  font-weight: 400;
+  font-size: 360px;
+  line-height: 1;
+  color: #8787D9;
+  z-index: 1;
+  opacity: .1;
+}
+
+.h-stages__card-icon {
+  position: absolute;
+  bottom: -120px;
+  right: 0;
+  width: 300px;
+  height: 300px;
+}

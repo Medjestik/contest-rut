@@ -8,13 +8,13 @@ import { useEffect, useState } from 'react';
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 
 import Landing from '../../../pages/Landing/Landing';
+import History from '../../../pages/History/History';
 import Preloader from '../Preloader/ui/Preloader';
 import { EROUTES } from '../../utils/ERoutes';
 import { initialTeam, CurrentTeamContext } from '../../context/team';
 import LoginPopup from '../../../features/login/ui/LoginPopup';
 
 import * as api from '../../../shared/utils/api';
-
 
 function App() {
 
@@ -122,6 +122,7 @@ function App() {
           :
           <Routes>
             <Route path={EROUTES.LANDING} element={<Landing onLogin={openLoginPopup} windowWidth={windowWidth} />} />
+            <Route path={EROUTES.HISTORY} element={<History windowWidth={windowWidth} />} />
             {
               loggedIn &&
               <Route path={EROUTES.PERSON} element={<div />} />
