@@ -44,7 +44,7 @@ const Prize = () => {
         <div className='h-prize__item'>
           <img className='h-prize__item-img' src={prize3} alt='картинка'></img>
           <div className='h-prize__item-overlay'>
-            <h4 className='h-prize__item-title'>Оценка проектов по всем этапам</h4>
+            <h4 className='h-prize__item-title'>Оценка проектов на всех этапах</h4>
             <p className='h-prize__item-text'>Жюри оценивало не только финальные презентации, но и весь ход работы: качество анализа, проработку идеи и реализацию прототипа.</p>
           </div>
         </div>

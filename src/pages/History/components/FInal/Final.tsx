@@ -22,9 +22,9 @@ const Final = () => {
         <h2 className='h-final__title'>Финал в РУТ (МИИТ)</h2>
         <p className='h-final__subtitle'>Финал проходил в&nbsp;Российском университете транспорта и&nbsp;включал в&nbsp;себя три дня&nbsp;активной работы.</p>
         <div className='h-final__controls'>
-        <div onClick={handlePrev} className='h-final__arrow h-final__arrow--left'>&#x276E;</div>
-        <span className='h-final__counter'>День {currentSlide + 1}</span>
-        <div onClick={handleNext} className='h-final__arrow h-final__arrow--right'>&#x276F;</div>
+          <div onClick={handlePrev} className='h-final__arrow h-final__arrow--left'>&#x276E;</div>
+          <span className='h-final__counter'>День {currentSlide + 1}</span>
+          <div onClick={handleNext} className='h-final__arrow h-final__arrow--right'>&#x276F;</div>
         </div>
 
         <Carousel

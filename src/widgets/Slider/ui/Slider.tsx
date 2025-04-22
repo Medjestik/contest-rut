@@ -12,32 +12,30 @@ import '../styles/style.css';
 const Slider = () => {
 
   return (
-    <div className='h-slider'>
-      <Carousel
-        emulateTouch
-        swipeable
-        showThumbs={false}
-        showStatus={false}
-        infiniteLoop
-        autoPlay={true}
-      >
-        <div className='slider__item'>
-          <img className='slider__img' src={img1} />
-        </div>
-        <div className='slider__item'>
-          <img className='slider__img' src={img2} />
-        </div>
-        <div className='slider__item'>
-          <img className='slider__img' src={img3} />
-        </div>
-        <div className='slider__item'>
-          <img className='slider__img' src={img4} />
-        </div>
-        <div className='slider__item'>
-          <img className='slider__img' src={img5} />
-        </div>
-      </Carousel>
-    </div>
+    <Carousel
+      emulateTouch
+      swipeable
+      showThumbs={false}
+      showStatus={false}
+      infiniteLoop
+      autoPlay={true}
+    >
+      <div className='slider__item'>
+        <img className='slider__img' src={img1} />
+      </div>
+      <div className='slider__item'>
+        <img className='slider__img' src={img2} />
+      </div>
+      <div className='slider__item'>
+        <img className='slider__img' src={img3} />
+      </div>
+      <div className='slider__item'>
+        <img className='slider__img' src={img4} />
+      </div>
+      <div className='slider__item'>
+        <img className='slider__img' src={img5} />
+      </div>
+    </Carousel>
   );
 };
 

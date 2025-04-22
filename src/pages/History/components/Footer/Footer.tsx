@@ -18,25 +18,12 @@ const Footer: FC<IFooterProps> = ({ windowWidth }) => {
     <footer className='h-footer' id='footer'>
       <div className='h-footer__container'>
         <h2 className='h-footer__title'>Подпишись!</h2>
-        {
-          windowWidth > 1000
-          ?
-          <div className='h-footer__social'>
-            <a className='h-footer__social-link' href='https://t.me/contestmiit' target='_blank'>
-              <img className='h-footer__social-icon' src={telegramIcon} alt={'icon'} />
-            </a>
-            <span className='h-footer__social-text'>на Telegram-канал соревнований, чтобы не пропустить новый сезон</span>
-          </div>
-          :
-          <div className='h-footer__social-mobile'>
-            <div className='h-footer__links-mobile'>
-            <a className='h-footer__social-link' href='https://t.me/contestmiit' target='_blank'>
-              <img className='h-footer__social-icon' src={telegramIcon} alt={'icon'} />
-            </a>
-            </div>
-            <span className='h-footer__social-text'>техническую поддержку</span>
-          </div>
-        }
+        <div className='h-footer__social'>
+          <a className='h-footer__social-link' href='https://t.me/contestmiit' target='_blank'>
+            <img className='h-footer__social-icon' src={telegramIcon} alt={'icon'} />
+          </a>
+          <span className='h-footer__social-text'>на Telegram-канал соревнований, чтобы не пропустить новый сезон</span>
+        </div>
         <div className='h-footer__bottom'>
           {
             windowWidth > 1000 && <img className='h-footer__icon' src={icon} alt='логотип'></img>

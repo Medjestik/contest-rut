@@ -20,3 +20,18 @@
   position: relative;
 }
 
+@media all and (max-width: 1440px) {
+  .history__container {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .history {
+    padding: 16px 0 0 0;
+  }
+  .history__container {
+    padding: 0;
+  }
+}

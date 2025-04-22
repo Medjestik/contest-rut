@@ -40,7 +40,7 @@ const History: FC<IHistoryProps> = ({ windowWidth }) => {
       <div className='history__container'>
         <Cases />
       </div>
-      <News />
+      <News windowWidth={windowWidth} />
       <div className='history__container'>
         <Video />
       </div>

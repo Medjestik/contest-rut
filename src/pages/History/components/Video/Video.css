@@ -37,3 +37,9 @@
 .h-video:hover::after {
   opacity: 1;
 }
+
+@media all and (max-width: 1000px) {
+  .h-video {
+    margin: 0;
+  }
+}

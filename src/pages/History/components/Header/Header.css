@@ -63,3 +63,27 @@
   opacity: .7;
   cursor: pointer;
 }
+
+@media all and (max-width: 1000px) {
+  .h-header {
+    margin: 0 16px;
+    padding: 0;
+    width: calc(100% - 32px);
+  }
+  .h-header__nav {
+    display: none;
+  }
+  .h-header__logo {
+    margin: 0 24px 0 0;
+    width: 32px;
+    height: 32px;
+  }
+  .h-header__button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+  .h-header__item {
+    font-size: 16px;
+    line-height: 1;
+  }
+}

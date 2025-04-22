@@ -14,7 +14,7 @@ const Stages = () => {
             <li className='h-stages__card h-stages__card_type_first'>
               <span className='h-stages__card-date'>30 августа - 15 сентября</span>
               <h4 className='h-stages__card-title'>Регистрация</h4>
-              <p className='h-stages__card-text'>Участники прошли отбор и подготовились к работе над кейсами.</p>
+              <p className='h-stages__card-text'>Участники заполнили анкету и подготовились к работе над кейсами.</p>
               <span className='h-stages__card-count'>1</span>
               <img className='h-stages__card-icon' src={icon1} alt='иконка'></img>
             </li>
@@ -22,7 +22,7 @@ const Stages = () => {
               <span className='h-stages__card-date'>15 сентября - 30 сентября</span>
               <h4 className='h-stages__card-title'>Дистанционный этап</h4>
               <p className='h-stages__card-text'>Команды работали онлайн с кейсами от партнёров: анализировали задачи, выдвигали гипотезы и записывали видеопрезентации. Они консультировались с экспертами и уточняли детали кейсов.</p>
-              <p className='h-stages__card-text'><span className='h-stages__card-text_weight_bold'>75 команд</span> боролись за выход в финал.</p>
+              <p className='h-stages__card-text'><span className='h-stages__card-text_weight_bold'>175 команд</span> боролись за выход в финал.</p>
               <span className='h-stages__card-count'>2</span>
               <img className='h-stages__card-icon' src={icon2} alt='иконка'></img>
             </li>

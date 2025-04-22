@@ -63,3 +63,48 @@
   cursor: pointer;
 }
 
+@media all and (max-width: 1440px) {
+  .h-main__title {
+    max-width: 535px;
+    font-size: 56px;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  .history {
+    padding: 16px 0 0 0;
+  }
+  .history__container {
+    padding: 0 12px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .h-main {
+    margin: 16px 0 0 0;
+    width: 100%;
+    height: calc(100vh - 56px - 16px - 16px);
+  }
+  .h-main__overlay {
+    height: calc(100vh - 56px - 16px - 16px);
+    border-radius: 40px;
+  }
+  .h-main__container {
+    padding: 20px 16px;
+    height: calc(100vh - 56px - 16px - 16px);
+  }
+  .h-main__title {
+    max-width: none;
+    font-size: 40px;
+  }
+  .h-main__subtitle {
+    margin: 20px 0 0 0;
+    font-size: 20px;
+  }
+  .h-main__button {
+    padding: 12px 28px;
+    font-size: 20px;
+  }
+}
+
+

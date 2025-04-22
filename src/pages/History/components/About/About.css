@@ -90,3 +90,36 @@
   color: var(--white-color);
 }
 
+@media all and (max-width: 1000px) {
+  .h-about {
+    margin: 40px 0 0 0;
+  }
+  
+  .h-about__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .h-about__background {
+    height: 280px;
+  }
+  .h-about__numbers {
+    padding: 20px 16px;
+  }
+  .h-about__text {
+    font-size: 20px;
+  }
+  .h-about__list {
+    margin: 20px 0 0 0;
+    gap: 20px;
+  }
+  .h-about__count {
+    font-size: 14px;
+  }
+  .h-about__number {
+    font-size: 32px;
+  }
+  .h-about__caption {
+    margin: 4px 0 0 0;
+    font-size: 12px;
+  }
+}
