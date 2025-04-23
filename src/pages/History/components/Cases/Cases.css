@@ -228,7 +228,7 @@
   .h-cases__slider {
     margin: 0;
     width: 100%;
-    height: 240px;
+    height: 260px;
   }
   .h-cases__tag {
     margin: 0 0 16px 0;
@@ -239,7 +239,7 @@
     font-size: 16px;
   }
   .h-cases__list {
-    margin: 0;
+    margin: 12px 0 0 0;
     grid-template-columns: 1fr;
     gap: 20px;
   }
