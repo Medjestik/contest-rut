@@ -1,0 +1,39 @@
+{
+  "title": "Interuniversity Transport Project Contest",
+  "nav": ["About", "Methodology", "Task", "Documents", "Contacts"],
+  "main-button": "More",
+  "main-tag-1": "presentation",
+  "main-tag-2": "5+ participating countries",
+  "main-tag-3": "analysis",
+  "main-tag-4": "prototype",
+  "main-tag-5": "Moscow, October 29-31",
+  "main-tag-6": "real-world challenge",
+
+  "description-title": "What is a Project Contest?",
+  "description-text-1": "This is a new format of student competition where teams explore real-world challenges in the transport industry.",
+  "description-text-2": "Step by step, following the stages of project-based work, you will analyze the problem, conduct research, propose a new solution, and present a prototype to a panel of experts. It’s an intensive but highly valuable experience that prepares you for the demands of your future career, deepens your understanding of the industry, and gives you the kind of project experience employers are looking for.",
+  "description-text-3": "Be sure to review the materials on this page to prepare for the competition",
+  "description-tag-1": "practice",
+  "description-tag-2": "experience",
+  "description-tag-3": "competitions",
+  "description-tag-4": "transport problem",
+
+  "final-title": "Final at the Russian University of Transport",
+  "final-day": "Day",
+  "final-text-1": "The final round of the Interuniversity Transport Project Competition will take place in Moscow at the Russian University of Transport from October 29 to 31, 2025. Over the course of three intensive days, participants of the international track will go through the entire project development process — from initial problem analysis to presenting a final solution.",
+  "final-text-2": "Unlike teams in the national track, who undergo a preliminary selection phase, international teams are invited directly to the final. Upon arrival, they will receive a case based on a current challenge in the transport industry and begin working on its solution. The competition venue will be equipped with basic prototyping tools — from computers to 3D printers and hand tools. However, we encourage teams to begin preparing in advance: you can already start developing your concept, exploring the case, and gathering materials that may be useful in Moscow. This early preparation will help you move quickly to implementation on site and make the most of your time during the competition.",
+  "final-text-3": "The case for the international track is available on this website. Review it carefully — your competition journey begins with this real-world problem. All additional support, including consultations with industry experts, will be provided during the final days.",
+  "final-text-4": "You will experience three days of deep engagement with a real industry challenge, collaborative teamwork, expert dialogue, and ultimately, the presentation of your solution. Welcome to the final!",
+
+  "methodology-title": "How the final works in the international track",
+  "methodology-text-1": "Project-based learning is a modern methodology for tackling real-world problems. It helps students develop the ability to analyze complex situations, propose well-founded solutions, and collaborate effectively in teams. At the Russian University of Transport, a structured system of tools has been developed through years of experience. This system guides students step by step — from analyzing the situation to building a functional prototype.",
+  "methodology-text-2": "The methodology is focused on cultivating professional thinking. It teaches students to identify contradictions, formulate and test hypotheses, and critically evaluate outcomes. Each project is built around an actual problem from the industry. The case is provided by a corporate partner, and students are tasked with finding and presenting a viable solution within a clearly defined framework.",
+  "methodology-text-3": "During the final, your team will follow each stage of the project journey — and what matters is not just the final result, but how you arrive at it. We assess more than just the solution: we evaluate the entire process — how your team thought through the problem, made decisions, and handled uncertainty.",
+  "methodology-quote": "We are sharing with you short videos that explain the key steps of project work. These videos were originally recorded for participants of the main track, so you might hear phrases like “download the template” or “fill out the presentation.” International track participants can disregard these parts — please follow the instructions on this page.",
+
+  "m1-accordion-title": "SITUATION ANALYSIS",
+  "m1-accordion-video": "https://course.emiit.ru/webtutor/ivan/land/video/international/en/video1.mp4",
+  "m1-accordion-text-1": "The first step in working on a project is analyzing the problem situation. At this stage, the team becomes familiar with the industry case and begins to explore which processes, stakeholders, and conditions contribute to the emergence and development of the problem.",
+  "m1-accordion-text-2": "To support this analysis, visual tools such as a stakeholder map are used. This tool helps identify who is involved in the situation, what interests and goals each party has, and how they interact with one another. It allows you to understand whose interests are affected and who will be impacted by a potential solution.",
+  "m1-accordion-text-3": "Understanding the structure of the situation and the relationships between its participants will help you narrow the focus of your project, identify potential risks, and prepare for the next stage — a deeper investigation into the root cause of the problem."
+}

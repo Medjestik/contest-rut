@@ -1,0 +1,135 @@
+.i-methodology{
+  width: 100%;
+  margin: 80px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.i-methodology__title {
+  margin: 0;
+  max-width: 60%;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  z-index: 2;
+}
+
+.i-methodology__block {
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.i-methodology__block_type_1 {
+  top: -60px;
+  right: 360px;
+  width: 240px;
+  height: 240px;
+  background-image: url('../../../../shared/images/int/block-1.svg');
+  transform: scaleX(-1);
+}
+
+.i-methodology__block_type_2 {
+  top: 140px;
+  right: 440px;
+  width: 240px;
+  height: 240px;
+  background-image: url('../../../../shared/images/int/block-2.svg');
+  transform: scaleX(-1);
+}
+
+.i-methodology__container {
+  width: 100%;
+  margin: 60px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  z-index: 2;
+}
+
+.i-methodology__text-container {
+  margin: 0;
+  width: 100%;
+  max-width: calc(100% - 422px - 80px);
+  padding: 42px 44px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--white-color);
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.i-methodology__text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.15;
+  color: #010315;
+}
+
+.i-methodology__img {
+  position: absolute;
+  top: -80px;
+  right: 0;
+  width: 826px;
+  height: 1239px;
+  background-image: url('../../../../shared/images/int/methodology.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.i-methodology__quote {
+  margin: 0;
+  position: absolute;
+  top: 340px;
+  right: 0;
+  width: 422px;
+  height: fit-content;
+  padding: 32px 26px;
+  box-sizing: border-box;
+  background-color: #3705AE;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.15;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.i-methodology__quote::after {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 44px;
+  width: 0;
+  height: 0;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  border-bottom: 32px solid #3705AE;
+}
+
+.i-methodology__accordion {
+  width: 100%;
+  margin: 60px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+

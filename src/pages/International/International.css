@@ -1,0 +1,38 @@
+.international {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 32px 0 2000px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(to bottom, #6B1DFF 19%, #220A78 98%);
+  overflow-x: hidden;
+}
+
+.international__container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@media all and (max-width: 1440px) {
+  .international__container {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .international {
+    padding: 16px 0 0 0;
+  }
+  .international__container {
+    padding: 0;
+  }
+}

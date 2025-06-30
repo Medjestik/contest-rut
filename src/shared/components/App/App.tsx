@@ -9,6 +9,7 @@ import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 
 import Landing from '../../../pages/Landing/Landing';
 import History from '../../../pages/History/History';
+import International from '../../../pages/International/International';
 import Preloader from '../Preloader/ui/Preloader';
 import { EROUTES } from '../../utils/ERoutes';
 import { initialTeam, CurrentTeamContext } from '../../context/team';
@@ -122,6 +123,7 @@ function App() {
           :
           <Routes>
             <Route path={EROUTES.LANDING} element={<Landing onLogin={openLoginPopup} windowWidth={windowWidth} />} />
+            <Route path={EROUTES.INTERNATIONAL} element={<International windowWidth={windowWidth} />} />
             <Route path={EROUTES.HISTORY} element={<History windowWidth={windowWidth} />} />
             {
               loggedIn &&

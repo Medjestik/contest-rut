@@ -1,0 +1,123 @@
+.i-header {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.i-header__logo {
+  margin: 0 56px 0 0;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+}
+
+.i-header__nav {
+  margin: 0;
+  width: 100%;
+}
+
+.i-header__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 44px;
+}
+
+.i-header__item {
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--white-color);
+  transition: all .3s ease-in-out;
+}
+
+.i-header__item:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.i-header__button {
+  margin: 0 0 0 auto;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  background-color: var(--white-color);
+  color: var(--title-color);
+  flex-shrink: 0;
+  transition: all .3s ease-in-out;
+}
+
+.i-header__button:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.i-header__lang {
+  margin: auto 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.i-header__lang-item {
+  margin: 0;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  border-right: 1px solid var(--white-color);
+  transition: all .3s ease-in-out;
+}
+
+.i-header__lang-item:hover {
+  cursor: pointer;
+}
+
+.i-header__lang-item:last-of-type {
+  border-right: none;
+}
+
+.i-header__lang-item.active {
+  background-color: var(--white-color);
+  color: #33284C;
+}
+
+@media all and (max-width: 1000px) {
+  .i-header {
+    margin: 0 16px;
+    padding: 0;
+    width: calc(100% - 32px);
+  }
+  .i-header__nav {
+    display: none;
+  }
+  .i-header__logo {
+    margin: 0 24px 0 0;
+    width: 32px;
+    height: 32px;
+  }
+  .i-header__button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+  .i-header__item {
+    font-size: 16px;
+    line-height: 1;
+  }
+}

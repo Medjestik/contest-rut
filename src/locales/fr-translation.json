@@ -1,0 +1,39 @@
+{
+  "title": "Concours interuniversitaire de projets en transport",
+  "nav": ["À propos", "Méthodologie", "Mission", "Documents", "Contacts"],
+  "main-button": "En savoir plus",
+  "main-tag-1": "soutenance",
+  "main-tag-2": "5+ pays participants",
+  "main-tag-3": "analyse",
+  "main-tag-4": "prototype",
+  "main-tag-5": "Moscou, 29-31 octobre",
+  "main-tag-6": "un problème réel",
+
+  "description-title": "Qu’est-ce que le concours de projets?",
+  "description-text-1": "Il s’agit d’un nouveau format de concours étudiant dans lequel des équipes travaillent sur de véritables problématiques du secteur des transports.",
+  "description-text-2": "En suivant pas à pas les étapes de la démarche projet, vous devrez analyser une situation problématique, mener une courte enquête, proposer une solution innovante et en présenter un prototype aux experts. C’est un exercice intensif mais extrêmement formateur, qui vous prépare aux défis de votre future carrière, vous aide à mieux comprendre le secteur et à acquérir une expérience très recherchée par les employeurs.",
+  "description-text-3": "Consultez les ressources disponibles sur cette page pour vous préparer au concours",
+  "description-tag-1": "pratique",
+  "description-tag-2": "expérience",
+  "description-tag-3": "compétitions",
+  "description-tag-4": "problème de transport",
+
+  "final-title": "Finale à l’Université russe des transports",
+  "final-day": "Jour",
+  "final-text-1": "La finale du Concours interuniversitaire de projets en transport se tiendra à Moscou, sur le campus de l’Université russe des transports, du 29 au 31 octobre 2025. C’est ici que, pendant trois jours intenses, les équipes du parcours international suivront l’intégralité du processus de projet — de l’analyse initiale de la situation à la présentation de la solution finale.",
+  "final-text-2": "Contrairement aux équipes du parcours national, qui passent par une phase de sélection, les équipes du parcours international sont invitées directement à la finale. Elles recevront un cas concret représentant un problème actuel dans le secteur des transports, et commenceront à travailler à sa résolution. Le site de la finale disposera de l’équipement de base nécessaire pour le prototypage — des ordinateurs, des imprimantes 3D, des outils de travail, etc. Cependant, nous recommandons de commencer les préparatifs à l’avance : dès maintenant, vous pouvez réfléchir à votre concept, analyser le problème et réunir les matériaux qui pourront être utiles à Moscou. Cela vous permettra de passer plus rapidement à la réalisation sur place et d’utiliser le temps de manière optimale.",
+  "final-text-3": "La description du problème pour le parcours international est disponible sur ce site. Consultez-la attentivement — c’est à partir de cette situation concrète que débutera votre concours. Tout le soutien complémentaire, y compris les consultations d’experts, sera disponible pendant les jours de la finale.",
+  "final-text-4": "Trois jours d’immersion complète dans une problématique réelle du secteur vous attendent : travail en équipe, échanges avec des experts et, bien sûr, soutenance de votre projet. Bienvenue en finale!",
+
+  "methodology-title": "COMMENT SE DÉROULE LA FINALE DU PARCOURS INTERNATIONAL DU CONCOURS",
+  "methodology-text-1": "La démarche de projet est une méthodologie moderne de résolution de problèmes réels. Elle permet aux étudiants de développer leur capacité à analyser des situations complexes, proposer des solutions argumentées et travailler en équipe.",
+  "methodology-text-2": "À l’Université russe des transports, une boîte à outils complète a été élaborée à partir d’années de pratique, afin d’accompagner pas à pas la compréhension d’une situation problématique, depuis l’analyse initiale jusqu’à la création d’un prototype finalisé. Cette méthodologie est centrée sur le développement de la pensée professionnelle : elle apprend aux étudiants à identifier les contradictions, formuler des hypothèses solides, les tester et évaluer les résultats.",
+  "methodology-text-3": "Chaque projet repose sur un problème réel du secteur, formulé par un partenaire industriel. En suivant une structure claire, les étudiants conçoivent et présentent leur solution. Lors de la finale, votre équipe devra parcourir toutes les étapes de la démarche projet. Ce n’est pas seulement le résultat qui est évalué, mais tout le cheminement : comment l’équipe a réfléchi, pris des décisions et géré les incertitudes. Nous partageons avec vous de courtes vidéos expliquant les étapes clés de la démarche projet. Ces vidéos ont été enregistrées pour les participants du parcours principal, c’est pourquoi vous y entendrez parfois des phrases comme « téléchargez le modèle » ou « remplissez la présentation ».",
+  "methodology-quote": "Les participants du parcours international n’ont pas à en tenir compte — référez-vous aux consignes présentes sur cette page.",
+
+  "m1-accordion-title": "ANALYSE DE LA SITUATION",
+  "m1-accordion-video": "https://course.emiit.ru/webtutor/ivan/land/video/international/fr/video1.mp4",
+  "m1-accordion-text-1": "La première étape d’un projet est l’analyse de la situation problématique. À ce stade, l’équipe prend connaissance du cas proposé par le secteur et commence à comprendre quels processus, acteurs et conditions influencent l’apparition et le développement du problème.",
+  "m1-accordion-text-2": "Pour cela, des outils visuels comme la carte des parties prenantes sont utilisés. Elle vous permet d’identifier qui sont les acteurs impliqués, quels sont leurs objectifs et leurs intérêts, et comment ils interagissent entre eux. Cela aide à comprendre qui est affecté et qui pourrait l’être par une solution potentielle.",
+  "m1-accordion-text-3": "Comprendre la structure de la situation et les relations entre ses acteurs vous permettra de mieux cibler votre projet, de définir les zones à risque, et de vous préparer à l’étape suivante — une analyse approfondie des causes du problème."
+}
