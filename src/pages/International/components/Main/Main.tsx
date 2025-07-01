@@ -8,8 +8,6 @@ const Main = () => {
 
   const { t } = useTranslation();
 
-
-
   return (
     <div className='i-main'>
       <div className='i-main__container'>

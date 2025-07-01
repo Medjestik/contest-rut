@@ -1,5 +1,7 @@
 import { type FC, useState, useRef, useEffect } from 'react';
 
+import poster from '../../../../shared/images/poster.png';
+
 import './MethodologyAccordion.css';
 
 interface IMethodologyAccordionProps {
@@ -38,20 +40,25 @@ const MethodologyAccordion: FC<IMethodologyAccordionProps> = ({ count, title, vi
         <div className='methodology-accordion__icon'></div>
       </div>
       <div style={{ maxHeight: `${height}` }} ref={childrenRef} className='methodology-accordion__children'>
-      <div className='methodology-accordion-video'>
-        <video
-          src={video}
-          loop
-          controls
-          playsInline
-          className='methodology-accordion-video__element'
-        />
-      </div>
-        {
-          content.map((text, i) => (
-            <p className='methodology-accordion__text' key={i}>{text}</p>
-          ))
-        }
+        <div className={`methodology-accordion__children-img methodology-accordion__children-img_type_${count}`}></div>
+        <div className='methodology-accordion-video'>
+          <video
+            src={video}
+            poster={poster}
+            loop
+            controls
+            playsInline
+            className='methodology-accordion-video__element'
+          />
+        </div>
+        <div className='methodology-accordion__text-container'>
+          {
+            content.map((text, i) => (
+              <p className='methodology-accordion__text' key={i}>{text}</p>
+            ))
+          }
+        </div>
+
         
       </div>
     </li>

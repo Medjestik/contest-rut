@@ -48,44 +48,53 @@ const Final = () => {
         >
           <div className='i-final__item'>
             <div className='i-final__item-media'>
-              <div className='i-final__item-content-img' />
-              <div className='i-final__item-content-img' />
-              <div className='i-final__item-content-img' />
-            </div>
-            <div className='i-final__item-content'>
-              <p className='i-final__item-text'>{t('final-text-1')}</p>
-              <p className='i-final__item-text'>{t('final-text-2')}</p>
-              <p className='i-final__item-text'>{t('final-text-3')}</p>
-              <p className='i-final__item-text'>{t('final-text-4')}</p>
-            </div>
-          </div>
-          <div className='i-final__item'>
-            <div className='i-final__item-media'>
-              <div className='i-final__item-content-img' />
-              <div className='i-final__item-content-img' />
-              <div className='i-final__item-content-img' />
-            </div>
-            <div className='i-final__item-content'>
-              <p className='i-final__item-text'>{t('final-text-1')}</p>
-              <p className='i-final__item-text'>{t('final-text-2')}</p>
-              <p className='i-final__item-text'>{t('final-text-3')}</p>
-              <p className='i-final__item-text'>{t('final-text-4')}</p>
+              <div className='i-final__item-content-img i-final__item-content-img_type_1'>
+                <div className='i-final__item-content-tag i-final__item-content-tag_type_1'>{t('final-tag-1')}</div>
+              </div>
+              <div className='i-final__item-content-img i-final__item-content-img_type_2'>
+                <div className='i-final__item-content-tag i-final__item-content-tag_type_2'>{t('final-tag-2')}</div>
+                <div className='i-final__item-content-tag i-final__item-content-tag_type_3'>{t('final-tag-3')}</div>
+              </div>
+              <div className='i-final__item-content-img i-final__item-content-img_type_3'>
+                <div className='i-final__item-content-tag i-final__item-content-tag_type_4'>{t('final-tag-4')}</div>
+              </div>
             </div>
           </div>
           <div className='i-final__item'>
             <div className='i-final__item-media'>
-              <div className='i-final__item-content-img' />
-              <div className='i-final__item-content-img' />
-              <div className='i-final__item-content-img' />
+              <div className='i-final__item-content-img i-final__item-content-img_type_4'>
+                <div className='i-final__item-content-tag i-final__item-content-tag_type_5'>{t('final-tag-5')}</div>
+                <div className='i-final__item-content-tag i-final__item-content-tag_type_6'>{t('final-tag-6')}</div>
+              </div>
+              <div className='i-final__item-content-img i-final__item-content-img_type_5'>
+                <div className='i-final__item-content-tag i-final__item-content-tag_type_7'>{t('final-tag-7')}</div>
+                <div className='i-final__item-content-tag i-final__item-content-tag_type_8'>{t('final-tag-8')}</div>
+              </div>
+              <div className='i-final__item-content-img i-final__item-content-img_type_6'>
+                <div className='i-final__item-content-tag i-final__item-content-tag_type_9'>{t('final-tag-9')}</div>
+              </div>
             </div>
-            <div className='i-final__item-content'>
-              <p className='i-final__item-text'>{t('final-text-1')}</p>
-              <p className='i-final__item-text'>{t('final-text-2')}</p>
-              <p className='i-final__item-text'>{t('final-text-3')}</p>
-              <p className='i-final__item-text'>{t('final-text-4')}</p>
+          </div>
+          <div className='i-final__item'>
+            <div className='i-final__item-media'>
+              <div className='i-final__item-content-img i-final__item-content-img_type_7'>
+                <div className='i-final__item-content-tag i-final__item-content-tag_type_10'>{t('final-tag-10')}</div>
+              </div>
+              <div className='i-final__item-content-img i-final__item-content-img_type_8'>
+                <div className='i-final__item-content-tag i-final__item-content-tag_type_11'>{t('final-tag-11')}</div>
+              </div>
+              <div className='i-final__item-content-img i-final__item-content-img_type_9'>
+                <div className='i-final__item-content-tag i-final__item-content-tag_type_12'>{t('final-tag-12')}</div>
+              </div>
             </div>
           </div>
         </Carousel>
+        <div className='i-final__item-content'>
+          <p className='i-final__item-text'>{t('final-text-1')}</p>
+          <p className='i-final__item-text'>{t('final-text-2')}</p>
+          <p className='i-final__item-text'>{t('final-text-3')}</p>
+          <p className='i-final__item-text'>{t('final-text-4')}</p>
+        </div>
       </div>
     </div>
   );

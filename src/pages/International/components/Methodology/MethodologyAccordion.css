@@ -83,36 +83,90 @@
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
   transition: max-height 0.3s ease;
 }
+.methodology-accordion__children-img {
+  position: absolute;
+  width: 280px;
+  height: 600px;
+  top: 0;
+  right: 20px;
+  z-index: 1;
+}
+.methodology-accordion__children-img_type_1 {
+  background-image: url('../../../../shared/images/int/m-1.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.methodology-accordion__children-img_type_2 {
+  background-image: url('../../../../shared/images/int/m-2.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.methodology-accordion__children-img_type_3 {
+  background-image: url('../../../../shared/images/int/m-1.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.methodology-accordion__children-img_type_4 {
+  background-image: url('../../../../shared/images/int/m-1.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.methodology-accordion__children-img_type_5 {
+  background-image: url('../../../../shared/images/int/m-1.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.methodology-accordion__text-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .methodology-accordion__text {
-  margin: 20px 0 0 0;
+  margin: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 1.15;
   color: var(--title-color);
 }
 
 .methodology-accordion-video {
-  margin: 40px 0 0 0;
-  width: 100%;
+  margin: 20px 0 0 0;
+  width: 925px;
+  height: 510px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  border-radius: 20px;
   position: relative;
-  overflow-y: hidden;
+  z-index: 2;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 
 .methodology-accordion-video__element {
-  margin: -2px 0 0 0;
-  max-width: 1440px;
-  width: 100%;
-  height: 600px;
-  border-radius: 20px;
+  margin: 0;
+  width: 925px;
+  height: 510px;
+  object-fit: cover;
   display: block;
   position: relative;
-  z-index: 1;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
 }
 
 .methodology-accordion-video::after {

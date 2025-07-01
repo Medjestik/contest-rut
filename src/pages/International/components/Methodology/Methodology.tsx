@@ -16,6 +16,26 @@ const Methodology:FC = () => {
       video: t('m1-accordion-video'), 
       content: [t('m1-accordion-text-1'), t('m1-accordion-text-2'), t('m1-accordion-text-3')],
     },
+    {
+      title: t('m2-accordion-title'), 
+      video: t('m2-accordion-video'), 
+      content: [t('m2-accordion-text-1'), t('m2-accordion-text-2'), t('m2-accordion-text-3')],
+    },
+    {
+      title: t('m3-accordion-title'), 
+      video: t('m3-accordion-video'), 
+      content: [t('m3-accordion-text-1'), t('m3-accordion-text-2'), t('m3-accordion-text-3'), t('m3-accordion-text-4')],
+    },
+    {
+      title: t('m4-accordion-title'), 
+      video: t('m4-accordion-video'), 
+      content: [t('m4-accordion-text-1'), t('m4-accordion-text-2'), t('m4-accordion-text-3'), t('m4-accordion-text-4'), t('m4-accordion-text-5')],
+    },
+    {
+      title: t('m5-accordion-title'), 
+      video: t('m5-accordion-video'), 
+      content: [t('m5-accordion-text-1'), t('m5-accordion-text-2'), t('m5-accordion-text-3'), t('m5-accordion-text-4')],
+    },
   ];
 
   return (
@@ -35,7 +55,7 @@ const Methodology:FC = () => {
       <ul className='i-methodology__accordion'>
         {
           data.map((item, i) => (
-            <MethodologyAccordion count={i + 1} title={item.title} video={item.video} content={item.content} />
+            <MethodologyAccordion key={i} count={i + 1} title={item.title} video={item.video} content={item.content} />
           ))
         }
       </ul>
