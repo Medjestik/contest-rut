@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.0a07cadb.css",
-    "main.js": "/static/js/main.e99d153e.js",
+    "main.css": "/static/css/main.d53738ff.css",
+    "main.js": "/static/js/main.9d26f9ab.js",
     "static/js/453.7ce295cc.chunk.js": "/static/js/453.7ce295cc.chunk.js",
     "static/media/main-img.png": "/static/media/main-img.ab3b66bb6a901ce85830.png",
     "static/media/main.svg": "/static/media/main.ef102666a7ab60bdce7e.svg",
-    "static/media/m-2.svg": "/static/media/m-2.454de77e882b93f54354.svg",
+    "static/media/m-5.svg": "/static/media/m-5.b8c9718d875f53fb9e31.svg",
+    "static/media/m-2.svg": "/static/media/m-2.c3e7af92fd024e2f5cc0.svg",
     "static/media/methodology.svg": "/static/media/methodology.dca9e5f51341d654b218.svg",
     "static/media/final-7.jpg": "/static/media/final-7.cc8f92b3a66c325eeeef.jpg",
     "static/media/description.svg": "/static/media/description.831a3731e6615b40fadf.svg",
-    "static/media/m-1.svg": "/static/media/m-1.20aca3e124d57750b7d8.svg",
+    "static/media/m-1.svg": "/static/media/m-1.ca4adc87e61444aa045b.svg",
+    "static/media/m-4.svg": "/static/media/m-4.edf40a82843bb82a9a3d.svg",
+    "static/media/i-poster.svg": "/static/media/i-poster.fba7ce10e7cffdf94a63a33163f5624c.svg",
+    "static/media/task.svg": "/static/media/task.2b0ef4bc498f24e5cb81.svg",
+    "static/media/m-3.svg": "/static/media/m-3.f0fcc59c8a802c5d12d2.svg",
     "static/media/background.png": "/static/media/background.c0c98a943ac2d498274a.png",
     "static/media/final-8.jpg": "/static/media/final-8.1fac7aa19cc132698a08.jpg",
     "static/media/final-3.jpg": "/static/media/final-3.2f8a4e48a4ceace91789.jpg",
@@ -39,11 +44,11 @@
     "static/media/final-6.png": "/static/media/final-6.204915b45fb93534da58.png",
     "static/media/news4.png": "/static/media/news4.f5a1345ea443974c671e.png",
     "static/media/recruitment-img.jpg": "/static/media/recruitment-img.4c422d736060f7023f20.jpg",
-    "static/media/poster.png": "/static/media/poster.0d47aa7ebb75484b529e.png",
     "static/media/news3.png": "/static/media/news3.382b991a9e539826870d.png",
     "static/media/case2.png": "/static/media/case2.815c88f07558a3c7c5fe.png",
     "static/media/stage-moscow.jpg": "/static/media/stage-moscow.3a8e4ad0b0b477f88282.jpg",
     "static/media/news1.png": "/static/media/news1.51f90e1f24f61084ec60.png",
+    "static/media/fesco.svg": "/static/media/fesco.146c4fe31dba23707c14.svg",
     "static/media/wb.svg": "/static/media/wb.fc14c6c306713786ad16bca6e976b386.svg",
     "static/media/wb-white.svg": "/static/media/wb-white.f9335e579133a69e633e2ce690f98c90.svg",
     "static/media/about.png": "/static/media/about.a1083443a908486941b9.png",
@@ -78,12 +83,12 @@
     "static/media/icon.svg": "/static/media/icon.9525a7560bf2bc227eeb9bf8a149b621.svg",
     "index.html": "/index.html",
     "static/media/line.svg": "/static/media/line.b05c0e2b901f71d7124a.svg",
-    "main.0a07cadb.css.map": "/static/css/main.0a07cadb.css.map",
-    "main.e99d153e.js.map": "/static/js/main.e99d153e.js.map",
+    "main.d53738ff.css.map": "/static/css/main.d53738ff.css.map",
+    "main.9d26f9ab.js.map": "/static/js/main.9d26f9ab.js.map",
     "453.7ce295cc.chunk.js.map": "/static/js/453.7ce295cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a07cadb.css",
-    "static/js/main.e99d153e.js"
+    "static/css/main.d53738ff.css",
+    "static/js/main.9d26f9ab.js"
   ]
 }

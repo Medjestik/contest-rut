@@ -18,11 +18,11 @@ const Header = () => {
       <img className='i-header__logo' src={icon} alt='лого'></img>
       <nav className='i-header__nav'>
         <div className='i-header__list'>
-          <Link className='i-header__item' to='stages' smooth={true} offset={0} duration={500} spy={true}>{t('nav.0')}</Link>
-          <Link className='i-header__item' to='cases' smooth={true} offset={-40} duration={750} spy={true}>{t('nav.1')}</Link>
-          <Link className='i-header__item' to='final' smooth={true} offset={0} duration={1000} spy={true}>{t('nav.2')}</Link>
-          <Link className='i-header__item' to='prize' smooth={true} offset={-40} duration={1250} spy={true}>{t('nav.3')}</Link>
-          <Link className='i-header__item' to='news' smooth={true} offset={-40} duration={1750} spy={true}>{t('nav.4')}</Link>
+          <Link className='i-header__item' to='description' smooth={true} offset={-20} duration={500} spy={true}>{t('nav.0')}</Link>
+          <Link className='i-header__item' to='methodology' smooth={true} offset={-40} duration={750} spy={true}>{t('nav.1')}</Link>
+          <Link className='i-header__item' to='task' smooth={true} offset={0} duration={1000} spy={true}>{t('nav.2')}</Link>
+          <Link className='i-header__item' to='document' smooth={true} offset={-40} duration={1250} spy={true}>{t('nav.3')}</Link>
+          <Link className='i-header__item' to='footer' smooth={true} offset={-40} duration={1750} spy={true}>{t('nav.4')}</Link>
         </div>
       </nav>
       <ul className='i-header__lang'>

@@ -74,7 +74,7 @@
   "m5-accordion-video": "https://course.emiit.ru/webtutor/ivan/land/video/international/en/video5.mp4",
   "m5-accordion-text-1": "The final stage of the competition is the presentation of your project. This is not just about showcasing the result — it’s an opportunity to walk the audience through the entire journey your team has taken: how you thought, made decisions, and worked through uncertainty. The focus is not only on what you achieved, but how you arrived at it.",
   "m5-accordion-text-2": "Each team is required to prepare a project presentation lasting up to 7 minutes. The emphasis should be on your thinking process, not just the final product. This format allows the experts to assess both the outcome and the depth of your team’s reasoning.",
-  "m5-accordion-text-3": "To ensure clarity and coherence, we recommend including the following key components: 1 The product. Present your prototype, model, or concept, if available. 2 Situation analysis. Briefly describe the problem you studied and who it affects. What insights did you gain from working with the stakeholder map? 3 Problem interviews. Share what you discovered from users and experts. What root causes did you identify? Were there any unexpected perspectives that changed your understanding of the issue? 4 Solution idea. Explain your solution and why it’s the most fitting approach. How does it address the core causes you uncovered? 5 Prototyping. Talk about how you planned your work, what requirements you set, and how far your team progressed in bringing the solution to life.",
+  "m5-accordion-text-3": "To ensure clarity and coherence, we recommend including the following key components: \n1 The product. Present your prototype, model, or concept, if available. \n2 Situation analysis. Briefly describe the problem you studied and who it affects. What insights did you gain from working with the stakeholder map? \n3 Problem interviews. Share what you discovered from users and experts. What root causes did you identify? Were there any unexpected perspectives that changed your understanding of the issue? \n4 Solution idea. Explain your solution and why it’s the most fitting approach. How does it address the core causes you uncovered? \n5 Prototyping. Talk about how you planned your work, what requirements you set, and how far your team progressed in bringing the solution to life.",
   "m5-accordion-text-4": "This presentation is not a dry report — it’s a story, and at the center of that story is your team: your thinking, your process, your decisions. We value strong ideas, but even more — a clear and honest narrative of exploration, doubts, turns, and insights. Don’t be afraid to show how you thought. That is the true power of project-based thinking.",
 
   "faq-title": "Frequently asked questions",
@@ -91,5 +91,17 @@
   "f6-accordion-title": "What will the jury evaluate?",
   "f6-accordion-text": "The jury will assess the depth of your situation analysis, the quality of your stakeholder interviews, the logic and justification behind your solution, the completeness of your prototype, and the overall coherence of your team’s approach.",
   "f7-accordion-title": "Where can we see what the competition looked like last year?",
-  "f7-accordion-text": "We’ve prepared a dedicated page showcasing highlights and results from last year’s contest."
+  "f7-accordion-text": "We’ve prepared a dedicated page showcasing highlights and results from last year’s contest.",
+
+  "task-title": "Problem",
+  "task-text-1": "The FESCO Transport Group is one of the largest Russian transport and logistics companies. It performs container transportation by sea, rail, and road transport. FESCO owns its own fleet, the Vladivostok Sea Commercial Port, railway rolling stock, a container fleet, and terminal complexes in Novosibirsk, Khabarovsk, Vladivostok, and Tomsk.",
+  "task-text-2": "FESCO, represented by the Head of the Marine Sales Sector, wants to speed up the process of transferring refrigerated containers from railway platforms to container ships and back, but faces a number of difficulties. Currently, the procedure for coordinating and transmitting information between the three company departments responsible for different logistics directions takes too much time and leads to additional costs for connecting containers in the port and their storage. Another consequence of the prolonged container transfer process is the risk of missing the queue for loading onto a container ship or at the sorting railway station, which results in container downtime at the port until the next possible shipment.",
+
+  "document-title": "documents",
+  "document-guideline": "Competition Guidelines",
+  "document-rules": "Rules and Regulations",
+
+  "footer-title": "Subscribe",
+  "footer-subtitle": "to the competition's Telegram channel so as not to miss the new season",
+  "footer-copy": "All rights reserved Russian University of Transport"
 }

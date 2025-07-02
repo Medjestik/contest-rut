@@ -1,0 +1,91 @@
+.i-task {
+  width: 100%;
+  margin: 80px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.i-task__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.i-task__text-container {
+  margin: 40px 0 0 0;
+  padding: 42px 44px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--white-color);
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 60%;
+  z-index: 2;
+  position: relative;
+}
+
+.i-task__text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.15;
+  color: #010315;
+}
+
+.i-task__text-icon {
+  position: absolute;
+  bottom: -30px;
+  right: -60px;
+  width: 246px;
+  height: 57px;
+  border-radius: 30px;
+  background-color: #230B79;
+  background-image: url('../../../../shared/images/int/fesco.svg');
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  transform: rotate(-6deg);
+  outline: none;
+}
+
+.i-task__img {
+  position: absolute;
+  top: 0;
+  right: -80px;
+  width: 750px;
+  height: 750px;
+  background-image: url('../../../../shared/images/int/task.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media all and (max-width: 1439px) {
+  .i-task__title {
+    font-size: 56px;
+  }
+  
+.i-task__text-container {
+  margin: 20px 0 0 0;
+  padding: 22px 24px;
+  border-radius: 20px;
+  gap: 12px;
+  max-width: 60%;
+}
+  .i-task__text {
+    font-size: 20px;
+  }
+  .i-task__img {
+    top: 0;
+    right: -40px;
+    width: 560px;
+    height: 560px;
+  }
+}
+

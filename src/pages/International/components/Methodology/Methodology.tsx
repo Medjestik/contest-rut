@@ -39,7 +39,7 @@ const Methodology:FC = () => {
   ];
 
   return (
-    <div className='i-methodology'>
+    <div className='i-methodology' id='methodology'>
       <h2 className='i-methodology__title'>{t('methodology-title')}</h2>
       <div className='i-methodology__block i-methodology__block_type_1'></div>
       <div className='i-methodology__block i-methodology__block_type_2'></div>
@@ -63,4 +63,4 @@ const Methodology:FC = () => {
   );
 };
 
-export default Methodology; 
+export default Methodology;

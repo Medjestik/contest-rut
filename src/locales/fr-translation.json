@@ -74,7 +74,7 @@
   "m5-accordion-video": "https://course.emiit.ru/webtutor/ivan/land/video/international/fr/video5.mp4",
   "m5-accordion-text-1": "La phase finale de la compétition est la présentation de votre travail. Il ne s’agit pas seulement de montrer le résultat, mais de raconter le chemin parcouru : comment votre équipe a réfléchi, pris des décisions et surmonté les incertitudes. L’accent est mis non seulement sur ce que vous avez fait, mais aussi sur la manière dont vous y êtes parvenus.",
   "m5-accordion-text-2": "Chaque équipe doit préparer une présentation de son projet d’une durée maximale de 7 minutes. L’objectif principal est de mettre en lumière votre démarche de réflexion, et pas uniquement le produit final. Ce format permet aux experts d’évaluer non seulement le résultat, mais aussi la profondeur de la pensée de l’équipe.",
-  "m5-accordion-text-3": "Pour que la structure de votre présentation soit claire, nous recommandons d’inclure les éléments suivants : 1 Produit : Présentez votre maquette, prototype ou concept, si vous en avez. 2 Analyse de la situation : Expliquez quel problème vous avez étudié, et qui est concerné. Quelles conclusions avez-vous tirées de votre travail avec la carte des parties prenantes ? 3 Entretien de problématisation : Partagez ce que vous avez appris auprès des experts et des utilisateurs. Quelles causes fondamentales avez-vous pu identifier ? Quels points de vue inattendus vous ont permis de mieux comprendre la situation ? 4 Idée de solution : Décrivez votre solution. Pourquoi avez-vous choisi cette approche ? En quoi répond-elle aux causes racines identifiées ? 5 Prototypage : Parlez de la mise en œuvre : quelles exigences avez-vous définies ? Comment avez-vous planifié le travail ? Jusqu’où êtes-vous parvenus ?",
+  "m5-accordion-text-3": "Pour que la structure de votre présentation soit claire, nous recommandons d’inclure les éléments suivants : \n1 Produit : Présentez votre maquette, prototype ou concept, si vous en avez. \n2 Analyse de la situation : Expliquez quel problème vous avez étudié, et qui est concerné. Quelles conclusions avez-vous tirées de votre travail avec la carte des parties prenantes ? \n3 Entretien de problématisation : Partagez ce que vous avez appris auprès des experts et des utilisateurs. Quelles causes fondamentales avez-vous pu identifier ? Quels points de vue inattendus vous ont permis de mieux comprendre la situation ? \n4 Idée de solution : Décrivez votre solution. Pourquoi avez-vous choisi cette approche ? En quoi répond-elle aux causes racines identifiées ? \n5 Prototypage : Parlez de la mise en œuvre : quelles exigences avez-vous définies ? Comment avez-vous planifié le travail ? Jusqu’où êtes-vous parvenus ?",
   "m5-accordion-text-4": "La présentation n’est pas un rapport technique, mais une histoire — et au centre de cette histoire, il y a votre équipe, sa logique et ses choix. Nous valorisons non seulement les idées fortes, mais aussi un récit sincère de vos recherches, doutes, changements de cap et conclusions. N’ayez donc pas peur de montrer comment vous avez pensé : c’est précisément cela qui révèle la puissance de la pensée projet.",
 
   "faq-title": "Questions fréquemment posées",
@@ -91,5 +91,17 @@
   "f6-accordion-title": "Quels critères le jury utilise-t-il pour évaluer les projets?",
   "f6-accordion-text": "Le jury évalue : la profondeur de l’analyse de la situation, la qualité des entretiens et de l’interaction avec les parties prenantes, la pertinence de la solution proposée, la qualité du prototype, et la logique du cheminement de l’équipe.",
   "f7-accordion-title": "Où peut-on voir comment s’est déroulée la compétition l’an dernier?",
-  "f7-accordion-text": "Nous avons créé une page dédiée aux résultats de l’année précédente."
+  "f7-accordion-text": "Nous avons créé une page dédiée aux résultats de l’année précédente.",
+
+  "task-title": "Problème",
+  "task-text-1": "Le groupe de transport FESCO est l'une des plus grandes entreprises russes de transport et de logistique. Elle effectue des transports de conteneurs par voie maritime, ferroviaire et routière. FESCO possède sa propre flotte, le port maritime commercial de Vladivostok, du matériel roulant ferroviaire, un parc de conteneurs et des complexes terminaux à Novossibirsk, Khabarovsk, Vladivostok et Tomsk.",
+  "task-text-2": "FESCO, représentée par le chef du secteur des ventes maritimes, souhaite accélérer le processus de transfert des conteneurs frigorifiques des plateformes ferroviaires aux porte-conteneurs et inversement, mais fait face à plusieurs difficultés. Actuellement, la procédure de coordination et de transmission des informations entre les trois départements de l'entreprise responsables de différentes directions logistiques prend trop de temps et entraîne des coûts supplémentaires liés à la connexion des conteneurs au port et à leur stockage. Une autre conséquence du processus de transfert prolongé des conteneurs est le risque de manquer la file d'attente pour le chargement sur le porte-conteneurs ou à la gare de triage ferroviaire, ce qui entraîne une immobilisation du conteneur au port jusqu'à la prochaine expédition possible.",
+
+  "document-title": "documents",
+  "document-guideline": "Règlement",
+  "document-rules": "Règlement intérieur",
+
+  "footer-title": "S'abonner",
+  "footer-subtitle": "sur la chaîne Telegram de la compétition pour ne pas manquer la nouvelle saison",
+  "footer-copy": " tous droits réservés Université russe des transports"
 }

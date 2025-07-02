@@ -1,6 +1,6 @@
 import { type FC, useState, useRef, useEffect } from 'react';
 
-import poster from '../../../../shared/images/poster.png';
+import poster from '../../../../shared/images/int/i-poster.svg';
 
 import './MethodologyAccordion.css';
 
@@ -52,14 +52,14 @@ const MethodologyAccordion: FC<IMethodologyAccordionProps> = ({ count, title, vi
           />
         </div>
         <div className='methodology-accordion__text-container'>
-          {
-            content.map((text, i) => (
-              <p className='methodology-accordion__text' key={i}>{text}</p>
+          {content.map((text, i) =>
+            text.split('\n').map((line, j) => (
+              <p className='methodology-accordion__text' key={`${i}-${j}`}>
+                {line}
+              </p>
             ))
-          }
+          )}
         </div>
-
-        
       </div>
     </li>
   );

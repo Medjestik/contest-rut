@@ -91,7 +91,7 @@
 }
 .methodology-accordion__children-img {
   position: absolute;
-  width: 280px;
+  width: 360px;
   height: 600px;
   top: 0;
   right: 20px;
@@ -110,19 +110,19 @@
   background-repeat: no-repeat;
 }
 .methodology-accordion__children-img_type_3 {
-  background-image: url('../../../../shared/images/int/m-1.svg');
+  background-image: url('../../../../shared/images/int/m-3.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .methodology-accordion__children-img_type_4 {
-  background-image: url('../../../../shared/images/int/m-1.svg');
+  background-image: url('../../../../shared/images/int/m-4.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .methodology-accordion__children-img_type_5 {
-  background-image: url('../../../../shared/images/int/m-1.svg');
+  background-image: url('../../../../shared/images/int/m-5.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,6 +155,7 @@
   z-index: 2;
   flex-shrink: 0;
   overflow: hidden;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 .methodology-accordion-video__element {
@@ -167,6 +168,7 @@
   box-sizing: border-box;
   border: none;
   outline: none;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 .methodology-accordion-video::after {
@@ -176,7 +178,6 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 1440px;
   height: 100%;
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.25);
@@ -184,6 +185,7 @@
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
   z-index: 2;
+  will-change: opacity;
 }
 
 .methodology-accordion-video:hover::after {
@@ -191,14 +193,38 @@
 }
 
 
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1439px) {
   .methodology-accordion__item {
     padding: 32px 36px;
   }
   .methodology-accordion__title {
     margin: 0 16px 0 0;
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 1.15;
+  }
+  .methodology-accordion__count {
+    width: 56px;
+    height: 56px;
+    font-size: 32px;
+    line-height: 1;
+  }
+  .methodology-accordion__text-container {
+    gap: 12px;
+  }
+  .methodology-accordion__text {
+    font-size: 20px;
+  }
+  .methodology-accordion-video {
+    width: 771px;
+    height: 425px;
+  }
+  .methodology-accordion-video__element {
+    width: 771px;
+    height: 425px;
+  }
+  .methodology-accordion__children-img {
+    width: 280px;
+    height: 500px;
   }
 }
 

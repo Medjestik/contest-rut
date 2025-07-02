@@ -23,6 +23,7 @@
   line-height: 1;
   text-transform: uppercase;
   color: var(--white-color);
+  z-index: 2;
 }
 
 .i-main__img {
@@ -149,6 +150,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  z-index: 2;
   transition: all .3s ease-in-out;
 }
 
@@ -157,8 +159,140 @@
   cursor: pointer;
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1439px) {
+  .i-main__container {
+    margin: 0;
+    padding: 40px 0;
+    width: 100%;
+    height: calc(100vh - 56px - 64px - 20px);
+  }
+  .i-main__title {
+    font-size: 64px;
+  }
+  .i-main__img {
+    bottom: 60px;
+    right: 0;
+    width: 480px;
+    height: 480px;
+  }
+  .i-main__button {
+    min-width: 140px;
+    font-size: 20px;
+  }
+  .i-main__tags {
+    bottom: 40px;
+  }
+  .i-main__tag {
+    height: 60px;
+    font-size: 24px;
+  }
+  .i-main__tag_type_1 {
+    bottom: 200px;
+    right: 55px;
+    width: 136px;
+  }
+  .i-main__tag_type_2 {
+    bottom: 75px;
+    right: 280px;
+    width: 304px;
+  }
+  .i-main__tag_type_3 {
+    bottom: 90px;
+    right: 140px;
+    width: 112px;
+  }
+  .i-main__tag_type_4 {
+    bottom: 130px;
+    right: 0;
+    width: 120px;
+  }
+  .i-main__tag-icon {
+    bottom: 65px;
+    right: 80px;
+    width: 60px;
+    height: 60px;
+  }
+  .i-main__tag_type_5 {
+    bottom: 0;
+    right: 300px;
+    width: 319px;
+  }
+  .i-main__tag_type_6 {
+    bottom: 0;
+    right: 0;
+    width: 272px;
+  }
 }
 
 @media all and (max-width: 1000px) {
+  .i-main {
+    margin: 0;
+    height: calc(100vh - 32px - 16px);
+  }
+  .i-main__container {
+    margin: 0;
+    padding: 40px 16px;
+    box-sizing: border-box;
+    height: calc(100vh - 32px - 16px);
+  }
+  .i-main__title {
+    font-size: 44px;
+  }
+  .i-main__img {
+    bottom: 0;
+    right: -40px;
+    width: 480px;
+    height: 480px;
+  }
+  .i-main__button {
+    width: fit-content;
+    min-width: 140px;
+    margin: 20px 0 0 0;
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  .i-main__tags {
+    bottom: 40px;
+  }
+  .i-main__tag {
+    height: 40px;
+    font-size: 16px;
+  }
+  .i-main__tag_type_1 {
+    bottom: 120px;
+    right: 55px;
+    width: 86px;
+  }
+  .i-main__tag_type_2 {
+    bottom: 50px;
+    right: 200px;
+    width: 160px;
+  }
+  .i-main__tag_type_3 {
+    bottom: 60px;
+    right: 120px;
+    width: 72px;
+  }
+  .i-main__tag_type_4 {
+    bottom: 80px;
+    right: 10px;
+    width: 80px;
+  }
+  .i-main__tag-icon {
+    bottom: 45px;
+    right: 80px;
+    width: 40px;
+    height: 40px;
+  }
+  .i-main__tag_type_5 {
+    bottom: 0;
+    right: 180px;
+    width: 180px;
+  }
+  .i-main__tag_type_6 {
+    bottom: 0;
+    right: 10px;
+    width: 160px;
+  }
 }
