@@ -51,6 +51,9 @@ const Methodology:FC = () => {
           <p className='i-methodology__text'>{t('methodology-text-2')}</p>
           <p className='i-methodology__text'>{t('methodology-text-3')}</p>
         </div>
+        <div className='i-methodology__img-mobile'>
+          <div className='i-methodology__quote-mobile'>{t('methodology-quote')}</div>
+        </div>
       </div>
       <ul className='i-methodology__accordion'>
         {

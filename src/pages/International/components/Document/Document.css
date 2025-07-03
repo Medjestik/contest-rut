@@ -29,3 +29,19 @@
     font-size: 56px;
   }
 }
+
+@media all and (max-width: 1000px) {
+  .i-document {
+    margin: 40px 0 0 0;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .i-document__title {
+    font-size: 44px;
+  }
+  .i-document__buttons {
+    margin: 20px 0 0 0;
+    gap: 20px;
+  }
+}
+

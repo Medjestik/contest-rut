@@ -8,8 +8,9 @@ const Task = () => {
 
   return (
     <div className='i-task' id='task'>
-      <h1 className='i-task__title'>{t('task-title')}</h1>
+      <h2 className='i-task__title'>{t('task-title')}</h2>
       <div className='i-task__text-container'>
+        <h2 className='i-task__mobile-title'>{t('task-title')}</h2>
         <p className='i-task__text'>{t('task-text-1')}</p>
         <p className='i-task__text'>{t('task-text-2')}</p>
         <div className='i-task__text-icon'></div>

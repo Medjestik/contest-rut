@@ -157,7 +157,7 @@
 
 @media all and (max-width: 1000px) {
   .i-footer {
-    margin: 40px 0 0;
+    margin: 20px 0 0;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
   }

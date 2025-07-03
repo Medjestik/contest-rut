@@ -105,6 +105,9 @@
   .faq-accordion__text {
     font-size: 20px;
   }
+  .faq-accordion__link {
+    font-size: 20px;
+  }
 }
 
 @media all and (max-width: 1000px) {
@@ -118,8 +121,12 @@
     line-height: 20px;
   }
   .faq-accordion__text {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 1.15;
+  }
+  .faq-accordion__link {
+    font-size: 16px;
+    line-height: 1.15;
   }
   .faq-accordion__icon {
     margin: 0 0 0 auto;

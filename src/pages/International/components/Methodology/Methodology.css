@@ -132,6 +132,12 @@
   position: relative;
   z-index: 2;
 }
+.i-methodology__img-mobile {
+  display: none;
+}
+.i-methodology__quote-mobile {
+  display: none;
+}
 
 @media all and (max-width: 1439px) {
   .i-methodology__title {
@@ -181,6 +187,86 @@
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 28px solid #3705AE;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .i-methodology{
+    margin: 40px 0 0 0;
+  }
+  .i-methodology__title {
+    margin: 0 16px;
+    max-width: none;
+    font-size: 32px;
+  }
+  .i-methodology__container {
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .i-methodology__text-container {
+    max-width: none;
+    padding: 20px 16px;
+    gap: 12px;
+  }
+  .i-methodology__text {
+    font-size: 16px;
+  }
+  .i-methodology__img {
+    display: none;
+  }
+  .i-methodology__img-mobile {
+    display: block;
+    margin: -100px -100px 0 0;
+    position: relative;
+    width: 367px;
+    height: 551px;
+    background-image: url('../../../../shared/images/int/methodology.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  .i-methodology__quote {
+    display: none;
+  }
+  .i-methodology__quote-mobile {
+    margin: 0;
+    position: absolute;
+    top: 220px;
+    right: 80px;
+    width: 90%;
+    height: fit-content;
+    padding: 20px 16px;
+    box-sizing: border-box;
+    background-color: #3705AE;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.15;
+    color: #ffffff;
+    z-index: 2;
+  }
+  .i-methodology__quote-mobile::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 44px;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 20px solid #3705AE;
+  }
+  .i-methodology__accordion {
+    margin: -40px 0 0 0;
   }
 }
 

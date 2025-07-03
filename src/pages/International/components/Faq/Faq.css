@@ -34,5 +34,19 @@
     margin: 20px 0 0 0;
     gap: 12px;
   }
-  
+}
+
+@media all and (max-width: 1000px) {
+  .i-faq {
+    margin: 80px 0 0 0;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .i-faq__title {
+    font-size: 44px;
+  }
+  .i-faq__accordion {
+    margin: 20px 0 0 0;
+    gap: 0;
+  }
 }
