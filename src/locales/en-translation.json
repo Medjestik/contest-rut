@@ -74,7 +74,7 @@
   "m5-accordion-video": "https://course.emiit.ru/webtutor/ivan/land/video/international/en/video5.mp4",
   "m5-accordion-text-1": "The final stage of the competition is the presentation of your project. This is not just about showcasing the result — it’s an opportunity to walk the audience through the entire journey your team has taken: how you thought, made decisions, and worked through uncertainty. The focus is not only on what you achieved, but how you arrived at it.",
   "m5-accordion-text-2": "Each team is required to prepare a project presentation lasting up to 7 minutes. The emphasis should be on your thinking process, not just the final product. This format allows the experts to assess both the outcome and the depth of your team’s reasoning.",
-  "m5-accordion-text-3": "To ensure clarity and coherence, we recommend including the following key components: \n1 The product. Present your prototype, model, or concept, if available. \n2 Situation analysis. Briefly describe the problem you studied and who it affects. What insights did you gain from working with the stakeholder map? \n3 Problem interviews. Share what you discovered from users and experts. What root causes did you identify? Were there any unexpected perspectives that changed your understanding of the issue? \n4 Solution idea. Explain your solution and why it’s the most fitting approach. How does it address the core causes you uncovered? \n5 Prototyping. Talk about how you planned your work, what requirements you set, and how far your team progressed in bringing the solution to life.",
+  "m5-accordion-text-3": "To ensure clarity and coherence, we recommend including the following key components: \n1. The product. Present your prototype, model, or concept, if available. \n2. Situation analysis. Briefly describe the problem you studied and who it affects. What insights did you gain from working with the stakeholder map? \n3. Problem interviews. Share what you discovered from users and experts. What root causes did you identify? Were there any unexpected perspectives that changed your understanding of the issue? \n4. Solution idea. Explain your solution and why it’s the most fitting approach. How does it address the core causes you uncovered? \n5. Prototyping. Talk about how you planned your work, what requirements you set, and how far your team progressed in bringing the solution to life.",
   "m5-accordion-text-4": "This presentation is not a dry report — it’s a story, and at the center of that story is your team: your thinking, your process, your decisions. We value strong ideas, but even more — a clear and honest narrative of exploration, doubts, turns, and insights. Don’t be afraid to show how you thought. That is the true power of project-based thinking.",
 
   "faq-title": "Frequently asked questions",
@@ -102,6 +102,6 @@
   "document-rules": "Rules and Regulations",
 
   "footer-title": "Subscribe",
-  "footer-subtitle": "to the competition's Telegram channel so as not to miss the new season",
+  "footer-subtitle": "Follow the news of the project competitions in the Telegram channel",
   "footer-copy": "All rights reserved Russian University of Transport"
 }
