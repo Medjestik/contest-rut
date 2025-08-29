@@ -49,7 +49,7 @@ const Main = () => {
     <div className='h-main'>
       <div className='h-main__overlay'>
         <div className='h-main__container'>
-          <h1 className='h-main__title'>Межвузовские транспортные проектные соревнования</h1>
+          <h1 className='h-main__title'>Международные транспортные проектные соревнования</h1>
           <p className='h-main__subtitle'>Как это было в 2024 году</p>
           <button className='h-main__button' type='button' onClick={openPopup}>Успей на новый сезон</button>
         </div>

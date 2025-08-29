@@ -22,7 +22,7 @@ const Footer: FC<IFooterProps> = ({ windowWidth }) => {
           <a className='h-footer__social-link' href='https://t.me/contestmiit' target='_blank'>
             <img className='h-footer__social-icon' src={telegramIcon} alt={'icon'} />
           </a>
-          <span className='h-footer__social-text'>на Telegram-канал соревнований, чтобы не пропустить новый сезон</span>
+          <span className='h-footer__social-text'>Следи за новостями проектных соревнований в Telegram-канале</span>
         </div>
         <div className='h-footer__bottom'>
           {

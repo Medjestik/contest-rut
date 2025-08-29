@@ -1,10 +1,16 @@
+import type { FC } from 'react';
+
 import { useRef, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import './Final.css';
 
-const Final = () => {
+interface IFinalProps {
+  type?: string;
+}
+
+const Final: FC<IFinalProps> = ({ type = 'history'}) => {
   const carouselRef = useRef<InstanceType<typeof Carousel>>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -17,10 +23,18 @@ const Final = () => {
   };
 
   return (
-    <div className='h-final' id='final'>
+    <div className={`h-final h-final_type_${type}`} id='final'>
       <div className='h-final__container'>
         <h2 className='h-final__title'>Финал в РУТ (МИИТ)</h2>
-        <p className='h-final__subtitle'>Финал проходил в&nbsp;Российском университете транспорта и&nbsp;включал в&nbsp;себя три дня&nbsp;активной работы.</p>
+        <p className='h-final__subtitle'>
+          {
+            type === 'history'
+            ?
+            'Финал проходил в Российском университете транспорта и включал в себя три дня активной работы.'
+            :
+            'Финал пройдёт в Москве с 29 по 31 октября и будет включать 3 дня полного погружения: команды получат расширенную версию проблемы, доработают прототип, лично встретятся с представителями отраслевых компаний и представят своё решение. Вас ждёт экспозиция проектов, публичные защиты и работа в настоящем проектном режиме.'
+          }
+          </p>
         <div className='h-final__controls'>
           <div onClick={handlePrev} className='h-final__arrow h-final__arrow--left'>&#x276E;</div>
           <span className='h-final__counter'>День {currentSlide + 1}</span>

@@ -1,5 +1,5 @@
 {
-  "title": "Interuniversity Transport Project Contest",
+  "title": "International transport project contest",
   "nav": ["About", "Methodology", "Task", "Documents", "Contacts"],
   "main-button": "More",
   "main-tag-1": "presentation",
@@ -8,6 +8,7 @@
   "main-tag-4": "prototype",
   "main-tag-5": "Moscow, October 29-31",
   "main-tag-6": "real-world challenge",
+  "main-link": "Home",
 
   "description-title": "What is a Project Contest?",
   "description-text-1": "This is a new format of student competition where teams explore real-world challenges in the transport industry.",

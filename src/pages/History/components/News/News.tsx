@@ -60,7 +60,7 @@ const News: FC<INewsProps> = ({ windowWidth }) => {
             <div className='h-news__item'>
               <img className='h-news__item-img' src={news1} alt='картинка'></img>
               <h4 className='h-news__item-title'>Кейсы проверят уровень подготовки</h4>
-              <p className='h-news__item-text'>Межвузовские транспортные проектные соревнования стартовали 16 сентября. Студенты будут выполнять отраслевые задания, которые для них сделали компании-партнёры.</p>
+              <p className='h-news__item-text'>Международные транспортные проектные соревнования стартовали 16 сентября. Студенты будут выполнять отраслевые задания, которые для них сделали компании-партнёры.</p>
               <a className='h-news__item-button' target='_blank' rel='norefferer' href='https://gudok.ru/newspaper/?ID=1679917'>Читать статью</a>
             </div>
             <div className='h-news__item'>
@@ -72,24 +72,24 @@ const News: FC<INewsProps> = ({ windowWidth }) => {
             <div className='h-news__item'>
               <img className='h-news__item-img' src={news3} alt='картинка'></img>
               <h4 className='h-news__item-title'>Первые среди первых</h4>
-              <p className='h-news__item-text'>Инициатива РУТ по проведению межвузовских транспортных проектных соревнований является ярким примером того, как образовательные учреждения могут способствовать подготовке специалистов для динамично развивающейся транспортной отрасли до 2035 года и далее.</p>
+              <p className='h-news__item-text'>Инициатива РУТ по проведению международных транспортных проектных соревнований является ярким примером того, как образовательные учреждения могут способствовать подготовке специалистов для динамично развивающейся транспортной отрасли до 2035 года и далее.</p>
               <a className='h-news__item-button' target='_blank' rel='norefferer' href='https://xn--m1acd.xn--p1ai/pervye-sredi-pervyh/'>Читать статью</a>
             </div>
             <div className='h-news__item'>
               <img className='h-news__item-img' src={news4} alt='картинка'></img>
-              <h4 className='h-news__item-title'>В РУТ впервые прошли межвузовские проектные соревнования</h4>
-              <p className='h-news__item-text'>Команды транспортных вузов страны впервые встретились на площадке Российского университета транспорта для участия в межвузовских проектных соревнованиях.</p>
+              <h4 className='h-news__item-title'>В РУТ впервые прошли международные проектные соревнования</h4>
+              <p className='h-news__item-text'>Команды транспортных вузов страны впервые встретились на площадке Российского университета транспорта для участия в международных проектных соревнованиях.</p>
               <a className='h-news__item-button' target='_blank' rel='norefferer' href='https://gudok.ru/news/?ID=1685319'>Читать статью</a>
             </div>
             <div className='h-news__item'>
               <img className='h-news__item-img' src={news5} alt='картинка'></img>
               <h4 className='h-news__item-title'>Студенты транспортных вузов решили кейсы от крупных бизнес-заказчиков</h4>
-              <p className='h-news__item-text'>Межвузовские транспортные проектные соревнования – масштабный конкурс для студентов отраслевых вузов страны, организатором которого выступил РУТ (МИИТ). Цель мероприятия – подготовка молодых специалистов к решению актуальных задач в области перевозок.</p>
+              <p className='h-news__item-text'>Международные транспортные проектные соревнования – масштабный конкурс для студентов отраслевых вузов страны, организатором которого выступил РУТ (МИИТ). Цель мероприятия – подготовка молодых специалистов к решению актуальных задач в области перевозок.</p>
               <a className='h-news__item-button' target='_blank' rel='norefferer' href='https://gudok.ru/content/luchshie_praktiki/obrazovanie/1685360/?sphrase=0'>Читать статью</a>
             </div>
             <div className='h-news__item'>
               <img className='h-news__item-img' src={news6} alt='картинка'></img>
-              <h4 className='h-news__item-title'>Финал межвузовских проектных соревнований</h4>
+              <h4 className='h-news__item-title'>Финал международных проектных соревнований</h4>
               <p className='h-news__item-text'>Три дня подготовки и решения реальных задач по заказу от государственных компаний и представителей бизнеса. Атмосфера, организация, впечатления.</p>
               <a className='h-news__item-button' target='_blank' rel='norefferer' href='https://rzdtv.ru/2024/11/12/final-mezhvuzovskih-proektnyh-sorevnovanij/'>Читать статью</a>
             </div>
@@ -109,7 +109,7 @@ const News: FC<INewsProps> = ({ windowWidth }) => {
             <div className='h-news__item'>
               <img className='h-news__item-img' src={news1} alt='картинка'></img>
               <h4 className='h-news__item-title'>Кейсы проверят уровень подготовки</h4>
-              <p className='h-news__item-text'>Межвузовские транспортные проектные соревнования стартовали 16 сентября. Студенты будут выполнять отраслевые задания, которые для них сделали компании-партнёры.</p>
+              <p className='h-news__item-text'>Международные транспортные проектные соревнования стартовали 16 сентября. Студенты будут выполнять отраслевые задания, которые для них сделали компании-партнёры.</p>
               <a className='h-news__item-button' target='_blank' rel='norefferer' href='https://gudok.ru/newspaper/?ID=1679917'>Читать статью</a>
             </div>
             <div className='h-news__item'>
@@ -121,24 +121,24 @@ const News: FC<INewsProps> = ({ windowWidth }) => {
             <div className='h-news__item'>
               <img className='h-news__item-img' src={news3} alt='картинка'></img>
               <h4 className='h-news__item-title'>Первые среди первых</h4>
-              <p className='h-news__item-text'>Инициатива РУТ по проведению межвузовских транспортных проектных соревнований является ярким примером того, как образовательные учреждения могут способствовать подготовке специалистов для динамично развивающейся транспортной отрасли до 2035 года и далее.</p>
+              <p className='h-news__item-text'>Инициатива РУТ по проведению международных транспортных проектных соревнований является ярким примером того, как образовательные учреждения могут способствовать подготовке специалистов для динамично развивающейся транспортной отрасли до 2035 года и далее.</p>
               <a className='h-news__item-button' target='_blank' rel='norefferer' href='https://xn--m1acd.xn--p1ai/pervye-sredi-pervyh/'>Читать статью</a>
             </div>
             <div className='h-news__item'>
               <img className='h-news__item-img' src={news4} alt='картинка'></img>
-              <h4 className='h-news__item-title'>В РУТ впервые прошли межвузовские проектные соревнования</h4>
-              <p className='h-news__item-text'>Команды транспортных вузов страны впервые встретились на площадке Российского университета транспорта для участия в межвузовских проектных соревнованиях.</p>
+              <h4 className='h-news__item-title'>В РУТ впервые прошли международные проектные соревнования</h4>
+              <p className='h-news__item-text'>Команды транспортных вузов страны впервые встретились на площадке Российского университета транспорта для участия в международных проектных соревнованиях.</p>
               <a className='h-news__item-button' target='_blank' rel='norefferer' href='https://gudok.ru/news/?ID=1685319'>Читать статью</a>
             </div>
             <div className='h-news__item'>
               <img className='h-news__item-img' src={news5} alt='картинка'></img>
               <h4 className='h-news__item-title'>Студенты транспортных вузов решили кейсы от крупных бизнес-заказчиков</h4>
-              <p className='h-news__item-text'>Межвузовские транспортные проектные соревнования – масштабный конкурс для студентов отраслевых вузов страны, организатором которого выступил РУТ (МИИТ). Цель мероприятия – подготовка молодых специалистов к решению актуальных задач в области перевозок.</p>
+              <p className='h-news__item-text'>Международные транспортные проектные соревнования – масштабный конкурс для студентов отраслевых вузов страны, организатором которого выступил РУТ (МИИТ). Цель мероприятия – подготовка молодых специалистов к решению актуальных задач в области перевозок.</p>
               <a className='h-news__item-button' target='_blank' rel='norefferer' href='https://gudok.ru/content/luchshie_praktiki/obrazovanie/1685360/?sphrase=0'>Читать статью</a>
             </div>
             <div className='h-news__item'>
               <img className='h-news__item-img' src={news6} alt='картинка'></img>
-              <h4 className='h-news__item-title'>Финал межвузовских проектных соревнований</h4>
+              <h4 className='h-news__item-title'>Финал международных проектных соревнований</h4>
               <p className='h-news__item-text'>Три дня подготовки и решения реальных задач по заказу от государственных компаний и представителей бизнеса. Атмосфера, организация, впечатления.</p>
               <a className='h-news__item-button' target='_blank' rel='norefferer' href='https://rzdtv.ru/2024/11/12/final-mezhvuzovskih-proektnyh-sorevnovanij/'>Читать статью</a>
             </div>

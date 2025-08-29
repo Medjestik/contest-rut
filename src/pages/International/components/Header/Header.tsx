@@ -1,16 +1,34 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
 
 import icon from '../../../../shared/icons/icon-white.png';
+
+import Button from '../../../../shared/components/Button/ui/Button';
+import { EROUTES } from '../../../../shared/utils/ERoutes';
 
 import './Header.css';
 
 const Header = () => {
 
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const handleChangeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
+  };
+
+  const btnLinkStyle = {
+    margin: '0',
+    width: '94px',
+    padding: '10px 12px 6px',
+    borderRadius: '12px',
+    fontSize: '16px',
+    flexShrink: '0',
+  };
+
+  const handleBackHome = () => {
+    navigate(EROUTES.HOME);
   };
  
   return (
@@ -36,6 +54,7 @@ const Header = () => {
           </li>
         ))}
       </ul>
+      <Button text={t('main-link')} color='white' style={btnLinkStyle} onClick={handleBackHome} />
     </header>
   );
 };

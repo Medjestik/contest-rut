@@ -57,9 +57,9 @@ const LayoutHeader: FC<ILayoutHeaderProps> = ({ windowWidth, isLoggedIn, onLogou
         {
           windowWidth > 1000
           ?
-          <button className='layout-header__btn' type='button' onClick={() => navigate(EROUTES.LANDING)}>На главную</button>
+          <button className='layout-header__btn' type='button' onClick={() => navigate(EROUTES.HOME)}>На главную</button>
           :
-          <Icon type='home' onClick={() => navigate(EROUTES.LANDING)} />
+          <Icon type='home' onClick={() => navigate(EROUTES.HOME)} />
         }
         </>
       }

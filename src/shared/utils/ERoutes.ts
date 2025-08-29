@@ -1,8 +1,9 @@
 export enum EROUTES {
-  HISTORY= '/',
-  LANDING = '/landing',
+  HOME= '/',
+  HISTORY = '/history',
   INTERNATIONAL = '/international',
   REGISTRATION = '/registration',
   PERSON = '/person-test',
-  LOGIN = '/login-test',
+  MAIN = '/main',
+  LOGIN = '/login',
 }

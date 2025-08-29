@@ -10,6 +10,7 @@ export interface IParticipant {
   phone: string;
   telegram?: string;
   uniqId: string;
+  subdivision: { id: number; name: string; };
 }
 
 export interface IParticipantItemProps {
@@ -33,4 +34,5 @@ export interface IAddParticipantPopupProps {
   courses: ICourse[];
   onClose: () => void;
   onSubmit: (participant: IParticipant) => void;
+  isRut: boolean;
 }

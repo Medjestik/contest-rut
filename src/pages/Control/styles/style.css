@@ -1,0 +1,31 @@
+.control {
+  margin: 0;
+  padding: 0 22px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.control__row {
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.control__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--main-black-color);
+}
+
+@media all and (max-width: 1000px) {
+  .control {
+    padding: 0;
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "title": "Concours interuniversitaire de projets en transport",
+  "title": "Concours international de projets de transport",
   "nav": ["À propos", "Méthodologie", "Mission", "Documents", "Contacts"],
   "main-button": "En savoir plus",
   "main-tag-1": "soutenance",
@@ -8,6 +8,7 @@
   "main-tag-4": "prototype",
   "main-tag-5": "Moscou, 29-31 octobre",
   "main-tag-6": "un problème réel",
+  "main-link": "Maison",
 
   "description-title": "Qu’est-ce que le concours de projets?",
   "description-text-1": "Il s’agit d’un nouveau format de concours étudiant dans lequel des équipes travaillent sur de véritables problématiques du secteur des transports.",

@@ -4,6 +4,7 @@ import type { IFormFieldError } from '../../../shared/components/Form/interface/
 import type { ISelectOption } from '../../../shared/components/Select/interface/interface';
 
 import { useState, useEffect } from 'react';
+
 import Popup from '../../../shared/components/Popup/ui/Popup';
 import Button from '../../../shared/components/Button/ui/Button';
 import Form from '../../../shared/components/Form/ui/Form';
@@ -12,9 +13,11 @@ import FormInputString from '../../../shared/components/Form/components/FormInpu
 import FormSubmit from '../../../shared/components/Form/components/FormSubmit/ui/FormSubmit';
 import SelectWithSearch from '../../../shared/components/Select/ui/SelectWithSearch';
 
+import { rutStructure } from '../../../shared/utils/structure';
+ 
 import '../styles/style.css';
 
-const AddParticipantPopup: FC<IAddParticipantPopupProps> = ({ isOpen, currentParticipant, courses, onClose, onSubmit }) => {
+const AddParticipantPopup: FC<IAddParticipantPopupProps> = ({ isOpen, currentParticipant, courses, onClose, onSubmit, isRut }) => {
 
   const [firstName, setFirstName] = useState<string>(currentParticipant.firstName);
   const [isShowErrorFirstName, setIsShowErrorFirstName] = useState<IFormFieldError>({ isShow: false, text: '' });
@@ -23,6 +26,7 @@ const AddParticipantPopup: FC<IAddParticipantPopupProps> = ({ isOpen, currentPar
   const [middleName, setMiddleName] = useState<string>(currentParticipant.middleName);
   const [isShowErrorMiddleName, setIsShowErrorMiddleName] = useState<IFormFieldError>({ isShow: false, text: '' });
   const [course, setCourse] = useState<ISelectOption>(currentParticipant.course);
+  const [institute, setInstitute] = useState<ISelectOption>(currentParticipant.subdivision);
   const [group, setGroup] = useState<string>(currentParticipant.group);
   const [isShowErrorGroup, setIsShowErrorGroup] = useState<IFormFieldError>({ isShow: false, text: '' });
   const [mail, setMail] = useState<string>(currentParticipant.mail);
@@ -59,6 +63,10 @@ const AddParticipantPopup: FC<IAddParticipantPopupProps> = ({ isOpen, currentPar
 
   const handleChangeCourse = (option: ISelectOption) => {
     setCourse(option);
+  };
+
+  const handleChangeInstitute = (option: ISelectOption) => {
+    setInstitute(option);
   };
 
   const handleChangeGroup = (value: string) => {
@@ -114,6 +122,7 @@ const AddParticipantPopup: FC<IAddParticipantPopupProps> = ({ isOpen, currentPar
       firstName,
       middleName,
       course,
+      subdivision: institute,
       group,
       mail,
       phone,
@@ -124,14 +133,15 @@ const AddParticipantPopup: FC<IAddParticipantPopupProps> = ({ isOpen, currentPar
 
   useEffect(() => {
     const isAnyFieldEmpty = firstName.length < 1 || secondName.length < 1 || group.length < 1 || mail.length < 1 || phone.length < 1;
-    const hasAnyError = isShowErrorMail.isShow || isShowErrorPhone.isShow || isShowErrorTelegram.isShow; 
+    const hasAnyError = isShowErrorMail.isShow || isShowErrorPhone.isShow || isShowErrorTelegram.isShow;
+    const isInstituteEmpty = isRut && institute.id === 0;
   
-    if (isAnyFieldEmpty || hasAnyError || course.id === 0) {
+    if (isAnyFieldEmpty || hasAnyError || course.id === 0 || isInstituteEmpty) {
       setIsBlockSubmitButton(true);
     } else {
       setIsBlockSubmitButton(false);
     }
-  }, [firstName, secondName, course, group, mail, phone, isShowErrorMail, isShowErrorPhone, isShowErrorTelegram]);
+  }, [firstName, secondName, course, institute, group, mail, phone, isShowErrorMail, isShowErrorPhone, isShowErrorTelegram]);
 
   return (
     <Popup isOpen={isOpen} onClose={onClose} popupWidth='large'>
@@ -168,6 +178,16 @@ const AddParticipantPopup: FC<IAddParticipantPopupProps> = ({ isOpen, currentPar
             onChooseOption={handleChangeCourse}
           />
         </FormField>
+        {
+          isRut &&
+          <FormField title='Институт / академия' marginBottom='large'>
+            <SelectWithSearch 
+              options={rutStructure}
+              currentOption={institute} 
+              onChooseOption={handleChangeInstitute}
+            />
+          </FormField>
+        }
         <FormField title='Учебная группа'>
           <FormInputString 
             value={group} 

@@ -42,6 +42,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
     problem: '',
     title: '',
     icon: '',
+    company: '',
   }), []);
   
   const initialUniversity = useMemo(() => ({
@@ -59,6 +60,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
     phone: '',
     telegram: '',
     uniqId: '',
+    subdivision: { id: 0, name: 'Выберите институт..' },
   }), []);
 
   const navigate = useNavigate();
@@ -79,6 +81,8 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
   const [isShowErrorName, setIsShowErrorName] = useState<IFormFieldError>({ isShow: false, text: '' });
   const [login, setLogin] = useState<string>('');
   const [isShowErrorLogin, setIsShowErrorLogin] = useState<IFormFieldError>({ isShow: false, text: '' });
+  const [password, setPassword] = useState<string>('');
+  const [isShowErrorPassword, setIsShowErrorPassword] = useState<IFormFieldError>({ isShow: false, text: '' });
 
   const [isCheckFirst, setIsCheckFirst] = useState<boolean>(false);
   const [isCheckSecond, setIsCheckSecond] = useState<boolean>(false);
@@ -102,6 +106,11 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
   const handleChangeLogin = (value: string) => {
     setLogin(value);
     setIsShowErrorLogin(value.length > 5 ? { isShow: false, text: '' } : { isShow: true, text: 'Логин должен содержать более 5 символов' });
+  };
+
+  const handleChangePassword = (value: string) => {
+    setPassword(value);
+    setIsShowErrorPassword(value.length > 5 ? { isShow: false, text: '' } : { isShow: true, text: 'Пароль должен содержать более 5 символов' });
   };
 
   const handleSelectCase = (caseId: string) => {
@@ -171,6 +180,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
     const data = {
       name,
       login,
+      password,
       university: currentUniversity.id,
       case: selectCaseId,
       participants: participants.map((item: IParticipant) => ({
@@ -182,6 +192,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
         group_name: item.group,
         level: item.course.id,
         telegram_url: item.telegram,
+        subdivision: item.subdivision.id === 0 ? '' : item.subdivision.name
       })),
     };
     api.registration(data)
@@ -196,23 +207,23 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
   };
 
   useEffect(() => {
-    if (name.length > 0 && login.length > 5 && selectCaseId.length > 0 && currentUniversity.id !== 0 && participants.length === 4 && isCheckFirst && isCheckSecond && isCheckThird) {
+    if (name.length > 0 && login.length > 5 && password.length > 5 && selectCaseId.length > 0 && currentUniversity.id !== 0 && participants.length === 4 && isCheckFirst && isCheckSecond && isCheckThird) {
       setIsBlockSubmitButton(false);
     } else {
       setIsBlockSubmitButton(true);
     }
-  }, [name, login, selectCaseId, currentUniversity, participants, isCheckFirst, isCheckSecond , isCheckThird]);
+  }, [name, login, password, selectCaseId, currentUniversity, participants, isCheckFirst, isCheckSecond , isCheckThird]);
 
   const getData = () => {
     setIsLoadingData(true);
     Promise.all([
-      api.getCases(),
+      api.getRegisteredCases(),
       api.getUniversity(),
       api.getCourses(),
     ])
     .then(([cases, university, courses]) => {
       setCases(cases);
-      setUniversity(university);
+      setUniversity(university.map((elem: IUniversity) => { return { ...elem, name: elem.name_search };}));
       setCourses(courses);
     })
     .catch((err) => {
@@ -252,6 +263,15 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
             placeholder='Введите логин..' 
             onChange={handleChangeLogin} 
             error={isShowErrorLogin} 
+          />
+        </FormField>
+
+        <FormField title='Пароль команды' subtitle='Придумайте пароль для вашей команды'>
+          <FormInputString 
+            value={password} 
+            placeholder='Введите логин..' 
+            onChange={handleChangePassword} 
+            error={isShowErrorPassword} 
           />
         </FormField>
 
@@ -324,10 +344,10 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
               <span></span>
             </label>
             <div className='checkbox__text'>
-            {'Подтверждаю, что Участники команды ознакомлены и согласны с условиями и правилами участия в соревнованиях, изложенными в '}
-              <Link text='Положении' path='https://cloud.mail.ru/public/Rfcu/ZCm3ZmDBR' />
+            {'Подтверждаю, что участники команды ознакомлены и согласны с условиями и правилами участия в соревнованиях, изложенными в '}
+              <Link text='Положении' path='https://cloud.mail.ru/public/7FNk/x4DxKax58' />
               {' и '}
-              <Link text='Регламенте' path='https://cloud.mail.ru/public/YhUL/vuXbSSsgF' />
+              <Link text='Регламенте' path='https://cloud.mail.ru/public/NqV9/sGGmDQ999' />
               {'.'}
             </div>
           </div>
@@ -354,6 +374,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
           currentParticipant={currentParticipant}
           onClose={closePopup} 
           onSubmit={handleAddParticipant}
+          isRut={currentUniversity.id === 763 ? true : false}
         />
       }
 
@@ -365,6 +386,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
           currentParticipant={currentParticipant}
           onClose={closePopup} 
           onSubmit={handleEditParticipant}
+          isRut={currentUniversity.id === 763 ? true : false}
         />
       }
 

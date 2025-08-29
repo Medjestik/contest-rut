@@ -1,10 +1,31 @@
 import { Link } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
 
 import icon from '../../../../shared/icons/icon-white.png';
 
+import Button from '../../../../shared/components/Button/ui/Button';
+import { EROUTES } from '../../../../shared/utils/ERoutes';
+
 import './Header.css';
 
+const btnLinkStyle = {
+  margin: '0',
+  width: '94px',
+  padding: '10px 12px 6px',
+  borderRadius: '12px',
+  fontSize: '16px',
+  flexShrink: '0',
+  color: '#33284C',
+};
+
 const Header = () => {
+
+  const navigate = useNavigate();
+
+  const handleBackHome = () => {
+    navigate(EROUTES.HOME);
+  };
+  
   return (
     <header className='h-header'>
       <img className='h-header__logo' src={icon} alt='лого'></img>
@@ -17,7 +38,7 @@ const Header = () => {
           <Link className='h-header__item' to='news' smooth={true} offset={-40} duration={1750} spy={true}>СМИ</Link>
         </div>
       </nav>
-      <a className='h-header__button' target='_blank' rel='norefferer' href='https://t.me/contestmiit'>Telegram-канал</a>
+      <Button text='На главную' color='white' style={btnLinkStyle} onClick={handleBackHome} />
     </header>
   );
 };

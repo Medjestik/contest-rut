@@ -1,7 +1,9 @@
 import type { FC } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import { Link } from 'react-scroll';
 import Button from '../../../../../shared/components/Button/ui/Button';
+import CountdownTimer from '../../../../../widgets/CountdownTimer/ui/CountdownTimer';
+import { EROUTES } from '../../../../../shared/utils/ERoutes';
 
 import '../styles/style.css';
 
@@ -21,6 +23,12 @@ const mobileBtnStyle = {
 
 const Main: FC<IMainProps> = ({ windowWidth }) => {
 
+  const navigate = useNavigate();
+
+  const navigateToReg = () => {
+    navigate(EROUTES.REGISTRATION);
+  };
+
   return (
     <div className='main'>
       {
@@ -28,16 +36,20 @@ const Main: FC<IMainProps> = ({ windowWidth }) => {
         ?
         <>
         <div className='main__column'>
+          <div className='main__section'>
+            <h3 className='main__timer-title'>До конца отборочного этапа</h3>
+            <span className='main__timer-count'><CountdownTimer targetDate="2025-09-15T12:00:00" /></span>
+            <p className='main__timer-text'>Сначала регистрация — потом миллион.</p>
+          </div>
           <div className='main__section main__section-registration'>
-            <h3 className='main__timer-title'>Отбор команд завершен!</h3>
-            <p className='main__timer-text'>Мы благодарим все команды за участие!</p>
-            <p className='main__timer-text'>Наши эксперты оценили ваши работы и вы можете ознакомиться с результатами.</p>
-            <Link to='leaderboard' smooth={true} offset={0} duration={750} spy={true}><Button text='Результаты' width='default' style={windowWidth > 1000 ? btnStyle : mobileBtnStyle} /></Link>
+            <p className='main__timer-text'>Участвуй в главных транспортных соревнованиях страны!</p>
+            <p className='main__timer-text'>Разберись с проблемой, которую ещё никто не решил.</p>
+            <Button text='Зарегистрироваться' width='default' style={windowWidth > 1000 ? btnStyle : mobileBtnStyle} onClick={navigateToReg} />
           </div>
         </div>
         <div className='main__column'>
           <div className='main__section main__section-img'> 
-            <h1 className='main__title'>Межвузовские&nbsp;транспортные проектные&nbsp;соревнования</h1>
+            <h1 className='main__title'>Международные&nbsp;транспортные проектные&nbsp;соревнования</h1>
             <div className='main__img'></div>
           </div>
         </div>
@@ -45,13 +57,14 @@ const Main: FC<IMainProps> = ({ windowWidth }) => {
         :
         <> 
           <div className='main__img'>
-            <h3 className='main__timer-title'>Отбор команд завершен</h3>
-            <h1 className='main__title'>Межвузовские транспортные проектные&nbsp;cоревнования</h1>
+            <h3 className='main__timer-title'>До конца отборочного этапа</h3>
+            <span className='main__timer-count'><CountdownTimer targetDate="2025-09-15T12:00:00" /></span>
+            <h1 className='main__title'>Международные транспортные проектные&nbsp;cоревнования</h1>
           </div>
           <div className='main__section'>
-            <h3 className='main__section-title'>Мы благодарим все команды за участие!</h3>
-            <p className='main__section-text'>Наши эксперты оценили ваши работы и вы можете ознакомиться с результатами.</p>
-            <Link to='leaderboard' smooth={true} offset={0} duration={750} spy={true}><Button text='Результаты' width='default' style={windowWidth > 1000 ? btnStyle : mobileBtnStyle} /></Link>
+            <h3 className='main__section-title'>Участвуй в главных транспортных соревнованиях страны!</h3>
+            <p className='main__section-text'>Разберись с проблемой, которую ещё никто не решил.</p>
+            <Button text='Зарегистрироваться' width='default' style={windowWidth > 1000 ? btnStyle : mobileBtnStyle} onClick={navigateToReg} />
           </div>
           
         </>

@@ -32,6 +32,18 @@ export const getTeam = (token: string) => {
   .then(res => handleResponse(res));
 };
 
+export const getTeams = (token: string) => {
+  return fetch(`${API_URL}/report/teams`, {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Authorization': `Token ${token}`,
+    }
+  })
+  .then(res => handleResponse(res));
+};
+
 export const login = (data: ILoginData) => {
   return fetch(`${API_URL}/auth/login/`, {
     method: 'POST',
@@ -57,6 +69,7 @@ export const registration = (data: IRegisterData) => {
     body: JSON.stringify({
       name: data.name,
       login: data.login,
+      password: data.password,
       university: data.university,
       case: data.case,
       participants: data.participants,
@@ -79,6 +92,17 @@ export const subscribe = (email: string) => {
 
 export const getCases = () => {
   return fetch(`${API_URL}/cases`, {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+    }
+  })
+  .then(res => handleResponse(res));
+};
+
+export const getRegisteredCases = () => {
+  return fetch(`${API_URL}/cases?is_registered=true`, {
     method: 'GET',
     headers: {
       'Accept': 'application/json',

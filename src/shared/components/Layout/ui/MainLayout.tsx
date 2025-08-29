@@ -15,6 +15,7 @@ const MainLayout: FC<ILayoutProps> = ({ containerWidth = 'default', mainContaine
             <main className='layout__main'>
               {
                 mainContainer
+                
                 ?
                 <div className='layout__main-container'>
                   {children}

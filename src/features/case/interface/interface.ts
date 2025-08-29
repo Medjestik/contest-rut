@@ -4,6 +4,7 @@ export interface ICaseItem {
   problem: string;
   title: string;
   icon: string;
+  company: string;
 }
 
 export interface ICaseItemProps {

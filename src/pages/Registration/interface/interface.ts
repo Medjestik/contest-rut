@@ -1,9 +1,11 @@
 export interface IUniversity {
-  id: number;
-  name: string;
-  short_name?: string;
-  city?: string;
-  icon?: string;
+address: string;
+id: number;
+name: string;
+name_full: string;
+name_search: string;
+name_short_csv: string;
+short_name: string;
 }
 
 export interface ICourse {
@@ -25,6 +27,7 @@ interface IParticipantData {
 export interface IRegisterData {
   name: string;
   login: string;
+  password: string;
   university: number;
   case: string;
   participants: IParticipantData[];

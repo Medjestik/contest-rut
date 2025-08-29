@@ -49,7 +49,7 @@ const About = () => {
           }
         </div>
         <div className='h-about__numbers'>
-          <p className='h-about__text'>В 2024 году состоялись первые Межвузовские транспортные проектные соревнования — событие, объединившее:</p>
+          <p className='h-about__text'>В 2024 году состоялись первые Международные транспортные проектные соревнования — событие, объединившее:</p>
           <ul className='h-about__list'>
             {
               counts.map((elem, i) => (

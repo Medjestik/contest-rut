@@ -25,7 +25,7 @@
   flex-direction: column;
 }
 .main__section-registration {
-  margin: 0;
+  margin: 40px 0 0 0;
   flex-grow: 2;
 }
 .main__section-img {
@@ -78,7 +78,7 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background-image: url('../../../../../shared/images/main-img.png');
+  background-image: url('../../../../../shared/images/main-img-lego.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

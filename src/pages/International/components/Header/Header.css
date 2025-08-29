@@ -66,7 +66,7 @@
 }
 
 .i-header__lang {
-  margin: 0 0 0 auto;
+  margin: 0 20px 0 auto;
   padding: 0;
   list-style-type: none;
   display: flex;
