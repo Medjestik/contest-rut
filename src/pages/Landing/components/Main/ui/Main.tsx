@@ -43,7 +43,7 @@ const Main: FC<IMainProps> = ({ windowWidth }) => {
         <>
         <div className='main__column'>
           <div className='main__section'>
-            <h3 className='main__timer-title'>До конца отборочного этапа</h3>
+            <h3 className='main__timer-title'>До конца регистрации</h3>
             <span className='main__timer-count'><CountdownTimer targetDate="2025-09-15T12:00:00" /></span>
             <p className='main__timer-text'>Сначала регистрация — потом миллион.</p>
           </div>

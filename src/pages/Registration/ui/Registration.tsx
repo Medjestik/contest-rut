@@ -47,7 +47,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
   
   const initialUniversity = useMemo(() => ({
     id: 0, 
-    name: 'Выберите ВУЗ..',
+    name: 'Введите название..',
   }), []);
   
   const initialParticipant = useMemo(() => ({
@@ -279,7 +279,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
           <CaseList items={cases} selectItemId={selectCaseId} onSelect={handleSelectCase} onDetail={openCaseDetailPopup} windowWidth={windowWidth} />
         </FormField>
 
-        <FormField title='Информация о ВУЗе' subtitle='Выберите ВУЗ, который представляет ваша команда'>
+        <FormField title='Информация о ВУЗе' subtitle='Введите название образовательной организации, которую представляет ваша команда'>
           <SelectWithSearch 
             options={university}
             currentOption={currentUniversity} 

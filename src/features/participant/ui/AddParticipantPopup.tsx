@@ -207,7 +207,7 @@ const AddParticipantPopup: FC<IAddParticipantPopupProps> = ({ isOpen, currentPar
         <FormField title='Телефон'>
           <FormInputString 
             value={phone} 
-            placeholder='Введите телефон..' 
+            placeholder='81234567890' 
             onChange={handleChangePhone} 
             error={isShowErrorPhone} 
           />

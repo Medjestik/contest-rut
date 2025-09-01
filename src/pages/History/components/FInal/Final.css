@@ -13,10 +13,9 @@
   background: #8787D9;
 }
 .h-final_type_land {
-  margin: 40px 0;
-  background: linear-gradient(135deg, #8229F3 0%, #1B096F 100%)
+  margin: 80px 0 0;
+  background: linear-gradient(135deg, #8229F3 0%, #1B096F 100%);
 }
-
 .h-final__container {
   margin: 0 auto;
   padding: 44px 0 80px;
@@ -231,6 +230,9 @@
 }
 
 @media all and (max-width: 1279px) {
+  .h-final_type_land {
+    margin: 20px 0 0;
+  }
   .h-final__title {
     font-size: 56px;
   }

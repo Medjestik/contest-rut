@@ -17,7 +17,7 @@ const Cases: FC<ICasesProps> = ({ cases }) => {
     <div className='cases' id={ENAV.CASES}>
       <Section>
         <div className='cases__section'>
-          <h2 className='section__title'>Кейсы соревнования</h2>
+          <h2 className='section__title'>Проблемы соревнований</h2>
           <ul className='cases__list'>
             {
               cases.map((card: ICaseItem) => (
