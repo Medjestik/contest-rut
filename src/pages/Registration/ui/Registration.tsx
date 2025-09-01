@@ -84,6 +84,8 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
   const [password, setPassword] = useState<string>('');
   const [isShowErrorPassword, setIsShowErrorPassword] = useState<IFormFieldError>({ isShow: false, text: '' });
 
+  const [errorText, setErrorText] = useState<string>('');
+
   const [isCheckFirst, setIsCheckFirst] = useState<boolean>(false);
   const [isCheckSecond, setIsCheckSecond] = useState<boolean>(false);
   const [isCheckThird, setIsCheckThird] = useState<boolean>(false);
@@ -199,10 +201,21 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
     .then(() => {
       setIsOpenRegistrationSuccessPopup(true);
     })
-    .catch((err) => {
-      console.log(err);
-      setIsOpenRegistrationErrorPopup(true);
-    })
+      .catch(async (err) => {
+          let errorText = 'Произошла ошибка';
+          try {
+            const res = await err.json();
+            if (res.login && res.login.length > 0) {
+              errorText = res.login[0];
+            } else {
+              setErrorText('Попробуйте позже или обратитесь в техническую поддержку.'); 
+            }
+          } catch (e) {
+            console.log('Ошибка при разборе JSON:', e);
+          }
+          setErrorText(errorText);
+          setIsOpenRegistrationErrorPopup(true);
+        })
     .finally(() => setIsBlockSubmitButton(false));
   };
 
@@ -403,7 +416,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
         isOpenRegistrationSuccessPopup &&
         <RegistrationSuccessPopup
           isOpen={isOpenRegistrationSuccessPopup} 
-          onClose={closeRegistration} 
+          onClose={closeRegistration}
         />
       }
 
@@ -412,6 +425,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
         <RegistrationErrorPopup
           isOpen={isOpenRegistrationErrorPopup} 
           onClose={closePopup} 
+          errorText={errorText}
         />
       }
 

@@ -8,7 +8,11 @@ import Button from '../../../shared/components/Button/ui/Button';
 
 import '../styles/style.css';
 
-const RegistrationErrorPopup: FC<IPopupProps> = ({ isOpen, onClose }) => {
+interface IRegistrationErrorPopupProps extends IPopupProps {
+  errorText?: string;
+}
+
+const RegistrationErrorPopup: FC<IRegistrationErrorPopupProps> = ({ isOpen, onClose, errorText }) => {
 
   const btnStyle = {
     width: '100%',
@@ -23,7 +27,7 @@ const RegistrationErrorPopup: FC<IPopupProps> = ({ isOpen, onClose }) => {
     <Popup isOpen={isOpen} onClose={onClose} popupWidth='small'>
       <img className='popup__icon' src={icon} alt={'иконка'}></img>
       <h2 className='popup__title'>К сожалению, произошла ошибка!</h2>
-      <p className='popup__subtitle'>Попробуйте позже или обратитесь в техническую поддержку.</p>
+      <p className='popup__subtitle'>{errorText}</p>
       <Button style={btnStyle} text='Понятно' onClick={onClose} />
     </Popup>
   );
