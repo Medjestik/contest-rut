@@ -5,16 +5,14 @@ export const getRegistrationStats = (teams: IControlTeam[]): IRegistrationStat[]
 
   const totalTeams = teams.length;
 
-  // Считаем сколько команд зарегистрировано в каждый день
   const dayMap: Record<string, number> = {};
   teams.forEach(team => {
-    const day = team.date_joined.split('T')[0]; // yyyy-mm-dd
+    const day = team.date_joined.split('T')[0];
     dayMap[day] = (dayMap[day] || 0) + 1;
   });
 
-  // Строгий интервал 25.08.2025 - 05.09.2025
-  const start = new Date('2025-08-25');
-  const end = new Date('2025-09-10');
+  const start = new Date('2025-08-31');
+  const end = new Date('2025-09-15');
 
   const days: string[] = [];
   const d = new Date(start);
@@ -24,7 +22,6 @@ export const getRegistrationStats = (teams: IControlTeam[]): IRegistrationStat[]
     d.setDate(d.getDate() + 1);
   }
 
-  // Формируем массив статистики
   let cumulative = 0;
   return days.map(date => {
     const dailyCount = dayMap[date] || 0;

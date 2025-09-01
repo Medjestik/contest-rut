@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8491ce68.css",
-    "main.js": "/static/js/main.95a93666.js",
+    "main.css": "/static/css/main.88fcb7dd.css",
+    "main.js": "/static/js/main.624e222f.js",
     "static/js/453.7ce295cc.chunk.js": "/static/js/453.7ce295cc.chunk.js",
     "static/media/main.svg": "/static/media/main.ef102666a7ab60bdce7e.svg",
     "static/media/m-5.svg": "/static/media/m-5.b8c9718d875f53fb9e31.svg",
@@ -73,7 +73,6 @@
     "static/media/BebasNeueLight.woff": "/static/media/BebasNeueLight.fb1021edc3744b98b5b7.woff",
     "static/media/BebasNeueRegular.woff": "/static/media/BebasNeueRegular.c07e076467a248c2f672.woff",
     "static/media/BebasNeue-Thin.woff": "/static/media/BebasNeue-Thin.83e86240c8a62475c312.woff",
-    "static/media/telegram.png": "/static/media/telegram.5fb5dfb87ac3e180e9f7.png",
     "static/media/vniijt.svg": "/static/media/vniijt.359317a4400e1031430f38c8debfb92a.svg",
     "static/media/BebasNeueBold.woff": "/static/media/BebasNeueBold.e0462489b6967dbc5942.woff",
     "static/media/vniijt-white.svg": "/static/media/vniijt-white.d1b7c012c5ecf56683e97dbbf90ca367.svg",
@@ -93,12 +92,12 @@
     "index.html": "/index.html",
     "static/media/line.svg": "/static/media/line.b05c0e2b901f71d7124a.svg",
     "static/media/arrow.svg": "/static/media/arrow.55a4ec4915bbcdabc744.svg",
-    "main.8491ce68.css.map": "/static/css/main.8491ce68.css.map",
-    "main.95a93666.js.map": "/static/js/main.95a93666.js.map",
+    "main.88fcb7dd.css.map": "/static/css/main.88fcb7dd.css.map",
+    "main.624e222f.js.map": "/static/js/main.624e222f.js.map",
     "453.7ce295cc.chunk.js.map": "/static/js/453.7ce295cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8491ce68.css",
-    "static/js/main.95a93666.js"
+    "static/css/main.88fcb7dd.css",
+    "static/js/main.624e222f.js"
   ]
 }
