@@ -73,6 +73,20 @@
   z-index: 2;
   position: relative;
 }
+.main__link {
+  margin: auto 0 0;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.15;
+  color: var(--main-color);
+  z-index: 2;
+  position: relative;
+  transition: all .3s ease-in-out;
+}
+.main__link:hover {
+  cursor: pointer;
+  opacity: .7;
+}
 .main__img {
   margin: 12px 0 0 0;
   width: 100%;
@@ -134,6 +148,12 @@
   .main__title {
     font-size: 56px;
   }
+  .main__timer-text {
+    font-size: 20px;
+  }
+  .main__link {
+    font-size: 20px;
+  }
 }
 
 @media all and (max-width: 1000px) {
@@ -150,6 +170,10 @@
     letter-spacing: 0;
     color: var(--white-color);
     text-align: left;
+  }
+  .main__link {
+    margin: auto auto 12px;
+    font-size: 16px;
   }
   .main__img {
     margin: 20px 0 0 0;

@@ -18,6 +18,7 @@ const CasesCard: FC<ICasesCardProps> = ({ card }) => {
 
   const navigateToInt = () => {
     navigate(EROUTES.INTERNATIONAL);
+    window.scrollTo(0, 0);
   };
 
   return (

@@ -27,6 +27,12 @@ const Main: FC<IMainProps> = ({ windowWidth }) => {
 
   const navigateToReg = () => {
     navigate(EROUTES.REGISTRATION);
+    window.scrollTo(0, 0);
+  };
+
+  const navigateToHistory = () => {
+    navigate(EROUTES.HISTORY);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -45,6 +51,7 @@ const Main: FC<IMainProps> = ({ windowWidth }) => {
             <p className='main__timer-text'>Участвуй в главных транспортных соревнованиях страны!</p>
             <p className='main__timer-text'>Разберись с проблемой, которую ещё никто не решил.</p>
             <Button text='Зарегистрироваться' width='default' style={windowWidth > 1000 ? btnStyle : mobileBtnStyle} onClick={navigateToReg} />
+            <span onClick={navigateToHistory} className='main__link'>Как это было в 2024 году &rarr;</span>
           </div>
         </div>
         <div className='main__column'>
@@ -65,6 +72,7 @@ const Main: FC<IMainProps> = ({ windowWidth }) => {
             <h3 className='main__section-title'>Участвуй в главных транспортных соревнованиях страны!</h3>
             <p className='main__section-text'>Разберись с проблемой, которую ещё никто не решил.</p>
             <Button text='Зарегистрироваться' width='default' style={windowWidth > 1000 ? btnStyle : mobileBtnStyle} onClick={navigateToReg} />
+            <span onClick={navigateToHistory} className='main__link'>Как это было в 2024 году &rarr;</span>
           </div>
           
         </>

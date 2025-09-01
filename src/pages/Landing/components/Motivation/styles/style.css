@@ -1,0 +1,143 @@
+.motivation {
+  margin: 60px 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(135deg, #8229F3 0%, #1B096F 100%);
+  border-radius: 80px;
+}
+.motivation__container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 44px 80px 80px;
+  max-width: none;
+}
+.motivation__header {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.motivation__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 1;
+  color: #F3F3E9;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.motivation__controls {
+  margin: 0;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.motivation__arrow {
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF7A28;
+  color: #FFFFFF;
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+.motivation__arrow:hover {
+  cursor: pointer;
+}
+.motivation__item {
+  width: 100%;
+  margin: 20px 0 0 0;
+  display: flex;
+  gap: 40px;
+}
+.motivation__item-card {
+  width: 100%;
+  margin: 0;
+  padding: 36px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  border-radius: 40px;
+  position: relative;
+}
+.motivation__item-card-img {
+  margin: 0;
+  height: 240px;
+  object-fit: contain;
+  object-position: center;
+}
+.motivation__item-card-text {
+  margin: 12px auto;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.15;
+  text-align: center;
+  max-width: 80%;
+}
+
+@media all and (max-width: 1439px) {
+  .motivation__container {
+    padding: 32px;
+    border-radius: 20px;
+    gap: 20px;
+  }
+  .motivation__title {
+    font-size: 64px;
+  }
+  .motivation__item-card-img {
+    height: 200px;
+  }
+  .motivation__item-card-text {
+    margin: 12px auto;
+    font-size: 20px;
+    max-width: none;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .motivation {
+    margin: 40px 0 0 0;
+    border-radius: 40px;
+  }
+  .motivation__container {
+    padding: 20px 16px;
+  }
+  .motivation__header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .motivation__item {
+    margin: 0;
+  }
+  .motivation__title {
+    margin: 20px 0 0 0;
+    font-size: 32px;
+  }
+  .motivation__item-card-img {
+    height: 160px;
+  }
+  .motivation__item-card-text {
+    font-size: 18px;
+  }
+  .motivation__controls {
+    gap: 12px;
+  }
+  .motivation__arrow {
+    width: 30px;
+    height: 30px;
+  }
+}

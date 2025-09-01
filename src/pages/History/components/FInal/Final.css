@@ -274,6 +274,9 @@
     right: 0;
     gap: 12px;
   }
+  .h-final_type_land .h-final__controls {
+    right: 0;
+  }
   .h-final__counter {
     min-width: 52px;
     font-size: 20px;

@@ -5,10 +5,12 @@ import PublicLayout from '../../shared/components/Layout/ui/PublicLayout';
 import Header from './components/Header/ui/Header';
 import Main from './components/Main/ui/Main';
 import Description from './components/Description/ui/Description';
+import Prize from './components/Prize/ui/Prize';
 import Stages from './components/Stages/ui/Stages';
 import Final from '../History/components/FInal/Final';
 import Cases from './components/Cases/ui/Cases';
 import Recruitment from './components/Recruitment/ui/Recruitment';
+import Motivation from './components/Motivation/ui/Motivation';
 import FAQ from './components/FAQ/ui/FAQ';
 import Document from './components/Document/ui/Document';
 import Footer from './components/Footer/ui/Footer';
@@ -72,9 +74,11 @@ const Landing: FC<ILandingProps> = ({ windowWidth, onLogin }) => {
             */
           }
           <Description windowWidth={windowWidth} />
+          <Prize windowWidth={windowWidth} />
           <Stages />
           <Final type='land' />
           <Cases cases={cases} />
+          <Motivation windowWidth={windowWidth} />
           <Recruitment />
           <FAQ />
           <Document />

@@ -11,14 +11,13 @@ const btnStyle = {
   margin: '50px 0 0',
 };
 
-const isHideReg = true;
-
 const StagesCard: FC<IStagesCardProps> = ({ card }) => {
   
   const navigate = useNavigate();
 
   const navigateToReg = () => {
     navigate(EROUTES.REGISTRATION);
+    window.scrollTo(0, 0);
   };
   
   return (
@@ -31,7 +30,7 @@ const StagesCard: FC<IStagesCardProps> = ({ card }) => {
         ))
       }
       {
-        card.type === 'registration' && !isHideReg &&
+        card.type === 'registration' &&
         <Button text='Зарегистрироваться' width='default' color='secondary' style={btnStyle} onClick={navigateToReg} />
       }
     </li>
