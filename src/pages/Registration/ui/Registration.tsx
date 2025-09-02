@@ -288,7 +288,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
           />
         </FormField>
 
-        <FormField title='Кейсы соревнований' subtitle='Выберите кейс для вашей команды'>
+        <FormField title='Проблемы соревнований' subtitle='Выберите проблему для вашей команды'>
           <CaseList items={cases} selectItemId={selectCaseId} onSelect={handleSelectCase} onDetail={openCaseDetailPopup} windowWidth={windowWidth} />
         </FormField>
 

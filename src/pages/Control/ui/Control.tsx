@@ -8,13 +8,21 @@ import * as api from '../../../shared/utils/api';
 import Preloader from '../../../shared/components/Preloader/ui/Preloader';
 import { Table } from '../../../shared/components/Table/ui/Table';
 import { RegistrationChart } from '../components/RegistrationChart/RegistrationChart';
+import Button from '../../../shared/components/Button/ui/Button';
 import { SubdivisionPieChart } from '../components/RegistrationChart/SubdivisionPieChart';
 
 import { getRegistrationStats } from '../lib/getRegistrationStats';
 import { getInstituteStats } from '../lib/getInstituteStats';
 
-
 import '../styles/style.css';
+
+const btnStyle = {
+  margin: '0 0 0 auto',
+  padding: '8px 14px',
+  borderRadius: '12px',
+  fontSize: '18px',
+  lineHeight: '1',
+};
 
 const Control: FC = () => {
 
@@ -54,6 +62,7 @@ const Control: FC = () => {
         <Preloader />
         :
         <>
+        <Button text='Экспорт статистики' style={btnStyle} type='link' link='https://contest-api.emiit.ru/api/report/teams-export/' />
         <div className='control__row'>
           <RegistrationChart stats={getRegistrationStats(teams)} />
         </div>
