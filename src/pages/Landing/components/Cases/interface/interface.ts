@@ -4,6 +4,7 @@ export interface ICasesCardItem {
   problem: string;
   title: string;
   icon: string;
+  tags: { id: number, name: string }[];
 }
 
 export interface ICasesCardProps {

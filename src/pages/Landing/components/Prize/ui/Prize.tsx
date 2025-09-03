@@ -14,9 +14,13 @@ const Prize: FC<IPrizeProps> = ({ windowWidth }) => {
   return (
     <div className='prize' id='prize'>
       <h2 className='prize__title'>ПРИЗЫ</h2>
+      {
+        windowWidth > 1000 &&
+        <h2 className='prize__subtitle'>Приз <strong>200&nbsp;000 рублей</strong> команде, предложившей лучшее решение каждой проблемы </h2>
+      }
       <div className='prize__description'>
         <h4 className='prize__count'>2&nbsp;200&nbsp;000&nbsp;рублей</h4>
-        <p className='prize__subtitle'>призовой фонд Международных транспортных проектных соревнований</p>
+        <p className='prize__subtitle prize__subtitle-count'>призовой фонд Международных транспортных проектных соревнований</p>
       </div>
       {
         windowWidth > 1000
@@ -27,7 +31,12 @@ const Prize: FC<IPrizeProps> = ({ windowWidth }) => {
             <span className='prize__item-title'>200&nbsp;000 рублей</span>
           </li>
           <li className='prize__item'>
-            <p className='prize__item-text'>Приз <strong>200&nbsp;000 рублей</strong> команде, предложившей лучшее решение каждой проблемы </p>
+            <img className='prize__item-icon' src={moneyImg} alt='иконка'></img>
+            <span className='prize__item-title'>200&nbsp;000 рублей</span>
+          </li>
+          <li className='prize__item'>
+            <img className='prize__item-icon' src={moneyImg} alt='иконка'></img>
+            <span className='prize__item-title'>200&nbsp;000 рублей</span>
           </li>
           <li className='prize__item prize__item-prize'>
             <img className='prize__item-prize-icon' src={prizeImg} alt='иконка'></img>

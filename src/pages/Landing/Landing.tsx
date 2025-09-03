@@ -1,5 +1,5 @@
 import { useState, useEffect, type FC } from 'react';
-import type { ICaseItem } from '../../features/case/interface/interface';
+import type { ICasesCardItem } from './components/Cases/interface/interface';
  
 import PublicLayout from '../../shared/components/Layout/ui/PublicLayout';
 import Header from './components/Header/ui/Header';
@@ -28,7 +28,7 @@ interface ILandingProps {
 
 const Landing: FC<ILandingProps> = ({ windowWidth, onLogin }) => {
 
-  const [cases, setCases] = useState<ICaseItem[]>([]);
+  const [cases, setCases] = useState<ICasesCardItem[]>([]);
 
   const [isShowMobileMenu, setIsShowMobileMenu] = useState<boolean>(false);
   const [isLoadingData, setIsLoadingData] = useState<boolean>(true);

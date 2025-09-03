@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import type { ICaseItem } from '../../../../../features/case/interface/interface';
+import type { ICasesCardItem } from '../interface/interface';
 
 import Section from '../../../../../shared/components/Section/ui/Section';
 import CasesCard from './CasesCard';
@@ -8,7 +8,7 @@ import { ENAV } from '../../../../../shared/components/Navigation/interface/inte
 import '../styles/style.css';
 
 interface ICasesProps {
-  cases: ICaseItem[];
+  cases: ICasesCardItem[];
 }
 
 const Cases: FC<ICasesProps> = ({ cases }) => {
@@ -20,7 +20,7 @@ const Cases: FC<ICasesProps> = ({ cases }) => {
           <h2 className='section__title'>Проблемы соревнований</h2>
           <ul className='cases__list'>
             {
-              cases.map((card: ICaseItem) => (
+              cases.map((card: ICasesCardItem) => (
                 <CasesCard card={card} key={card.id} />
               ))
             }

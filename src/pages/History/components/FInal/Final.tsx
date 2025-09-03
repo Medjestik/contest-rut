@@ -25,7 +25,7 @@ const Final: FC<IFinalProps> = ({ type = 'history'}) => {
   return (
     <div className={`h-final h-final_type_${type}`} id='final'>
       <div className='h-final__container'>
-        <h2 className='h-final__title'>Финал в РУТ (МИИТ)</h2>
+        <h2 className='h-final__title'>Финал в Российском университете транспорта</h2>
         <p className='h-final__subtitle'>
           {
             type === 'history'

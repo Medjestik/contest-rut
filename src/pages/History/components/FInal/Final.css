@@ -35,7 +35,7 @@
 .h-final__title {
   margin: 0;
   font-weight: 600;
-  font-size: 80px;
+  font-size: 56px;
   line-height: 1;
   color: #F3F3E9;
 }
@@ -221,6 +221,9 @@
   .h-final__container  {
     padding: 44px 20px 80px;
   }
+  .h-final__title {
+    font-size: 48px;
+  }
   .h-final__controls {
     right: 20px;
   }
@@ -234,7 +237,7 @@
     margin: 20px 0 0;
   }
   .h-final__title {
-    font-size: 56px;
+    font-size: 36px;
   }
   .h-final__subtitle {
     font-size: 20px;
@@ -262,7 +265,7 @@
     padding: 24px 16px;
   }
   .h-final__title {
-    font-size: 32px;;
+    font-size: 32px;
   }
   .h-final__subtitle {
     margin: 12px 0;

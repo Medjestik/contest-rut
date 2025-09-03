@@ -23,6 +23,11 @@ const CasesCard: FC<ICasesCardProps> = ({ card }) => {
 
   return (
     <li className='cases__card'>
+      <ul className='cases__tags'>
+        { card.tags.map((elem) => (
+          <li className='cases__tag' key={elem.id}>{elem.name}</li>
+        )) }
+      </ul>
       <h4 className='cases__card-title'>Ситуация</h4>
       <p className='cases__card-text'>{card.situation}</p>
       <h4 className='cases__card-title cases__card-title_type_problem'>Сбой</h4>

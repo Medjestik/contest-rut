@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 44px 80px 80px;
+  padding: 44px 60px 80px;
   box-sizing: border-box;
 }
 .prize__title {
@@ -24,23 +24,24 @@
 }
 .prize__description {
   position: absolute;
-  right: 80px;
+  right: 60px;
   top: 80px;
-  max-width: 600px;
+  max-width: 500px;
   z-index: 2;
 }
 .prize__count {
   margin: 0;
   font-weight: 600;
-  font-size: 96px;
+  font-size: 80px;
   line-height: 1;
   color: #F3F3E9;
   font-family: 'Bebas Neue', sans-serif;
 }
 .prize__subtitle {
   margin: 12px 0 0 0;
+  max-width: 500px;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.15;
   color: #F3F3E9;
 }
@@ -128,6 +129,15 @@
   text-align: center;
 }
 
+@media all and (max-width: 1599px) {
+  .prize__item-title {
+    font-size: 32px;
+  }
+  .prize__item-text {
+    font-size: 20px;
+  }
+}
+
 @media all and (max-width: 1440px) {
   .prize {
     margin: 60px 0 0;
@@ -136,6 +146,9 @@
   }
   .prize__title {
     font-size: 64px;
+  }
+  .prize__subtitle {
+    max-width: 300px;
   }
   .prize__list {
     margin: 60px 0 0 0;
@@ -147,12 +160,6 @@
   .prize__item-icon {
     width: 80px;
     height: 80px;
-  }
-  .prize__item-title {
-    font-size: 32px;
-  }
-  .prize__item-text {
-    font-size: 20px;
   }
   .prize__item-prize-icon {
     width: 200px;
