@@ -301,14 +301,16 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
         </FormField>
 
         <FormField title='Информация о команде' subtitle='Добавьте участников вашей команды (обязательно 4 участника)'>
-          <ParticipantList 
-            items={participants} 
-            onAdd={openAddParticipantPopup} 
-            onEdit={openEditParticipantPopup} 
-            onRemove={openRemoveParticipantPopup} 
-            windowWidth={windowWidth}
-          />
-          
+          {
+            currentUniversity.id !== 0 &&
+            <ParticipantList 
+              items={participants} 
+              onAdd={openAddParticipantPopup} 
+              onEdit={openEditParticipantPopup} 
+              onRemove={openRemoveParticipantPopup} 
+              windowWidth={windowWidth}
+            />
+          }
         </FormField>
 
         <FormField title='Персональные данные'>
