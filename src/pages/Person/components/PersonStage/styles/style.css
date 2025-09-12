@@ -39,12 +39,13 @@
   pointer-events: none;
 }
 .person-stage__container {
-  margin: 32px 0 0 0;
+  margin: 24px 0 0 0;
   display: flex;
+  gap: 32px;
 }
 .person-stage__info {
   width: 100%;
-  margin: 0 20px 0 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
@@ -67,22 +68,26 @@
   margin: 0;
 }
 .person-stage__row-title {
-  margin: 0;
+  margin: 0 0 8px 0;
   font-weight: bold;
   font-size: 24px;
   line-height: 1.15;
   color: var(--title-color);
 }
 .person-stage__row-subtitle {
-  margin: 8px 0 12px 0;
+  margin: 0 0 12px 0;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.15;
   color: var(--title-color);
 }
+.person-stage__row-subtitle_m_t {
+  margin-top: 8px
+}
 .person-stage__video {
   width: 100%;
-  margin: 0 20px 0 0;
+  max-width: 480px;
+  margin: 0;
   display: flex;
   flex-direction: column;
 }

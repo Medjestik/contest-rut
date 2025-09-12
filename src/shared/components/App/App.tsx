@@ -67,11 +67,9 @@ function App() {
     }
   };
 
-  /*
   const handleChangeStage = (stageId: number) => {
     setCurrentTeam({ ...currentTeam, current_stage: stageId });
   };
-  */
 
   const handleLogin = (data: ILoginData) => {
     setIsLoadingRequest(true);
@@ -131,7 +129,7 @@ function App() {
             
             {
               loggedIn &&
-              <Route path={EROUTES.MAIN} element={<Main windowWidth={windowWidth} onLogout={handleLogout} />} />
+              <Route path={EROUTES.MAIN} element={<Main windowWidth={windowWidth} onChangeStage={handleChangeStage} onLogout={handleLogout} />} />
             }
           </Routes>
         }

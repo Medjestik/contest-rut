@@ -24,7 +24,7 @@ const Document: FC = () => {
           <h2 className='section__title'>документы</h2>
           <div className='document__buttons'>
             <a href='https://cloud.mail.ru/public/7FNk/x4DxKax58' target='_blank' rel='noreferrer'><Button color={'white'} text={'положение'} width='full' /></a>
-            <a href='https://cloud.mail.ru/public/NqV9/sGGmDQ999' target='_blank' rel='noreferrer'><Button color={'white'} text={'регламент'} width='full' /></a>
+            <a href='https://cloud.mail.ru/public/rMTM/Ah1cwwKU6' target='_blank' rel='noreferrer'><Button color={'white'} text={'регламент'} width='full' /></a>
             <Button color={'primary'} text={'зарегистрироваться'} width='full' onClick={navigateToReg} />
           </div>
         </div>

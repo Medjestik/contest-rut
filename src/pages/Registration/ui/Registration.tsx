@@ -362,7 +362,7 @@ const Registration: FC<IRegistrationProps> = ({ windowWidth }) => {
             {'Подтверждаю, что участники команды ознакомлены и согласны с условиями и правилами участия в соревнованиях, изложенными в '}
               <Link text='Положении' path='https://cloud.mail.ru/public/7FNk/x4DxKax58' />
               {' и '}
-              <Link text='Регламенте' path='https://cloud.mail.ru/public/NqV9/sGGmDQ999' />
+              <Link text='Регламенте' path='https://cloud.mail.ru/public/rMTM/Ah1cwwKU6' />
               {'.'}
             </div>
           </div>

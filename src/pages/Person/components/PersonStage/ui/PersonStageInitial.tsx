@@ -6,6 +6,7 @@ import { useContext } from 'react';
 import { CurrentTeamContext } from '../../../../../shared/context/team';
 
 import Button from '../../../../../shared/components/Button/ui/Button';
+import PersonVideo from '../../PersonVideo/ui/PersonVideo';
 
 import '../styles/style.css';
 
@@ -23,11 +24,41 @@ const PersonStageInitial: FC<IPersonStageProps> = ({ stage }) => {
   return (
     <div className='person-stage'>
       <h2 className='person-stage__title'>{stage.name || ''}</h2>
-      <p className='person-stage__subtitle'>Поздравляем вас с участием в первых Межвузовских транспортных проектных соревнованиях!</p>
-      <p className='person-stage__subtitle'>Вас ждут интересные испытания, и каждый пройденный этап будет приближать вашу команду к решению реальной проблемы. Не забывайте внимательно выполнять задания, изучать предложенные инструменты и применять их для достижения цели.</p>
-      <p className='person-stage__subtitle'>Желаем удачи на всех этапах соревнований!</p>
       <div className='person-stage__container'>
-        <div className='person-stage__info person-stage__info-case'>
+        <div className='person-stage__video'>
+          <PersonVideo url={stage.url_video} />
+        </div>
+        <div className='person-stage__info'>
+          <div className='person-stage__row'>
+            <h4 className='person-stage__row-title'>Поздравляем с участием в Международных транспортных проектных соревнованиях!</h4>
+            <p className='person-stage__row-subtitle'>Проектная деятельность – это способ учиться и управлять процессами через решение реальных проблем. Вам предстоит пройти пять этапов: анализ ситуации, проблемное интервью, поиск идеи, создание прототипа и видеозащита. Такой порядок неслучаен: сначала важно понять проблему и её участников, затем предложить реалистичное решение, оформить и протестировать его, а в финале – убедительно представить результат.</p>
+            <p className='person-stage__row-subtitle'>Для участников подготовлены четыре набора инструментов: «базовый», «классический», «дизмыш» (по дизайн-мышлению) и «СМД» (со схемами и моделями). Каждый сможет выбрать удобный уровень погружения, но этапы проектной работы остаются одинаковыми для всех.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className='person-stage__container'>
+        <div className='person-stage__video'>
+          {
+            currentTeam.case && currentTeam.case.files.length > 0 &&
+            <div className='person-stage__row'>
+              <h4 className='person-stage__row-title'>Описание проблемы</h4>
+              <p className='person-stage__row-subtitle'>Ознакомьтесь с полным описанием проблемной ситуации, составленным компанией-партнёром.</p>
+              <Button style={btnStyle} text='Скачать' type='link' link={`https://contest-api.emiit.ru${currentTeam.case && currentTeam.case.files[0].url}`} />
+            </div>
+          }
+          <div className='person-stage__row'>
+            <h4 className='person-stage__row-title'>Чат проблемы</h4>
+            <p className='person-stage__row-subtitle'>Задайте вопросы о проблеме представителям компании и организаторам .</p>
+            <Button style={btnStyle} text='Вступить' type='link' link={currentTeam.case && currentTeam.case.telegram_url || ''} />
+          </div>
+          <div className='person-stage__row'>
+            <h4 className='person-stage__row-title'>Канал соревнований</h4>
+            <p className='person-stage__row-subtitle'>Следите за новостями проектных соревнований: сроки, ответы на вопросы, нюансы и советы .</p>
+            <Button style={btnStyle} text='Подписаться' type='link' link='https://t.me/contestmiit' />
+          </div>
+        </div>
+        <div className='person-stage__info'>
           {
             currentTeam.case &&
             <div className='cases__card cases__card_color_grey'>
@@ -40,29 +71,6 @@ const PersonStageInitial: FC<IPersonStageProps> = ({ stage }) => {
               </div>
             </div>
           }
-        </div>
-        <div className='person-stage__info'>
-          {
-            currentTeam.case && currentTeam.case.description &&
-            <div className='person-stage__row'>
-              <h4 className='person-stage__row-title'>Описание кейса</h4>
-              <p className='person-stage__row-subtitle'>Скачайте и изучите описание кейса.</p>
-              <Button style={btnStyle} text='Скачать' type='link' link={currentTeam.case.description} />
-            </div>
-          }
-          {
-            currentTeam.case && currentTeam.case.files.length > 0 &&
-            <div className='person-stage__row'>
-              <h4 className='person-stage__row-title'>Файлы кейса</h4>
-              <p className='person-stage__row-subtitle'>Скачайте файлы для кейса.</p>
-              <Button style={btnStyle} text='Скачать' type='link' link={`https://contest-api.emiit.ru${currentTeam.case && currentTeam.case.files[0].url}`} />
-            </div>
-          }
-          <div className='person-stage__row'>
-            <h4 className='person-stage__row-title'>Чат с экспертами</h4>
-            <p className='person-stage__row-subtitle'>Вы можете задать свой вопрос экспертам в специальном чате.</p>
-            <Button style={btnStyle} text='Перейти' type='link' link={currentTeam.case && currentTeam.case.telegram_url || ''} />
-          </div>
         </div>
       </div>
     </div>

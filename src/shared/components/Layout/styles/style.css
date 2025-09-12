@@ -42,9 +42,9 @@
   flex-direction: column;
 }
 .layout__main-container {
-  width: calc(100% - 40px);
+  width: calc(100% - 24px);
   height: 100%;
-  margin: 0 20px;
+  margin: 0 12px;
   padding: 0 10px;
   box-sizing: border-box;
   display: flex;
