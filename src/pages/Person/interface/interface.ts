@@ -14,6 +14,7 @@ export interface IStageNavItem {
   url_video: string;
   team_file_count: number;
   team_videos: string[];
+  stage_paths: IStagePath[] | null;
 }
 
 export interface IStage {
@@ -27,6 +28,13 @@ export interface IStage {
   url_video: string;
   team_file_count: number;
   team_videos: string[];
+}
+
+export interface IStagePath {
+  id: number;
+  path: { id: number; name: string; position: number; };
+  url_template: string | null;
+  url_video: string | null;
 }
 
 export interface IPersonProps {

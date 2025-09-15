@@ -40,11 +40,11 @@ const PersonStageInitial: FC<IPersonStageProps> = ({ stage }) => {
       <div className='person-stage__container'>
         <div className='person-stage__video'>
           {
-            currentTeam.case && currentTeam.case.files.length > 0 &&
+            currentTeam.case && currentTeam.case.description &&
             <div className='person-stage__row'>
               <h4 className='person-stage__row-title'>Описание проблемы</h4>
               <p className='person-stage__row-subtitle'>Ознакомьтесь с полным описанием проблемной ситуации, составленным компанией-партнёром.</p>
-              <Button style={btnStyle} text='Скачать' type='link' link={`https://contest-api.emiit.ru${currentTeam.case && currentTeam.case.files[0].url}`} />
+              <Button style={btnStyle} text='Скачать' type='link' link={currentTeam.case.description} />
             </div>
           }
           <div className='person-stage__row'>

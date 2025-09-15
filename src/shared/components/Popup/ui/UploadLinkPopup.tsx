@@ -28,6 +28,8 @@ const UploadLinkPopup: FC<IUploadLinkPopupProps> = ({ isOpen, onClose, onUpload,
   const [link, setLink] = useState<string>('');
   const [isShowErrorLink, setIsShowErrorLink] = useState<IFormFieldError>({ isShow: false, text: '' });
 
+  const [isConfirmLink, setIsConfirmLink] = useState<boolean>(false);
+
   const [isBlockSubmitButton, setIsBlockSubmitButton] = useState<boolean>(true);
 
 
@@ -55,13 +57,17 @@ const UploadLinkPopup: FC<IUploadLinkPopupProps> = ({ isOpen, onClose, onUpload,
   };
 
   useEffect(() => {
-    if ((link.length < 1) || (title.length < 1) || (isShowErrorLink.isShow)) { 
+    if (
+      title.length < 1 ||
+      link.length < 1 ||
+      isShowErrorLink.isShow ||
+      !isConfirmLink
+    ) {
       setIsBlockSubmitButton(true);
     } else {
       setIsBlockSubmitButton(false);
     }
-  // eslint-disable-next-line
-  }, [title, link]);
+  }, [title, link, isShowErrorLink, isConfirmLink]);
 
   useEffect(() => {
     setTitle('');
@@ -93,6 +99,23 @@ const UploadLinkPopup: FC<IUploadLinkPopupProps> = ({ isOpen, onClose, onUpload,
             error={isShowErrorLink} 
           />
         </FormField>
+        <FormField>
+          <div className='checkbox__item'>
+            <label className='checkbox'>
+              <input 
+                name='upload-link-confirm'
+                type='checkbox'
+                id='upload-link-confirm'
+                defaultChecked={isConfirmLink}
+                onChange={() => setIsConfirmLink(!isConfirmLink)}
+              >
+              </input>
+              <span></span>
+            </label>
+            <div className='checkbox__text'>Мы проверили, что файл доступен для любых пользователей без авторизации.</div>
+          </div>
+        </FormField>
+
         <div className='form__buttons'>
           <Button style={btnStyle} text='Отменить' color='cancel' onClick={onClose} />
           <FormSubmit text='Загрузить' isBlock={isBlockSubmitButton} isLoading={isLoading} loadingText='Загрузка..' />

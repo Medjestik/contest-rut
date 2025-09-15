@@ -28,9 +28,10 @@ const Person: FC<IPersonProps> = ({ onChangeStage }) => {
     view: 'info', 
     type: 'active',
     url_template: '',
-    url_video: '',
+    url_video: 'http://course.emiit.ru/webtutor/ivan/land/video/contest/intro.mp4',
     team_file_count: 0, 
     team_videos: [],
+    stage_paths: [],
   };
 
   const currentTeam = useContext(CurrentTeamContext);
