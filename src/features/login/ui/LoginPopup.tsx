@@ -41,10 +41,7 @@ const LoginPopup: FC<ILoginPopupProps> = ({ isOpen, onClose, onSubmit, loginErro
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const data = { login, password };
-
-    if (login.includes('navydragon')) {
-      onSubmit(data);
-    }
+    onSubmit(data);
   };
 
   useEffect(() => {
