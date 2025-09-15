@@ -3,7 +3,7 @@ import type { IStagesCardItem } from '../interface/interface';
 export const data: IStagesCardItem[] = [
   {
     id: 1,
-    date: '01-14 сентября',
+    date: '01-30 сентября',
     title: 'Регистрация',
     text: ['Зарегистрируйтесь на сайте, чтобы стать участником проектных соревнований.'],
     color: 'gradient',

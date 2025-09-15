@@ -81,7 +81,7 @@ const Landing: FC<ILandingProps> = ({ windowWidth, onLogin }) => {
           <Motivation windowWidth={windowWidth} />
           <Recruitment />
           <FAQ />
-          <Document />
+          <Document onLogin={onLogin} />
           <Footer windowWidth={windowWidth} />
           </>
         }
