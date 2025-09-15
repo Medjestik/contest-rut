@@ -5,5 +5,4 @@ export enum EROUTES {
   REGISTRATION = '/registration',
   PERSON = '/person-test',
   MAIN = '/main',
-  LOGIN = '/login-ars',
 }

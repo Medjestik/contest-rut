@@ -23,6 +23,11 @@ const PersonStage: FC<IPersonStageProps> = ({ stage, onOpen, onLink, onUploadVid
     ? stage.url_video
     : currentPath?.url_video ?? '';
 
+  const templateUrl =
+  stage.id === 5
+    ? stage.url_template
+    : currentPath?.url_template ?? '';
+
   const btnStyle = {
     margin: '0',
     fontSize: '18px',
@@ -41,7 +46,7 @@ const PersonStage: FC<IPersonStageProps> = ({ stage, onOpen, onLink, onUploadVid
       case 2:
         return 'Классический';
       case 3:
-        return 'Дизайн-мышления';
+        return 'Дизайн-мышление';
       case 4:
         return 'Со схемами и моделями';
       default:
@@ -90,7 +95,7 @@ const PersonStage: FC<IPersonStageProps> = ({ stage, onOpen, onLink, onUploadVid
           <div className='person-stage__row'>
             <h4 className='person-stage__row-title'>2. Шаблон</h4>
             <p className='person-stage__row-subtitle'>Скачайте и изучите шаблон.</p>
-            <Button style={btnStyle} text='Скачать' type='link' link={stage.url_template} />
+            <Button style={btnStyle} text='Скачать' type='link' link={templateUrl} />
           </div>
           <div className='person-stage__row'>
             <h4 className='person-stage__row-title'>3. Задание</h4>

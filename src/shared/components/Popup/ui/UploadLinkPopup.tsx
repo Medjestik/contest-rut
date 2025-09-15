@@ -118,7 +118,7 @@ const UploadLinkPopup: FC<IUploadLinkPopupProps> = ({ isOpen, onClose, onUpload,
 
         <div className='form__buttons'>
           <Button style={btnStyle} text='Отменить' color='cancel' onClick={onClose} />
-          <FormSubmit text='Загрузить' isBlock={isBlockSubmitButton} isLoading={isLoading} loadingText='Загрузка..' />
+          <FormSubmit text='Сохранить' isBlock={isBlockSubmitButton} isLoading={isLoading} loadingText='Сохранение..' />
         </div>
         <FormError isShow={isShowRequestError} text='К сожалению, произошла ошибка!' />
       </Form>

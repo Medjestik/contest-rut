@@ -10,7 +10,6 @@ import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import Landing from '../../../pages/Landing/Landing';
 import History from '../../../pages/History/History';
 import International from '../../../pages/International/International';
-import Login from '../../../pages/Login/ui/Login';
 import Registration from '../../../pages/Registration/ui/Registration';
 import Main from '../../../pages/Main/ui/Main';
 import Preloader from '../Preloader/ui/Preloader';
@@ -125,7 +124,6 @@ function App() {
             <Route path={EROUTES.HISTORY} element={<History windowWidth={windowWidth} />} />
             <Route path={EROUTES.INTERNATIONAL} element={<International windowWidth={windowWidth} />} />
             <Route path={EROUTES.REGISTRATION} element={<Registration windowWidth={windowWidth} />} />
-            <Route path={EROUTES.LOGIN} element={<Login onLogin={openLoginPopup} />} />
             
             {
               loggedIn &&

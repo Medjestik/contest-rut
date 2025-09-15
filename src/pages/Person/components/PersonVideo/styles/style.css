@@ -10,6 +10,7 @@
   width: 480px;
   height: auto;
   border-radius: var(--border-radius);
+  object-fit: cover;
 }
 .person-video__overlay {
   position: absolute;
