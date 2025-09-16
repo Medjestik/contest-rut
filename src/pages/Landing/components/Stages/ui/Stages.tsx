@@ -7,7 +7,11 @@ import { data } from '../mock/data';
 
 import '../styles/style.css';
 
-const Stages: FC = () => {
+interface IStagesProps {
+  onLogin: () => void;
+}
+
+const Stages: FC<IStagesProps> = ({ onLogin }) => {
 
   return (
     <div className='stages' id={ENAV.STAGES}>
@@ -17,7 +21,7 @@ const Stages: FC = () => {
           <ul className='stages__list'>
             {
               data.map((card) => (
-                <StagesCard card={card} key={card.id} />
+                <StagesCard card={card} key={card.id} onLogin={onLogin} />
               ))
             }
           </ul>

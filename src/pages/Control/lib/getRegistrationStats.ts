@@ -12,7 +12,7 @@ export const getRegistrationStats = (teams: IControlTeam[]): IRegistrationStat[]
   });
 
   const start = new Date('2025-08-31');
-  const end = new Date('2025-09-15');
+  const end = new Date('2025-09-20');
 
   const days: string[] = [];
   const d = new Date(start);

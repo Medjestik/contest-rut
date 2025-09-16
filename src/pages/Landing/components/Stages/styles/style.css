@@ -74,6 +74,9 @@
 .stages__card_type_gradient .stages__card-date {
   color: var(--white-color);
 }
+.stages__card_type_photo .stages__card-date {
+  color: var(--white-color);
+}
 .stages__card-title {
   margin: 120px 0 0;
   max-width: 85%;

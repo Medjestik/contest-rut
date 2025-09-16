@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.55edd313.css",
-    "main.js": "/static/js/main.31a23367.js",
+    "main.css": "/static/css/main.8d3efe08.css",
+    "main.js": "/static/js/main.837c0df5.js",
     "static/js/453.7ce295cc.chunk.js": "/static/js/453.7ce295cc.chunk.js",
     "static/media/main.svg": "/static/media/main.ef102666a7ab60bdce7e.svg",
     "static/media/m-5.svg": "/static/media/m-5.b8c9718d875f53fb9e31.svg",
@@ -10,6 +10,7 @@
     "static/media/methodology.svg": "/static/media/methodology.dca9e5f51341d654b218.svg",
     "static/media/final-7.jpg": "/static/media/final-7.cc8f92b3a66c325eeeef.jpg",
     "static/media/description.svg": "/static/media/description.831a3731e6615b40fadf.svg",
+    "static/media/mintrans.png": "/static/media/mintrans.afefab701dc2b281b6b1.png",
     "static/media/m-1.svg": "/static/media/m-1.ca4adc87e61444aa045b.svg",
     "static/media/main-img-lego.png": "/static/media/main-img-lego.d98c0d2a0a8bd124c135.png",
     "static/media/m-4.svg": "/static/media/m-4.edf40a82843bb82a9a3d.svg",
@@ -70,6 +71,7 @@
     "static/media/Akrobat-Regular.woff": "/static/media/Akrobat-Regular.9e31e53d72556b7eb4e7.woff",
     "static/media/Akrobat-Black.woff": "/static/media/Akrobat-Black.f14750998f34f5477f3f.woff",
     "static/media/Akrobat-Thin.woff": "/static/media/Akrobat-Thin.2e3f6f4a53187d9ba215.woff",
+    "static/media/prioritet-white.png": "/static/media/prioritet-white.36a5559401f0bb1797dc.png",
     "static/media/BebasNeueLight.woff": "/static/media/BebasNeueLight.fb1021edc3744b98b5b7.woff",
     "static/media/BebasNeueRegular.woff": "/static/media/BebasNeueRegular.c07e076467a248c2f672.woff",
     "static/media/BebasNeue-Thin.woff": "/static/media/BebasNeue-Thin.83e86240c8a62475c312.woff",
@@ -93,12 +95,12 @@
     "index.html": "/index.html",
     "static/media/line.svg": "/static/media/line.b05c0e2b901f71d7124a.svg",
     "static/media/arrow.svg": "/static/media/arrow.55a4ec4915bbcdabc744.svg",
-    "main.55edd313.css.map": "/static/css/main.55edd313.css.map",
-    "main.31a23367.js.map": "/static/js/main.31a23367.js.map",
+    "main.8d3efe08.css.map": "/static/css/main.8d3efe08.css.map",
+    "main.837c0df5.js.map": "/static/js/main.837c0df5.js.map",
     "453.7ce295cc.chunk.js.map": "/static/js/453.7ce295cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55edd313.css",
-    "static/js/main.31a23367.js"
+    "static/css/main.8d3efe08.css",
+    "static/js/main.837c0df5.js"
   ]
 }

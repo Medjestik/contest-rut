@@ -17,7 +17,7 @@ import { getInstituteStats } from '../lib/getInstituteStats';
 import '../styles/style.css';
 
 const btnStyle = {
-  margin: '0 0 0 auto',
+  margin: '0',
   padding: '8px 14px',
   borderRadius: '12px',
   fontSize: '18px',
@@ -62,7 +62,10 @@ const Control: FC = () => {
         <Preloader />
         :
         <>
-        <Button text='Экспорт статистики' style={btnStyle} type='link' link='https://contest-api.emiit.ru/api/report/teams-export/' />
+        <div className='control__buttons'>
+          <Button text='Экспорт участников' style={btnStyle} type='link' link='https://contest-api.emiit.ru/api/report/teams-export/' />
+          <Button text='Экспорт прогресса' style={btnStyle} type='link' link='https://contest-api.emiit.ru/api/report/participants-export/' />
+        </div>
         <div className='control__row'>
           <RegistrationChart stats={getRegistrationStats(teams)} />
         </div>

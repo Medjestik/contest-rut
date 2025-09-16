@@ -75,7 +75,7 @@ const Landing: FC<ILandingProps> = ({ windowWidth, onLogin }) => {
           }
           <Description windowWidth={windowWidth} />
           <Prize windowWidth={windowWidth} />
-          <Stages />
+          <Stages onLogin={onLogin} />
           <Final type='land' />
           <Cases cases={cases} />
           <Motivation windowWidth={windowWidth} />

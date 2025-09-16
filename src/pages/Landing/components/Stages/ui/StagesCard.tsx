@@ -8,10 +8,10 @@ import { EROUTES } from '../../../../../shared/utils/ERoutes';
 import '../styles/style.css';
 
 const btnStyle = {
-  margin: '50px 0 0',
+  margin: '24px 0 0',
 };
 
-const StagesCard: FC<IStagesCardProps> = ({ card }) => {
+const StagesCard: FC<IStagesCardProps> = ({ card, onLogin }) => {
   
   const navigate = useNavigate();
 
@@ -28,6 +28,10 @@ const StagesCard: FC<IStagesCardProps> = ({ card }) => {
         card.text?.map((paragraph, i) => (
           <p className='stages__card-text' key={i}>{paragraph}</p>
         ))
+      }
+      {
+        card.type === 'login' &&
+        <Button text='Личный кабинет' width='default' color='primary' style={btnStyle} onClick={onLogin} />
       }
       {
         card.type === 'registration' &&

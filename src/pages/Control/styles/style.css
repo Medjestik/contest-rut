@@ -15,6 +15,14 @@
   grid-template-columns: 1fr;
 }
 
+.control__buttons {
+  margin: 12px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .control__title {
   margin: 0;
   font-style: normal;
