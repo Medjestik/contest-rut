@@ -1,10 +1,19 @@
 export interface IControlTeam {
   id: number;
   date_joined: string;
+  current_stage: IControlStage;
   name: string;
   case: IControlCase;
   participants: IControlParticipant[];
   university: IControlUniversity;
+}
+
+export interface IControlStage {
+  id: number;
+  is_active: boolean;
+  is_completed: boolean;
+  name: string;
+  position: number;
 }
 
 export interface IControlCase {
@@ -29,6 +38,19 @@ export interface IInstituteStat {
   totalTeams: number;
   percentOfTotal: number;
   [caseTitle: string]: string | number;
+}
+
+export interface IInstituteStages {
+  university: string;
+  totalTeams: number;
+  percentOfTotal: number;
+  percentProgress: number;
+  stage1: number;
+  stage2: number;
+  stage3: number;
+  stage4: number;
+  stage5: number;
+  stage6: number;
 }
 
 export interface IRegistrationStat {

@@ -36,5 +36,5 @@ export const getInstituteStats = (teams: IControlTeam[]): IInstituteStat[] => {
     }
   );
 
-  return stats;
+  return stats.sort((a, b) => b.totalTeams - a.totalTeams);
 };
