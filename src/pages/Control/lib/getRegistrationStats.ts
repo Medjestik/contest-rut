@@ -23,15 +23,37 @@ export const getRegistrationStats = (teams: IControlTeam[]): IRegistrationStat[]
   }
 
   let cumulative = 0;
-  return days.map(date => {
-    const dailyCount = dayMap[date] || 0;
-    cumulative += dailyCount;
+  const result: IRegistrationStat[] = [];
+  let after15Sum = 0;
 
-    return {
-      date: date,
-      dailyCount,
+  for (const date of days) {
+    const day = new Date(date).getDate();
+
+    const dailyCount = dayMap[date] || 0;
+
+    if (day <= 15) {
+      cumulative += dailyCount;
+      result.push({
+        date,
+        dailyCount,
+        cumulativeCount: cumulative,
+        percentOfTotal: totalTeams > 0 ? +(dailyCount / totalTeams * 100).toFixed(2) : 0,
+      });
+    } else {
+      after15Sum += dailyCount;
+    }
+  }
+
+  // Добавляем последний "сводный" столбец после 15-го
+  if (after15Sum > 0) {
+    cumulative += after15Sum;
+    result.push({
+      date: 'после 15',
+      dailyCount: after15Sum,
       cumulativeCount: cumulative,
-      percentOfTotal: totalTeams > 0 ? +(dailyCount / totalTeams * 100).toFixed(2) : 0,
-    };
-  });
+      percentOfTotal: totalTeams > 0 ? +(after15Sum / totalTeams * 100).toFixed(2) : 0,
+    });
+  }
+
+  return result;
 };

@@ -33,7 +33,7 @@ export const RegistrationChart: React.FC<IRegistrationChartProps> = ({ stats }) 
   const chartData = useMemo(
     () =>
       stats.map(item => ({
-        date: formatShortDate(item.date),
+        date: item.date === 'после 15' ? item.date : formatShortDate(item.date),
         daily: item.dailyCount,
         cumulative: item.cumulativeCount,
       })),
@@ -116,7 +116,7 @@ export const RegistrationChart: React.FC<IRegistrationChartProps> = ({ stats }) 
           useMesh={true}
           tooltip={({ point }) => (
             <div style={{ padding: '6px 10px', background: '#fff', border: '1px solid #ccc' }}>
-              <div>Количество:&nbsp;<strong>{point.data.yFormatted}</strong></div>
+              <div><strong>{point.data.yFormatted}</strong></div>
             </div>
           )}
         />
