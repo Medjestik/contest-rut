@@ -15,6 +15,7 @@ import { getRegistrationStats } from '../lib/getRegistrationStats';
 import { getInstituteStats } from '../lib/getInstituteStats';
 import { getInstituteStages } from '../lib/getInstituteStages';
 import { getCaseStages } from '../lib/getCaseStages';
+import { getSubdivisionStages } from '../lib/getSubdivisionStages';
 
 import '../styles/style.css';
 
@@ -230,6 +231,83 @@ const Control: FC = () => {
               </div>
             </div>
           </div>
+			  </Table>
+        <h2 className='control__title' style={{ margin: '12px 0 16px' }}>Прогресс команд по институтам РУТ (МИИТ)</h2>
+        <Table>
+          <div className='table__header'>
+            <div className='table__main-column'>
+              <div className='table__column table__column_type_header table__column_type_count'>
+                <p className='table__text table__text_type_header'>№</p>
+              </div>
+              <div className='table__column table__column_type_header table__column_type_full'>
+                <p className='table__text table__text_type_header'>Образовательная организация</p>
+              </div>
+              <div className='table__column table__column_type_header table__column_align_center table__column_type_medium'>
+                <p className='table__text table__text_type_header'>Всего</p>
+              </div>
+              <div className='table__column table__column_type_header table__column_align_center table__column_type_medium'>
+                <p className='table__text table__text_type_header'>Этап 1</p>
+              </div>
+              <div className='table__column table__column_type_header table__column_align_center table__column_type_medium'>
+                <p className='table__text table__text_type_header'>Этап 2</p>
+              </div>
+              <div className='table__column table__column_type_header table__column_align_center table__column_type_medium'>
+                <p className='table__text table__text_type_header'>Этап 3</p>
+              </div>
+              <div className='table__column table__column_type_header table__column_align_center table__column_type_medium'>
+                <p className='table__text table__text_type_header'>Этап 4</p>
+              </div>
+              <div className='table__column table__column_type_header table__column_align_center table__column_type_medium'>
+                <p className='table__text table__text_type_header'>Этап 5</p>
+              </div>
+              <div className='table__column table__column_type_header table__column_align_center table__column_type_medium'>
+                <p className='table__text table__text_type_header'>Завершили</p>
+              </div>
+              <div className='table__column table__column_type_header table__column_align_center table__column_type_medium'>
+                <p className='table__text table__text_type_header'>Прогресс, %</p>
+              </div>
+            </div>
+          </div>
+          <ul className='table__main' style={{ height: '400px', overflow: 'auto' }}>
+            {getSubdivisionStages(teams, 763).map((item, i) => (
+              <li className='table__row' key={i}>
+                <div className='table__main-column table__main-column_type_full '>
+                  <div className='table__column table__column_type_count'>
+                    <p className='table__text'>{i + 1}</p>
+                  </div>
+                  <div className='table__column table__column_type_full'>
+                    <p className='table__text'>
+                      {item.subdivision}
+                    </p>
+                  </div>
+                  <div className='table__column table__column_align_center table__column_type_medium'>
+                    <p className='table__text table__text_align_center'>{item.totalTeams}</p>
+                  </div>
+                  <div className='table__column table__column_align_center table__column_type_medium'>
+                    <p className='table__text table__text_align_center'>{item.stage1}</p>
+                  </div>
+                  <div className='table__column table__column_align_center table__column_type_medium'>
+                    <p className='table__text table__text_align_center'>{item.stage2}</p>
+                  </div>
+                  <div className='table__column table__column_align_center table__column_type_medium'>
+                    <p className='table__text table__text_align_center'>{item.stage3}</p>
+                  </div>
+                  <div className='table__column table__column_align_center table__column_type_medium'>
+                    <p className='table__text table__text_align_center'>{item.stage4}</p>
+                  </div>
+                  <div className='table__column table__column_align_center table__column_type_medium'>
+                    <p className='table__text table__text_align_center'>{item.stage5}</p>
+                  </div>
+                  <div className='table__column table__column_align_center table__column_type_medium'>
+                    <p className='table__text table__text_align_center'>{item.stage6}</p>
+                  </div>
+                  <div className='table__column table__column_align_center table__column_type_medium'>
+                    <p className='table__text table__text_align_center table__text_type_header'>{item.percentProgress}%</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
 			  </Table>
         <h2 className='control__title' style={{ margin: '12px 0 16px' }}>Прогресс команд по проблемам</h2>
         <Table>
