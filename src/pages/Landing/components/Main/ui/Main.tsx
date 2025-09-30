@@ -48,7 +48,7 @@ const Main: FC<IMainProps> = ({ windowWidth, onLogin }) => {
         <div className='main__column'>
           <div className='main__section'>
             <h3 className='main__timer-title'>До конца отборочного этапа</h3>
-            <span className='main__timer-count'><CountdownTimer targetDate="2025-09-30T12:00:00" /></span>
+            <span className='main__timer-count'><CountdownTimer targetDate="2025-10-02T10:00:00" /></span>
             <p className='main__timer-text'>Разберись с проблемой, которую ещё никто не решил.</p>
           </div>
           <div className='main__section main__section-registration'>
@@ -69,7 +69,7 @@ const Main: FC<IMainProps> = ({ windowWidth, onLogin }) => {
         <> 
           <div className='main__img'>
             <h3 className='main__timer-title'>До конца отборочного этапа</h3>
-            <span className='main__timer-count'><CountdownTimer targetDate="2025-09-30T12:00:00" /></span>
+            <span className='main__timer-count'><CountdownTimer targetDate="2025-10-02T10:00:00" /></span>
             <h1 className='main__title'>Международные транспортные проектные&nbsp;cоревнования</h1>
           </div>
           <div className='main__section'>
