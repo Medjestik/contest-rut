@@ -8,6 +8,8 @@ import { useEffect, useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 
 import Landing from '../../../pages/Landing/Landing';
+import History from '../../../pages/History/History';
+import International from '../../../pages/International/International';
 import Main from '../../../pages/Main/ui/Main';
 import Preloader from '../Preloader/ui/Preloader';
 import { EROUTES } from '../../utils/ERoutes';
@@ -42,7 +44,7 @@ function App() {
   const tokenCheck = () => {
     localStorage.removeItem('token');
     setLoggedIn(false);
-    navigate(EROUTES.HOME);
+    // navigate(EROUTES.HOME);
   };
 
   const handleChangeStage = (stageId: number) => {
@@ -100,6 +102,8 @@ function App() {
           :
           <Routes>
             <Route path={EROUTES.HOME} element={<Landing onLogin={openLoginPopup} windowWidth={windowWidth} />} />
+            <Route path={EROUTES.HISTORY} element={<History windowWidth={windowWidth} />} />
+            <Route path={EROUTES.INTERNATIONAL} element={<International windowWidth={windowWidth} />} />
             
             {
               loggedIn &&
