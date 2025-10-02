@@ -10,7 +10,7 @@ interface IDocumentProps {
   onLogin: () => void;
 }
 
-const Document: FC<IDocumentProps> = ({ onLogin }) => {
+const Document: FC<IDocumentProps> = () => {
 
   return (
     <div className='document' id={ENAV.DOCUMENT}>
@@ -20,7 +20,6 @@ const Document: FC<IDocumentProps> = ({ onLogin }) => {
           <div className='document__buttons'>
             <a href='https://cloud.mail.ru/public/7FNk/x4DxKax58' target='_blank' rel='noreferrer'><Button color={'white'} text={'положение'} width='full' /></a>
             <a href='https://cloud.mail.ru/public/rMTM/Ah1cwwKU6' target='_blank' rel='noreferrer'><Button color={'white'} text={'регламент'} width='full' /></a>
-            <Button color={'primary'} text={'личный кабинет'} width='full' onClick={onLogin} />
           </div>
         </div>
       </Section>

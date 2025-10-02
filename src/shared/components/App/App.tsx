@@ -5,12 +5,9 @@ import type { IFormError } from '../Form/interface/interface';
 import type { ICurrentTeam } from './interface';
 
 import { useEffect, useState } from 'react';
-import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 
 import Landing from '../../../pages/Landing/Landing';
-import History from '../../../pages/History/History';
-import International from '../../../pages/International/International';
-import Registration from '../../../pages/Registration/ui/Registration';
 import Main from '../../../pages/Main/ui/Main';
 import Preloader from '../Preloader/ui/Preloader';
 import { EROUTES } from '../../utils/ERoutes';
@@ -22,13 +19,12 @@ import * as api from '../../../shared/utils/api';
 function App() {
 
   const navigate = useNavigate();
-  const { pathname } = useLocation();
+
+  const isLoadingPage = false;
 
   const [currentTeam, setCurrentTeam] = useState<ICurrentTeam>(initialTeam);
   const [loggedIn, setLoggedIn] = useState<boolean>(false);
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
-
-  const [isLoadingPage, setIsLoadingPage] = useState<boolean>(false);
 
   const [isLoadingRequest, setIsLoadingRequest] = useState<boolean>(false);
   const [isShowLoginError, setIsShowLoginError] = useState<IFormError>({ text: '', isShow: false });
@@ -36,7 +32,7 @@ function App() {
   const [isOpenLoginPopup, setIsOpenLoginPopup] = useState<boolean>(false);
 
   const openLoginPopup = () => {
-    setIsOpenLoginPopup(true);
+    setIsOpenLoginPopup(false);
   };
 
   const closePopup = () => {
@@ -44,26 +40,9 @@ function App() {
   };
 
   const tokenCheck = () => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      setIsLoadingPage(true);
-      api.getTeam(token)
-      .then((res) => {
-        setCurrentTeam(res);
-        setLoggedIn(true);
-        navigate('/main');
-      })
-      .catch((err) => {
-        setLoggedIn(false);
-        console.error(err);
-      })
-      .finally(() => setIsLoadingPage(false));
-    } else {
-      if (pathname !== EROUTES.REGISTRATION) {
-        // navigate(EROUTES.HOME);
-      }
-      setIsLoadingPage(false);
-    }
+    localStorage.removeItem('token');
+    setLoggedIn(false);
+    navigate(EROUTES.HOME);
   };
 
   const handleChangeStage = (stageId: number) => {
@@ -121,9 +100,6 @@ function App() {
           :
           <Routes>
             <Route path={EROUTES.HOME} element={<Landing onLogin={openLoginPopup} windowWidth={windowWidth} />} />
-            <Route path={EROUTES.HISTORY} element={<History windowWidth={windowWidth} />} />
-            <Route path={EROUTES.INTERNATIONAL} element={<International windowWidth={windowWidth} />} />
-            <Route path={EROUTES.REGISTRATION} element={<Registration windowWidth={windowWidth} />} />
             
             {
               loggedIn &&
