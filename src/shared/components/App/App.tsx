@@ -47,18 +47,33 @@ function App() {
     if (token) {
       setIsLoadingPage(true);
       api.getTeam(token)
-      .then((res) => {
-        setCurrentTeam(res);
-        if (res.role === 'admin' || res.role === 'expert') {
-          setLoggedIn(true);
-          navigate(EROUTES.MAIN);
-        }
-      })
-      .catch((err) => {
-        setLoggedIn(false);
-        console.error(err);
-      })
-      .finally(() => setIsLoadingPage(false));
+        .then((res) => {
+          setCurrentTeam(res);
+          if (res.role === 'admin' || res.role === 'expert') {
+            setLoggedIn(true);
+
+            const currentPath = window.location.pathname;
+            const publicRoutes = [
+              EROUTES.HOME,
+              EROUTES.LOGIN,
+              EROUTES.HISTORY,
+              EROUTES.INTERNATIONAL,
+            ];
+
+            // Если текущий путь публичный — редиректим на MAIN
+            if (publicRoutes.includes(currentPath as EROUTES)) {
+              navigate(EROUTES.MAIN);
+            } else {
+              // остаёмся на том же месте
+              navigate(currentPath, { replace: true });
+            }
+          }
+        })
+        .catch((err) => {
+          setLoggedIn(false);
+          console.error(err);
+        })
+        .finally(() => setIsLoadingPage(false));
     }
   };
 

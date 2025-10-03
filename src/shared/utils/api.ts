@@ -1,6 +1,7 @@
 import type { ILoginData } from '../../features/login/interface/interface';
 import type { IRegisterData } from '../../pages/Registration/interface/interface';
-import type { IUploadFile, IUploadLink } from '../components/Popup/interface/interface'; 
+import type { IUploadFile, IUploadLink } from '../components/Popup/interface/interface';
+import type { ICriteriaScore } from '../../pages/Expert/interface/interface';
 
 import { API_URL } from './config';
 
@@ -55,6 +56,44 @@ export const getForms = (token: string, caseId: string) => {
   })
   .then(res => handleResponse(res));
 };
+
+export const getСriterias = (token: string) => {
+  return fetch(`${API_URL}/criterias`, {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Authorization': `Token ${token}`,
+    }
+  })
+  .then(res => handleResponse(res));
+};
+
+export const getScores = (token: string, teamId: number) => {
+  return fetch(`${API_URL}/expert/team-marks?team_id=${teamId}`, {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Authorization': `Token ${token}`,
+    }
+  })
+  .then(res => handleResponse(res));
+};
+
+export const submitScores = (token: string, scores: ICriteriaScore[]) => {
+  return fetch(`${API_URL}/expert/rate-team/`, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Authorization': `Token ${token}`,
+    },
+    body: JSON.stringify(scores),
+  })
+  .then(res => handleResponse(res));
+};
+
 
 export const login = (data: ILoginData) => {
   return fetch(`${API_URL}/auth/login/`, {

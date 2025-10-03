@@ -60,7 +60,7 @@ const ExpertForms: FC = () => {
 
   const handleOpenForm = (form: IForm) => {
     console.log(form);
-    // navigate(`/main/nomination/${nominationId}/form/${form.team_id}`);
+    navigate(`/main/nomination/${nominationId}/form/${form.team_id}`);
   };
 
   const backToNominations = () => {
@@ -133,7 +133,7 @@ const ExpertForms: FC = () => {
                   <Button color='secondary' text='Оценить работу' style={btnScoreStyle} />
                 </div>
               </div>
-              <span className='expert__item-score'>{elem.average_score || '0'}</span>
+              <span className='expert__item-score'>{elem.expert_total_value || '0'}</span>
             </li>
           ))
         }

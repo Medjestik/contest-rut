@@ -120,6 +120,7 @@ const Control: FC = () => {
         <div className='control__buttons'>
           <Button text='Экспорт участников' style={btnStyle} type='link' link='https://contest-api.emiit.ru/api/report/teams-export/' />
           <Button text='Экспорт прогресса' style={btnStyle} type='link' link='https://contest-api.emiit.ru/api/report/participants-export/' />
+          <Button text='Экспорт оценок экспертов' style={btnStyle} type='link' link='https://contest-api.emiit.ru/api/report/summary-export/' />
         </div>
         <h2 className='control__title' style={{ margin: '12px 0 16px' }}>Прогресс команд по институтам</h2>
         <Table>

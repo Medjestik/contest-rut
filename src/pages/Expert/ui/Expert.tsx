@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 
 import ExpertForms from '../components/ExpertForms/ui/ExpertForms';
+import ExpertFormPage from '../components/ExpertFormPage/ui/ExpertFormPage';
 
 import Preloader from '../../../shared/components/Preloader/ui/Preloader';
 import Button from '../../../shared/components/Button/ui/Button';
@@ -83,6 +84,7 @@ const Expert: FC = () => {
 
         {/* Страница конкретной номинации */}
         <Route path="/nomination/:nominationId" element={<ExpertForms />} />
+        <Route path="/nomination/:nominationId/form/:formId" element={<ExpertFormPage />} />
       </Routes>
     </div>
   );
