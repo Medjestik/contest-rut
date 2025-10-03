@@ -44,6 +44,18 @@ export const getTeams = (token: string) => {
   .then(res => handleResponse(res));
 };
 
+export const getForms = (token: string, caseId: string) => {
+  return fetch(`${API_URL}/expert/teams?case_id=${caseId}`, {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Authorization': `Token ${token}`,
+    }
+  })
+  .then(res => handleResponse(res));
+};
+
 export const login = (data: ILoginData) => {
   return fetch(`${API_URL}/auth/login/`, {
     method: 'POST',

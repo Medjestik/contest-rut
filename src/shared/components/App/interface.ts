@@ -4,7 +4,7 @@ export interface ICurrentTeam {
   university: IUniversity | null;
   case: ICase | null;
   current_stage: number;
-  role: 'admin' | 'team' | 'moderator';
+  role: 'admin' | 'team' | 'expert';
 }
 
 export interface ICase {

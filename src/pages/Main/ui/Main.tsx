@@ -7,11 +7,11 @@ import { CurrentTeamContext } from '../../../shared/context/team';
 
 import MainLayout from '../../../shared/components/Layout/ui/MainLayout';
 import Control from '../../Control/ui/Control';
-import Person from '../../Person/ui/Person';
+import Expert from '../../Expert/ui/Expert';
 
 import '../styles/style.css';
 
-const Main: FC<IMainProps> = ({ windowWidth, onChangeStage, onLogout }) => {
+const Main: FC<IMainProps> = ({ windowWidth, onLogout }) => {
 
   const currentTeam = useContext(CurrentTeamContext);
 
@@ -20,11 +20,12 @@ const Main: FC<IMainProps> = ({ windowWidth, onChangeStage, onLogout }) => {
   return (
     <MainLayout mainContainer={true} windowWidth={windowWidth} onLogout={onLogout} >
       {
-        currentTeam.role === 'admin' 
-        ?
+        currentTeam.role === 'expert' &&
+        <Expert />
+      }
+      {
+        currentTeam.role === 'admin' &&
         <Control />
-        :
-        <Person windowWidth={windowWidth} onChangeStage={onChangeStage} onLogout={onLogout} />
       }
     </MainLayout>
   );

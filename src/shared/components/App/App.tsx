@@ -10,6 +10,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import Landing from '../../../pages/Landing/Landing';
 import History from '../../../pages/History/History';
 import International from '../../../pages/International/International';
+import Login from '../../../pages/Login/ui/Login';
 import Main from '../../../pages/Main/ui/Main';
 import Preloader from '../Preloader/ui/Preloader';
 import { EROUTES } from '../../utils/ERoutes';
@@ -22,8 +23,6 @@ function App() {
 
   const navigate = useNavigate();
 
-  const isLoadingPage = false;
-
   const [currentTeam, setCurrentTeam] = useState<ICurrentTeam>(initialTeam);
   const [loggedIn, setLoggedIn] = useState<boolean>(false);
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
@@ -31,10 +30,12 @@ function App() {
   const [isLoadingRequest, setIsLoadingRequest] = useState<boolean>(false);
   const [isShowLoginError, setIsShowLoginError] = useState<IFormError>({ text: '', isShow: false });
 
+  const [isLoadingPage, setIsLoadingPage] = useState<boolean>(false);
+
   const [isOpenLoginPopup, setIsOpenLoginPopup] = useState<boolean>(false);
 
   const openLoginPopup = () => {
-    setIsOpenLoginPopup(false);
+    setIsOpenLoginPopup(true);
   };
 
   const closePopup = () => {
@@ -42,9 +43,23 @@ function App() {
   };
 
   const tokenCheck = () => {
-    localStorage.removeItem('token');
-    setLoggedIn(false);
-    // navigate(EROUTES.HOME);
+    const token = localStorage.getItem('token');
+    if (token) {
+      setIsLoadingPage(true);
+      api.getTeam(token)
+      .then((res) => {
+        setCurrentTeam(res);
+        if (res.role === 'admin' || res.role === 'expert') {
+          setLoggedIn(true);
+          navigate(EROUTES.MAIN);
+        }
+      })
+      .catch((err) => {
+        setLoggedIn(false);
+        console.error(err);
+      })
+      .finally(() => setIsLoadingPage(false));
+    }
   };
 
   const handleChangeStage = (stageId: number) => {
@@ -104,10 +119,11 @@ function App() {
             <Route path={EROUTES.HOME} element={<Landing onLogin={openLoginPopup} windowWidth={windowWidth} />} />
             <Route path={EROUTES.HISTORY} element={<History windowWidth={windowWidth} />} />
             <Route path={EROUTES.INTERNATIONAL} element={<International windowWidth={windowWidth} />} />
+            <Route path={EROUTES.LOGIN} element={<Login onLogin={openLoginPopup} />} />
             
             {
               loggedIn &&
-              <Route path={EROUTES.MAIN} element={<Main windowWidth={windowWidth} onChangeStage={handleChangeStage} onLogout={handleLogout} />} />
+              <Route path={`${EROUTES.MAIN}/*`} element={<Main windowWidth={windowWidth} onChangeStage={handleChangeStage} onLogout={handleLogout} />} />
             }
           </Routes>
         }

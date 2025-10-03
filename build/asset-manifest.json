@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8862ee66.css",
-    "main.js": "/static/js/main.6f602064.js",
+    "main.css": "/static/css/main.6d0baccb.css",
+    "main.js": "/static/js/main.3992cc0d.js",
     "static/js/453.7ce295cc.chunk.js": "/static/js/453.7ce295cc.chunk.js",
     "static/media/main.svg": "/static/media/main.ef102666a7ab60bdce7e.svg",
     "static/media/m-5.svg": "/static/media/m-5.b8c9718d875f53fb9e31.svg",
@@ -83,7 +83,6 @@
     "static/media/sinara-white.svg": "/static/media/sinara-white.a439e31a69cecc57072e1a65615ba974.svg",
     "static/media/sinara.svg": "/static/media/sinara.dda97f8f01439250b98c9f4ecbfe7148.svg",
     "static/media/logo-rut-white.svg": "/static/media/logo-rut-white.d259705517743de0d67f7d6663abbb55.svg",
-    "static/media/poster.png": "/static/media/poster.ac5567a2ebeb95fd9e10.png",
     "static/media/social-telegram.svg": "/static/media/social-telegram.8d4ba7ebc9a13032d23c12fc744a6711.svg",
     "static/media/social-vk.svg": "/static/media/social-vk.35b2298bc0fb1659716abc6d230e661b.svg",
     "static/media/social-mail.svg": "/static/media/social-mail.70222a7334dbe63b191ca9ff753c2cef.svg",
@@ -94,12 +93,12 @@
     "static/media/icon.svg": "/static/media/icon.9525a7560bf2bc227eeb9bf8a149b621.svg",
     "index.html": "/index.html",
     "static/media/line.svg": "/static/media/line.b05c0e2b901f71d7124a.svg",
-    "main.8862ee66.css.map": "/static/css/main.8862ee66.css.map",
-    "main.6f602064.js.map": "/static/js/main.6f602064.js.map",
+    "main.6d0baccb.css.map": "/static/css/main.6d0baccb.css.map",
+    "main.3992cc0d.js.map": "/static/js/main.3992cc0d.js.map",
     "453.7ce295cc.chunk.js.map": "/static/js/453.7ce295cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8862ee66.css",
-    "static/js/main.6f602064.js"
+    "static/css/main.6d0baccb.css",
+    "static/js/main.3992cc0d.js"
   ]
 }
